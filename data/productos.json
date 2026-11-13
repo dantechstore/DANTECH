@@ -1,0 +1,6471 @@
+{
+ "meta": {
+  "fuente": "index.html",
+  "commit_main": "9ef8bc95f5023ec2160e8590c643e26605a5db32",
+  "sha256_fuente": "9b4ac063095243e6efa00925ad42da7eb0f9c0bbf5451323224265a4a5efd685",
+  "whatsapp": "573134724702",
+  "total_productos": 186,
+  "total_fotos_producto": 320,
+  "total_categorias": 20,
+  "nota": "Extraido sin modificar el catalogo publicado. Etiquetas (mas_vendido/nuevo/escasez) son una captura del estado publicado."
+ },
+ "categorias": [
+  {
+   "orden": 1,
+   "nombre": "Audífonos",
+   "color": "#2F6DA3",
+   "ancla": "c1",
+   "cantidad": 14
+  },
+  {
+   "orden": 2,
+   "nombre": "Entretenimiento",
+   "color": "#B8913A",
+   "ancla": "c2",
+   "cantidad": 7
+  },
+  {
+   "orden": 3,
+   "nombre": "Seguridad",
+   "color": "#B8913A",
+   "ancla": "c3",
+   "cantidad": 4
+  },
+  {
+   "orden": 4,
+   "nombre": "Accesorios para celular",
+   "color": "#2F6DA3",
+   "ancla": "c4",
+   "cantidad": 6
+  },
+  {
+   "orden": 5,
+   "nombre": "Accesorios para moto",
+   "color": "#B8913A",
+   "ancla": "c5",
+   "cantidad": 7
+  },
+  {
+   "orden": 6,
+   "nombre": "Cargadores y cables",
+   "color": "#2F6DA3",
+   "ancla": "c6",
+   "cantidad": 10
+  },
+  {
+   "orden": 7,
+   "nombre": "Parlantes",
+   "color": "#B8913A",
+   "ancla": "c7",
+   "cantidad": 7
+  },
+  {
+   "orden": 8,
+   "nombre": "Belleza hombre",
+   "color": "#3E7C8A",
+   "ancla": "c8",
+   "cantidad": 4
+  },
+  {
+   "orden": 9,
+   "nombre": "Belleza mujer",
+   "color": "#C95B80",
+   "ancla": "c9",
+   "cantidad": 23
+  },
+  {
+   "orden": 10,
+   "nombre": "Joyería",
+   "color": "#B8913A",
+   "ancla": "c10",
+   "cantidad": 3
+  },
+  {
+   "orden": 11,
+   "nombre": "Masajeadores",
+   "color": "#7D6AA8",
+   "ancla": "c11",
+   "cantidad": 5
+  },
+  {
+   "orden": 12,
+   "nombre": "Perfumería",
+   "color": "#B8913A",
+   "ancla": "c12",
+   "cantidad": 10
+  },
+  {
+   "orden": 13,
+   "nombre": "Salud",
+   "color": "#B8913A",
+   "ancla": "c13",
+   "cantidad": 8
+  },
+  {
+   "orden": 14,
+   "nombre": "Hogar",
+   "color": "#4E8F6E",
+   "ancla": "c14",
+   "cantidad": 19
+  },
+  {
+   "orden": 15,
+   "nombre": "Juguetería",
+   "color": "#B8913A",
+   "ancla": "c15",
+   "cantidad": 41
+  },
+  {
+   "orden": 16,
+   "nombre": "Mascotas",
+   "color": "#B8913A",
+   "ancla": "c16",
+   "cantidad": 1
+  },
+  {
+   "orden": 17,
+   "nombre": "Viaje",
+   "color": "#B8913A",
+   "ancla": "c17",
+   "cantidad": 5
+  },
+  {
+   "orden": 18,
+   "nombre": "Accesorios para carro",
+   "color": "#B8913A",
+   "ancla": "c18",
+   "cantidad": 2
+  },
+  {
+   "orden": 19,
+   "nombre": "Navidad",
+   "color": "#B8913A",
+   "ancla": "c19",
+   "cantidad": 4
+  },
+  {
+   "orden": 20,
+   "nombre": "Smartwatch",
+   "color": "#B8913A",
+   "ancla": "c20",
+   "cantidad": 6
+  }
+ ],
+ "mas_vendidos": [
+  "muu167a3kyoe",
+  "hpafeitadora",
+  "hpkeratina3dpro",
+  "hptoposplataley925",
+  "muu1q2701ujp",
+  "muu1q26w4d6h",
+  "muu1q26y58ek",
+  "muu1q26wblx4"
+ ],
+ "portada": {
+  "kicker": "🎁 REGALOS QUE ILUSIONAN",
+  "titulo": "Encuentra el regalo perfecto a precios que enamoran",
+  "subtitulo": "Pide fácil por WhatsApp · te lo llevamos a casa"
+ },
+ "ventanas_emergentes": {
+  "nav": {
+   "titulo": "🎄 ¡LLEGÓ LA NAVIDAD!",
+   "mensaje": "Regalos para toda la familia a precios de locura. Aparta los tuyos desde ya y pídelos por WhatsApp.",
+   "boton": "¡Ver regalos!",
+   "destino": "#c19"
+  },
+  "jug": {
+   "titulo": "🧸 ¡JUGUETES A PRECIOS DE LOCURA!",
+   "mensaje": "Carros a control remoto, sets de construcción, maquillaje y mucho más para los pequeños de la casa.",
+   "boton": "¡Ver juguetería!",
+   "destino": "#c15"
+  }
+ },
+ "logo": {
+  "archivo": "img/originales/_logo-marca.png",
+  "sha256": "e3d030e0ab687dcd7837b5862abb0079efd6b8a48539643a392289461159f4c5",
+  "bytes": 5637,
+  "ancho": 200,
+  "alto": 200,
+  "formato": "png"
+ },
+ "productos": [
+  {
+   "id": "muu167a3kyoe",
+   "orden_global": 1,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 1,
+   "nombre": "AirPods 4",
+   "nombre_visible": "AirPods 4",
+   "descripcion": "Con ANC",
+   "descripcion_html": "Con ANC",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu167a3kyoe-1.jpg",
+     "sha256": "536bbae87821cd1c18d6d09952cffebd0af39bc43765f00a1763afaf2c621ed8",
+     "bytes": 71739,
+     "ancho": 600,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muu1q26wblx4",
+   "orden_global": 2,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 2,
+   "nombre": "AirPods Pro 3",
+   "nombre_visible": "AirPods Pro 3",
+   "descripcion": "Con ANC",
+   "descripcion_html": "Con ANC",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26wblx4-1.jpg",
+     "sha256": "2ecd055953ebd2276e6bebab5c1198da0c6ded738610e4f8043b8ca0b01d0488",
+     "bytes": 8240,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muu1q26wblx4-2.jpg",
+     "sha256": "438e8445fa2f79dfbffbd901d696e22da7705cb4e7904f65a52363916d55c9f3",
+     "bytes": 12748,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muu1q26wblx4-3.jpg",
+     "sha256": "1bf8877908340560fec238c0dc1749afe67f566400cf3e1d7c765919d5cbe9cb",
+     "bytes": 19087,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "hpairpodsmax",
+   "orden_global": 3,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 3,
+   "nombre": "AirPods Max",
+   "nombre_visible": "AirPods Max",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 130000,
+   "precio_texto": "$130.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpairpodsmax-1.jpg",
+     "sha256": "3b1c7d19e7aa88f736cf1430fca72d609bb2c8aa327029361f537334aef7e2d9",
+     "bytes": 18587,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/hpairpodsmax-2.jpg",
+     "sha256": "d2afe59d987916ca9079afa7ce0d9bb30e852bc2be96e46e4ace5179a59d18d0",
+     "bytes": 28014,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtaudifonodiademabose700bluetooth",
+   "orden_global": 4,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 4,
+   "nombre": "Audifono Diadema Bose 700 Bluetooth",
+   "nombre_visible": "Audifono Diadema Bose 700 Bluetooth",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtaudifonodiademabose700bluetooth-1.jpg",
+     "sha256": "7ae991144a7445541ced543f689ff02c9ae88ad2dc819da5ff1ba90e2b2be807",
+     "bytes": 24931,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonodiademabose700bluetooth-2.jpg",
+     "sha256": "cee2aa40d1f40102b529af09adda89a0480192fd1e4a00d9e6de03e1a6e0a02f",
+     "bytes": 16973,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonodiademabose700bluetooth-3.jpg",
+     "sha256": "9aee3df05debc38a7b375b5e138b428c26d523deeac6e7dbb2a39bea6c264cf9",
+     "bytes": 18304,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtaudifonosinalambricosjkmxjk11",
+   "orden_global": 5,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 5,
+   "nombre": "Audífonos Inalámbricos JKMX JK11",
+   "nombre_visible": "Audífonos Inalámbricos JKMX JK11",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtaudifonosinalambricosjkmxjk11-1.jpg",
+     "sha256": "40ae906e39423ac7137c8b01b4e44cb713cb9daff97adb4632eb8d20917f10bb",
+     "bytes": 23829,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonosinalambricosjkmxjk11-2.jpg",
+     "sha256": "444c56eaa007abb85ee1a073c522e92f6e26183aae55f08051784386d2a826e6",
+     "bytes": 24446,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtaudifonosinalambricosjkmxjk18",
+   "orden_global": 6,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 6,
+   "nombre": "Audífonos Inalámbricos JKMX JK18",
+   "nombre_visible": "Audífonos Inalámbricos JKMX JK18",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 75000,
+   "precio_texto": "$75.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtaudifonosinalambricosjkmxjk18-1.jpg",
+     "sha256": "b5bc62d478e096beb30b6d6e1a2e0d43abcd9ff086ef593fffbbf3e294e2c0d7",
+     "bytes": 13801,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonosinalambricosjkmxjk18-2.jpg",
+     "sha256": "5c98da67eee909e69c8eed3635753817ee3db9ebb0140b1e78b2461b5bb5b4e4",
+     "bytes": 19630,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpaudifonosjkmxjk51",
+   "orden_global": 7,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 7,
+   "nombre": "Audífonos JKMX JK 51",
+   "nombre_visible": "Audífonos JKMX JK 51",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpaudifonosjkmxjk51-1.jpg",
+     "sha256": "846360eafb462a84933c7979fd1d8ef19def6d7ffc1e21a96d4c460a4df47c38",
+     "bytes": 7113,
+     "ancho": 225,
+     "alto": 225,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtaudifonosjkmxjk1",
+   "orden_global": 8,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 8,
+   "nombre": "Audífonos JKMX JK1",
+   "nombre_visible": "Audífonos JKMX JK1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtaudifonosjkmxjk1-1.jpg",
+     "sha256": "eb3e88c623c20a9888508d98d45cf39d7d3cc622c0d3efdf9da4acfeaa4f8370",
+     "bytes": 17661,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonosjkmxjk1-2.jpg",
+     "sha256": "46e78cc87d2b5186050c7d0ab63a8f784f59179b3ff48924e5064b487143439d",
+     "bytes": 22319,
+     "ancho": 640,
+     "alto": 396,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtaudifonosjkmxjk2",
+   "orden_global": 9,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 9,
+   "nombre": "Audífonos JKMX JK2",
+   "nombre_visible": "Audífonos JKMX JK2",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtaudifonosjkmxjk2-1.jpg",
+     "sha256": "5e4cc90334e8172729c806ef1925b7c1552d7044b7687b747aaa676e67416a74",
+     "bytes": 31345,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonosjkmxjk2-2.jpg",
+     "sha256": "bb0c23927f4aff5c3b9f55a737f2f4767846016881e7bd8975d17932f8c61ee0",
+     "bytes": 13545,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtaudifonosjkmxjk2-3.jpg",
+     "sha256": "9d83080530af4fa37f48d1a7d88f6c85177ff48770078ea1432eb977a323f996",
+     "bytes": 15984,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mv3t36862mav",
+   "orden_global": 10,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 10,
+   "nombre": "Audífonos Tipo C iPhone Alambricos",
+   "nombre_visible": "Audífonos Tipo C iPhone Alambricos",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv3t36862mav-1.jpg",
+     "sha256": "631315f3bc53740e2d5b842afcb1ede832e2611fad03d5012c3d3d33a0fd62d9",
+     "bytes": 15081,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv3t36862mav-2.jpg",
+     "sha256": "7644f4eb1e0b5b658d0f2adc173711394fa831cd8a88068e6a57b197a5f67d3c",
+     "bytes": 33875,
+     "ancho": 640,
+     "alto": 414,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muv3vy8m18xh",
+   "orden_global": 11,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 11,
+   "nombre": "Diadema Beats Studio Pro",
+   "nombre_visible": "Diadema Beats Studio Pro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 135000,
+   "precio_texto": "$135.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muv3vy8m18xh-1.jpg",
+     "sha256": "bde8a5b6feb578714961cb4fba7848aba4109b70f0748a1089d7f045a6efd19e",
+     "bytes": 20882,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muv3vy8m18xh-2.jpg",
+     "sha256": "32a97b44df24b6b40eedd65fddde1ec13d3d9b014563cfd51760a1f9df124ed0",
+     "bytes": 18597,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muv3vy8m18xh-3.jpg",
+     "sha256": "bd663f0a61a3215ed8e79d4a94fcd9d0d81a274ca3831c83dd364d767dac93bd",
+     "bytes": 16535,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muv455fqqzc0",
+   "orden_global": 12,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 12,
+   "nombre": "Diadema con Diseño",
+   "nombre_visible": "Diadema con Diseño",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muv455fqqzc0-1.jpg",
+     "sha256": "9532422a77dd316eb855bc6963d9f387968439e167ba6acdf482e5af889c7f72",
+     "bytes": 29103,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muv39ewiom36",
+   "orden_global": 13,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 13,
+   "nombre": "Galaxy Buds2",
+   "nombre_visible": "Galaxy Buds2",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muv39ewiom36-1.jpg",
+     "sha256": "256d6c0ca71e04cf4fc87ac3da2b342c002d54aa24a140efab2fa15a12422727",
+     "bytes": 18679,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muv300568xs4",
+   "orden_global": 14,
+   "categoria": "Audífonos",
+   "orden_en_categoria": 14,
+   "nombre": "JBL Tour Pro 2 BT",
+   "nombre_visible": "JBL Tour Pro 2 BT",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 110000,
+   "precio_texto": "$110.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muv300568xs4-1.jpg",
+     "sha256": "cc32f7f64bb82a4d38821f489c685437c2d31af81a80b1de686b7c202a0ab9f7",
+     "bytes": 21781,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q2701ujp",
+   "orden_global": 15,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 1,
+   "nombre": "Proyector HCS350 Mini",
+   "nombre_visible": "Proyector HCS350 Mini",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 330000,
+   "precio_texto": "$330.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q2701ujp-1.jpg",
+     "sha256": "9949c20df5890cf29e9d4bbfb7d455bda7876f1e7065922e8ca1c28394d551d7",
+     "bytes": 23840,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muu1q26ynzy6",
+   "orden_global": 16,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 2,
+   "nombre": "Emulador Play 5",
+   "nombre_visible": "Emulador Play 5",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 115000,
+   "precio_texto": "$115.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26ynzy6-1.jpg",
+     "sha256": "61d6428c5a49f7e7cfd09f9828debbf1fd1adcd2a7100122fe61c180ec7e0f95",
+     "bytes": 24380,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q2705ofl",
+   "orden_global": 17,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 3,
+   "nombre": "Proyector HY300",
+   "nombre_visible": "Proyector HY300",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 135000,
+   "precio_texto": "$135.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q2705ofl-1.jpg",
+     "sha256": "eef9fbc6c1967e4f6aa22ff292b708b2d8b189185e74741862267124af193d1d",
+     "bytes": 17780,
+     "ancho": 554,
+     "alto": 554,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muzsivk674g7",
+   "orden_global": 18,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 4,
+   "nombre": "Watch Onn HD Replica",
+   "nombre_visible": "Watch Onn HD Replica",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 110000,
+   "precio_texto": "$110.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muzsivk674g7-1.jpg",
+     "sha256": "a870bda7a68f5db929740e4ff63bab1d8f51b737c1b1b163328936f4567b236a",
+     "bytes": 18343,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muzsivk674g7-2.jpg",
+     "sha256": "6bf2c32b0925bd720bd9c8321c14aa5f81b3c2f46c0e8589de4062c75f40f213",
+     "bytes": 20068,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "hpconsolagametv",
+   "orden_global": 19,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 5,
+   "nombre": "Consola Game TV",
+   "nombre_visible": "Consola Game TV",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 180000,
+   "precio_texto": "$180.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpconsolagametv-1.jpg",
+     "sha256": "ba8d13d7f0b4f59898d6acc0328599fef714cc981336f3d166bd404a6d263c60",
+     "bytes": 64657,
+     "ancho": 456,
+     "alto": 528,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hponnhd",
+   "orden_global": 20,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 6,
+   "nombre": "Onn HD Replica",
+   "nombre_visible": "Onn HD Replica",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 110000,
+   "precio_texto": "$110.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hponnhd-1.jpg",
+     "sha256": "6b1be1b8cfd31536cbcf3f917579a4e22eaa3f7bd5053ce6438604868bd35dee",
+     "bytes": 31485,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muzrz5k5v69k",
+   "orden_global": 21,
+   "categoria": "Entretenimiento",
+   "orden_en_categoria": 7,
+   "nombre": "Watch Onn 4K Replica",
+   "nombre_visible": "Watch Onn 4K Replica",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 160000,
+   "precio_texto": "$160.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muzrz5k5v69k-1.jpg",
+     "sha256": "666a8d52cf0a97b71c66a4d7bd03cfdea76de21e694d4cfe461314a4ca13ec08",
+     "bytes": 18724,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muzrz5k5v69k-2.jpg",
+     "sha256": "ccd777191ad475c232cd81542233968837c21464d004c9f0569381eb0aac1f92",
+     "bytes": 21444,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26w4d6h",
+   "orden_global": 22,
+   "categoria": "Seguridad",
+   "orden_en_categoria": 1,
+   "nombre": "Cámara 3 Antenas",
+   "nombre_visible": "Cámara 3 Antenas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26w4d6h-1.jpg",
+     "sha256": "c0368ee17cc2e59bb85abc6840b21fa7c4f21c5f423f6f559760925eca0890e1",
+     "bytes": 25862,
+     "ancho": 484,
+     "alto": 413,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muzsr10507p2",
+   "orden_global": 23,
+   "categoria": "Seguridad",
+   "orden_en_categoria": 2,
+   "nombre": "Cámara Bombillo",
+   "nombre_visible": "Cámara Bombillo",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 60000,
+   "precio_texto": "$60.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muzsr10507p2-1.jpg",
+     "sha256": "cd6a5013096c7219816b8ea133bafb358a85faee48fc7aa55b507446f809bdda",
+     "bytes": 14397,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muu1q26xcmlj",
+   "orden_global": 24,
+   "categoria": "Seguridad",
+   "orden_en_categoria": 3,
+   "nombre": "Cámara Mini A9",
+   "nombre_visible": "Cámara Mini A9",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 20000,
+   "precio_texto": "$20.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26xcmlj-1.jpg",
+     "sha256": "a7b190b95954f9a102002a5e20d8928440cd641a23d4de002c62b41857770fc4",
+     "bytes": 16924,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv63m51f25gw",
+   "orden_global": 25,
+   "categoria": "Seguridad",
+   "orden_en_categoria": 4,
+   "nombre": "Cámara WiFi Exterior",
+   "nombre_visible": "Cámara WiFi Exterior",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv63m51f25gw-1.jpg",
+     "sha256": "de070bdff2d0c012d468cff1f5d0b8e01ba07301dd1e4d73826a614024441c12",
+     "bytes": 85716,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv63m51f25gw-2.jpg",
+     "sha256": "55a98df314ee729bd16b7063fc5da7372d5c0b556ba77641a7e89a7c63f1816a",
+     "bytes": 23964,
+     "ancho": 320,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpgagasinteligentesaimbgi",
+   "orden_global": 26,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 1,
+   "nombre": "Gafas Inteligentes AIMB-GI",
+   "nombre_visible": "Gafas Inteligentes AIMB-GI",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 235000,
+   "precio_texto": "$235.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpgagasinteligentesaimbgi-1.jpg",
+     "sha256": "c534480fc12e010331459995e78cfcc4c365c87990c9054bbad6cbdf67c3a204",
+     "bytes": 37880,
+     "ancho": 399,
+     "alto": 501,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw2edaiw2upx",
+   "orden_global": 27,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 2,
+   "nombre": "Micrófono de Solapa SX31",
+   "nombre_visible": "Micrófono de Solapa SX31",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 68000,
+   "precio_texto": "$68.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw2edaiw2upx-1.jpg",
+     "sha256": "ea4f0e242b972f32cdd18e8a81e7049b5c507232da346a96948357db8d8d1d00",
+     "bytes": 60160,
+     "ancho": 918,
+     "alto": 986,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw2edaiw2upx-2.jpg",
+     "sha256": "15294cb84eb582aaf769bc3054d6de38d98a3cfb16625ac80011dfd194e4599d",
+     "bytes": 110846,
+     "ancho": 860,
+     "alto": 860,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw2edaiw2upx-3.jpg",
+     "sha256": "423af384bdaa87738dc22942d2148247f3ebe5ef6337f6c331b53b8030cfbcfc",
+     "bytes": 67282,
+     "ancho": 519,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw2edaiw2upx-4.jpg",
+     "sha256": "525002dcdc19f93c2201915f94940e1c5b8b7abf0b82ae37afaa703c2be9ce86",
+     "bytes": 61352,
+     "ancho": 613,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "hpcasetransparente",
+   "orden_global": 28,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 3,
+   "nombre": "Case Transparente",
+   "nombre_visible": "Case Transparente",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 35000,
+   "precio_texto": "$35.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcasetransparente-1.jpg",
+     "sha256": "d54f4dfc0bf8a26fed5453b8201b3b6648483d435c6ae23dd7d1dba22bb6a48f",
+     "bytes": 23115,
+     "ancho": 309,
+     "alto": 500,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw2ejbb4krbj",
+   "orden_global": 29,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 4,
+   "nombre": "Microfonos Inalambrico K10",
+   "nombre_visible": "Microfonos Inalambrico K10",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 58000,
+   "precio_texto": "$58.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw2ejbb4krbj-1.jpg",
+     "sha256": "c2232650793d412681c9311eebf8dd08951f69f134e53c06dd8ef7826d90c617",
+     "bytes": 92554,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw2ejbb4krbj-2.jpg",
+     "sha256": "0ac3e1894925bc21f0c7c66ab126675f7d4ba874dafa21219e2e6749bb105bc5",
+     "bytes": 121695,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw2ejbb4krbj-3.jpg",
+     "sha256": "a36345e4132446653f2ab344a757e69d8d1c2e163c76693ffd51c41c3771b038",
+     "bytes": 116789,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtpowerbankmagneticojkmxjkmag01",
+   "orden_global": 30,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 5,
+   "nombre": "Power Bank Magnético JKMX JK-MAG01",
+   "nombre_visible": "Power Bank Magnético JKMX JK-MAG01",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtpowerbankmagneticojkmxjkmag01-1.jpg",
+     "sha256": "334d00e87e79d5fcba11d43032200ab8da305524c265d3078e352dfd8c9fd40d",
+     "bytes": 20472,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtpaloselfiecl07",
+   "orden_global": 31,
+   "categoria": "Accesorios para celular",
+   "orden_en_categoria": 6,
+   "nombre": "Tripode Selfie CL07 con Pantalla",
+   "nombre_visible": "Tripode Selfie CL07 con Pantalla",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtpaloselfiecl07-1.jpg",
+     "sha256": "2a729648a90faae023ac01a28dbf02bfb1fbb30260042df3196f8505eaca4517",
+     "bytes": 17260,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtpaloselfiecl07-2.jpg",
+     "sha256": "23f6140810952b4baa329855c4f37b2b7c0f277b9d8412f30ae3c84fbb27c77d",
+     "bytes": 19664,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv6383za6ire",
+   "orden_global": 32,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 1,
+   "nombre": "Bolso de Cintura (piernera)",
+   "nombre_visible": "Bolso de Cintura (piernera)",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv6383za6ire-1.jpg",
+     "sha256": "22e212407bfcafb681e2cdf9ceda3884a4276bb981f1b983c81ab4f06e663cda",
+     "bytes": 34491,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv6383za6ire-2.jpg",
+     "sha256": "a880f0b9cf150d7dc6ce5e9b3d327c2b8b15511bb604cd645bd6a0804037614c",
+     "bytes": 58055,
+     "ancho": 640,
+     "alto": 585,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv6383za6ire-3.jpg",
+     "sha256": "3b9b4a604c446962246b0ca7e76b57f532cbbac5cadf0f8a15c339b5a7524e05",
+     "bytes": 45156,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv63f3wnmrzs",
+   "orden_global": 33,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 2,
+   "nombre": "Cámara de Acción Deportiva",
+   "nombre_visible": "Cámara de Acción Deportiva",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 85000,
+   "precio_texto": "$85.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv63f3wnmrzs-1.jpg",
+     "sha256": "c21b3e7837e9f2970dead3cf40622ae2fbf3004812031422c319eb3de673fb5f",
+     "bytes": 44185,
+     "ancho": 640,
+     "alto": 637,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7c4xgh4z9a",
+   "orden_global": 34,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 3,
+   "nombre": "Inflador Compresor de Llantas",
+   "nombre_visible": "Inflador Compresor de Llantas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7c4xgh4z9a-1.jpg",
+     "sha256": "0167f065cd795cb74907b71005f2892ee6cc892a8ee10f20eca6feb36dafedd2",
+     "bytes": 21443,
+     "ancho": 584,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7c4xgh4z9a-2.jpg",
+     "sha256": "bd9633a0baba568ff2685650d856cfbb94700a38b99fd8f6994b8984394fbf3c",
+     "bytes": 20513,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "hpintercomduo102x",
+   "orden_global": 35,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 4,
+   "nombre": "Intercom Duo 10 2X Combo",
+   "nombre_visible": "Intercom Duo 10 2X Combo",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 135000,
+   "precio_texto": "$135.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpintercomduo102x-1.jpg",
+     "sha256": "b6a3e4db3dafc83d5aa01e293851e1357128d66de623e85a46795af7934780e3",
+     "bytes": 56297,
+     "ancho": 640,
+     "alto": 496,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7bfoksrayb",
+   "orden_global": 36,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 5,
+   "nombre": "Intercom Y10 2X",
+   "nombre_visible": "Intercom Y10 2X",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 75000,
+   "precio_texto": "$75.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7bfoksrayb-1.jpg",
+     "sha256": "a7af4888160b877f70a110b23edda23b1dec2805efaa87ed9bcfc444c98b2153",
+     "bytes": 26100,
+     "ancho": 640,
+     "alto": 411,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7bfoksrayb-2.jpg",
+     "sha256": "f926e93b10104a8634c9f3beb327bd3939d6c175710014b82c13de25ab3e7465",
+     "bytes": 53091,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtintercomunicadorq58max",
+   "orden_global": 37,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 6,
+   "nombre": "Intercomunicador Q58 Max",
+   "nombre_visible": "Intercomunicador Q58 Max",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 85000,
+   "precio_texto": "$85.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtintercomunicadorq58max-1.jpg",
+     "sha256": "e86e7784d353a04bdf5673ca41ae38f2c2b5e12bd94807dff8f6cc955c2b379e",
+     "bytes": 20943,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtintercomunicadorq58max-2.jpg",
+     "sha256": "de53e4218607200f60907f0e7d66f31eb357230fd5cc47631335054cabe10e4d",
+     "bytes": 25743,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtintercomunicadorq58max-3.jpg",
+     "sha256": "39852da308c0116195f9ff7ecc80ec14ba68e760be629378b99875f2f5fed9bd",
+     "bytes": 53048,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtintercomunicadorq58max-4.jpg",
+     "sha256": "3589139176b3afb89819fef92058e00f1c41dfe7b3e8e80d2296b6af03b00e34",
+     "bytes": 22421,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtintercomunicadorq58maxx2",
+   "orden_global": 38,
+   "categoria": "Accesorios para moto",
+   "orden_en_categoria": 7,
+   "nombre": "Intercomunicador Q58 Max Combo",
+   "nombre_visible": "Intercomunicador Q58 Max Combo",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 160000,
+   "precio_texto": "$160.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtintercomunicadorq58maxx2-1.jpg",
+     "sha256": "700862742230d8985aeec65c79ddc4e3e37032ff53d85c66cf86e61f7296a316",
+     "bytes": 29495,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtintercomunicadorq58maxx2-2.jpg",
+     "sha256": "884d3c4a7c924d2c9ba7f33f42b76c10c2955727a75aabdc17a53d52b1839612",
+     "bytes": 57289,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcableadaptadormac",
+   "orden_global": 39,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 1,
+   "nombre": "Cable Adaptador Mac",
+   "nombre_visible": "Cable Adaptador Mac",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcableadaptadormac-1.jpg",
+     "sha256": "24863ce72250a5a9599045deba287ccef0805b01a063669e09b4e0c19287bab4",
+     "bytes": 23756,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtcablediamondtipov8microusb",
+   "orden_global": 40,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 2,
+   "nombre": "Cable Diamond Tipo V8 – Micro USB",
+   "nombre_visible": "Cable Diamond Tipo V8 – Micro USB",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 4000,
+   "precio_texto": "$4.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtcablediamondtipov8microusb-1.jpg",
+     "sha256": "b1e81c588a2459c578ebdacb45c5bdaaf294cb4be82ee36c2899eaa8fecaa2af",
+     "bytes": 79072,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcabletipocapple",
+   "orden_global": 41,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 3,
+   "nombre": "Cable Tipo C a Tipo C",
+   "nombre_visible": "Cable Tipo C a Tipo C",
+   "descripcion": "1 m",
+   "descripcion_html": "1 m",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcabletipocapple-1.jpg",
+     "sha256": "950303bea05c3d6c6a4c18a685a1c03bd40d5915b372f9fdbfa1c364f485dcf1",
+     "bytes": 31387,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtcableusbbelkinv8",
+   "orden_global": 42,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 4,
+   "nombre": "Cable USB Belkin V8",
+   "nombre_visible": "Cable USB Belkin V8",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 6000,
+   "precio_texto": "$6.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtcableusbbelkinv8-1.jpg",
+     "sha256": "3ad667d3af995800ee346c4b3edc7c8067851adde9ffe1ab197a6fefe3aac9f2",
+     "bytes": 44549,
+     "ancho": 578,
+     "alto": 555,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtcableusbbelkinv8-2.jpg",
+     "sha256": "35280aef31a196dc3dd76cd6e22551e7246c0760abd27e07165d7a0f593d50ad",
+     "bytes": 13014,
+     "ancho": 379,
+     "alto": 381,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtcargadoriphone35wusbc",
+   "orden_global": 43,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 5,
+   "nombre": "Cargador iPhone 35W USB-C",
+   "nombre_visible": "Cargador iPhone 35W USB-C",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 55000,
+   "precio_texto": "$55.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtcargadoriphone35wusbc-1.jpg",
+     "sha256": "a9f2784cb7355b071c3f7659f5381bcaa92605f1007647f6a8b21fece8d0ba87",
+     "bytes": 32144,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv4s1isdu1qc",
+   "orden_global": 44,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 6,
+   "nombre": "Cargador iPhone Lightning 20W",
+   "nombre_visible": "Cargador iPhone Lightning 20W",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv4s1isdu1qc-1.jpg",
+     "sha256": "5dda36b082db38f0f4a02584b0c5ff1aa084c6d85b820a0cd8715d34ae8fe5ed",
+     "bytes": 17443,
+     "ancho": 360,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcargadorapplelightning",
+   "orden_global": 45,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 7,
+   "nombre": "Cargador iPhone Lightning 25W",
+   "nombre_visible": "Cargador iPhone Lightning 25W",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 45000,
+   "precio_texto": "$45.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcargadorapplelightning-1.jpg",
+     "sha256": "d580d78bf7af5887ecb5afd9bea2412acb1f14052532891de145169de7b48c6d",
+     "bytes": 16714,
+     "ancho": 360,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcargadorxiaomy33w",
+   "orden_global": 46,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 8,
+   "nombre": "Cargador Xiaomy 33 W",
+   "nombre_visible": "Cargador Xiaomy 33 W",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 35000,
+   "precio_texto": "$35.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcargadorxiaomy33w-1.jpg",
+     "sha256": "c29dfc2e839d878dc7a1ff93371dfca0b8bb2f9033eb38c903ece56c655bd8d3",
+     "bytes": 26277,
+     "ancho": 500,
+     "alto": 500,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtmarranasamsung25wcopy",
+   "orden_global": 47,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 9,
+   "nombre": "Marrana Samsung 25W",
+   "nombre_visible": "Marrana Samsung 25W",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtmarranasamsung25wcopy-1.jpg",
+     "sha256": "1addbe21c69b1b443ff2ab3ad64c2b09242d85cfba7109c0243e637d226373eb",
+     "bytes": 26778,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtmarranasamsung25wcopy-2.jpg",
+     "sha256": "34f19b79e11251c1a434101f44768dc18026c5c7e09939897b8b6157c14958fa",
+     "bytes": 25069,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "dtmarranasamsung45w",
+   "orden_global": 48,
+   "categoria": "Cargadores y cables",
+   "orden_en_categoria": 10,
+   "nombre": "Marrana Samsung 45W",
+   "nombre_visible": "Marrana Samsung 45W",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/dtmarranasamsung45w-1.jpg",
+     "sha256": "89c1bb4a9a642c513185dfcb8f7100468250257759804ec5c599ff007940dec7",
+     "bytes": 25169,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/dtmarranasamsung45w-2.jpg",
+     "sha256": "63dec581fa71f6fc9ff3cf75728ec26a124217a0e2993d7cf55f7933066d3e1a",
+     "bytes": 24915,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv1r1i4oc2hm",
+   "orden_global": 49,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 1,
+   "nombre": "Barra de Sonido Pk Sound S508",
+   "nombre_visible": "Barra de Sonido Pk Sound S508",
+   "descripcion": "GARANTÍA DE 2 MESES",
+   "descripcion_html": "GARANTÍA DE 2 MESES",
+   "precio": 215000,
+   "precio_texto": "$215.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1r1i4oc2hm-1.jpg",
+     "sha256": "25bf822abde3cf098b7d4a6a51232b48024b5f12bc65ec0c60fe74ebb42158a4",
+     "bytes": 49188,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1r1i4oc2hm-2.jpg",
+     "sha256": "d7afb21c0897a763d6469b9183a10afdfc6a1ad3a5e8eed80d4d2a164e33e6f6",
+     "bytes": 46061,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mvj15tw83a8t",
+   "orden_global": 50,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 2,
+   "nombre": "Bombox 3 LED",
+   "nombre_visible": "Bombox 3 LED",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [],
+   "sin_foto": true,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv1pubnbovzs",
+   "orden_global": 51,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 3,
+   "nombre": "Parlante Flip 7",
+   "nombre_visible": "Parlante Flip 7",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1pubnbovzs-1.jpg",
+     "sha256": "bf85877c0902e1150b7a720e874edbd4324123ccbf24025dcbc031b3cc139852",
+     "bytes": 37541,
+     "ancho": 640,
+     "alto": 491,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1pubnbovzs-2.jpg",
+     "sha256": "b3f036dbaa6789027ee647a68efa5c508017b2acc308e75758ef2282fb061796",
+     "bytes": 49383,
+     "ancho": 556,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q270pe3t",
+   "orden_global": 52,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 4,
+   "nombre": "Parlante Go4 Pro",
+   "nombre_visible": "Parlante Go4 Pro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q270pe3t-1.jpg",
+     "sha256": "40ae92f088a5bba69a30d7c82ea7e0c7079704a6177f3dac1bb80fb2f2a96fca",
+     "bytes": 28178,
+     "ancho": 554,
+     "alto": 554,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muu1q270pe3t-2.jpg",
+     "sha256": "c8c037b5c8f2f03cd0b25ea662b76e85724bcae03ed92905ce966b906717b937",
+     "bytes": 27785,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muu1q270pe3t-3.jpg",
+     "sha256": "e15fe664c286fe4c0d2f90634a9bab7dd7b7db5426bd517a172294938d90cdbf",
+     "bytes": 47203,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1rh7cj5al3",
+   "orden_global": 53,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 5,
+   "nombre": "Parlante Pk Sound S10",
+   "nombre_visible": "Parlante Pk Sound S10",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 415000,
+   "precio_texto": "$415.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1rh7cj5al3-1.jpg",
+     "sha256": "d4f6ce63113c5488c285e0a0ecddb2df60c3103139493bbebc94ed8897b1e859",
+     "bytes": 27449,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1rh7cj5al3-2.jpg",
+     "sha256": "19a80a7ba950b0e15e06b6d222d72b77fced59083c70e20c04d3a91e104e5ec5",
+     "bytes": 32617,
+     "ancho": 533,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1rb8jndq4a",
+   "orden_global": 54,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 6,
+   "nombre": "Parlante Pk Sound S133",
+   "nombre_visible": "Parlante Pk Sound S133",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 740000,
+   "precio_texto": "$740.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1rb8jndq4a-1.jpg",
+     "sha256": "27bfab998c040f0ac8c7632b7a186d0cf1736ce3c08c39a72be81cfaf2f6ff58",
+     "bytes": 18817,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1rb8jndq4a-2.jpg",
+     "sha256": "ae52b0e742f213d2d174a79a36628a1ec7f58224a486e51ba203be9833c587e1",
+     "bytes": 23329,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1rb8jndq4a-3.jpg",
+     "sha256": "d2ab582c94a3b37285254760f375f51a64f691807a65f31017f692589e0a435a",
+     "bytes": 34403,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1r471w4es0",
+   "orden_global": 55,
+   "categoria": "Parlantes",
+   "orden_en_categoria": 7,
+   "nombre": "Parlante Pk Sound S9B",
+   "nombre_visible": "Parlante Pk Sound S9B",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 290000,
+   "precio_texto": "$290.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1r471w4es0-1.jpg",
+     "sha256": "5f7692cc034e7be9c390097ff89df3913dbdea30e30bdfcb231d8812d249b30c",
+     "bytes": 52935,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1r471w4es0-2.jpg",
+     "sha256": "417139e150878073e87ebd99e55b653fb446cf39897b702b12ab0e3e2298883d",
+     "bytes": 44369,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpafeitadora",
+   "orden_global": 56,
+   "categoria": "Belleza hombre",
+   "orden_en_categoria": 1,
+   "nombre": "Afeitadora 3 en 1",
+   "nombre_visible": "Afeitadora 3 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpafeitadora-1.jpg",
+     "sha256": "8c79fe9c177a6bb1a477474b466516caaf2a3af1a9f77a6baebc91897af61358",
+     "bytes": 46516,
+     "ancho": 500,
+     "alto": 367,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muu1q26zh164",
+   "orden_global": 57,
+   "categoria": "Belleza hombre",
+   "orden_en_categoria": 2,
+   "nombre": "Máquina Profesional",
+   "nombre_visible": "Máquina Profesional",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26zh164-1.jpg",
+     "sha256": "54399f1c7d75167df3d07a9308418753149a90215289416a95b12b61ed47b488",
+     "bytes": 40019,
+     "ancho": 437,
+     "alto": 457,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpafeitadorav332",
+   "orden_global": 58,
+   "categoria": "Belleza hombre",
+   "orden_en_categoria": 3,
+   "nombre": "Afeitadora V-332",
+   "nombre_visible": "Afeitadora V-332",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpafeitadorav332-1.jpg",
+     "sha256": "18da57a5a7fc172f982cc5ae409a2a3ddec80d14312196d2d3c5ef0d3a5a23ef",
+     "bytes": 32376,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "hppeluqueravgr060",
+   "orden_global": 59,
+   "categoria": "Belleza hombre",
+   "orden_en_categoria": 4,
+   "nombre": "Peluquera VGR 060",
+   "nombre_visible": "Peluquera VGR 060",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hppeluqueravgr060-1.jpg",
+     "sha256": "bed271e42f03226559b11b396520afad1d0aaecb343195b81df7d6e023d51d43",
+     "bytes": 43259,
+     "ancho": 456,
+     "alto": 579,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpkeratina3dpro",
+   "orden_global": 60,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 1,
+   "nombre": "Keratina 3D Pro",
+   "nombre_visible": "Keratina 3D Pro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpkeratina3dpro-1.jpg",
+     "sha256": "c797d9528771d0cf4d675825ccd9ea92bc62ed79c451546a9dea47f803415c28",
+     "bytes": 48987,
+     "ancho": 640,
+     "alto": 359,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muu1q26xged7",
+   "orden_global": 61,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 2,
+   "nombre": "Cepillo Secador Aguacate",
+   "nombre_visible": "Cepillo Secador Aguacate",
+   "descripcion": "Keratina / Aguacate",
+   "descripcion_html": "Keratina / Aguacate",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26xged7-1.jpg",
+     "sha256": "191bb9770733b907d5a0d98689b91ef9f1e2a04ed5793904ff3fc3d73a29a9dc",
+     "bytes": 65931,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hppinzas",
+   "orden_global": 62,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 3,
+   "nombre": "Pinzas",
+   "nombre_visible": "Pinzas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hppinzas-1.jpg",
+     "sha256": "97d31c960cda472b8c3b3568157a98afd15080ad71935f6232fd53388ed8c84b",
+     "bytes": 65041,
+     "ancho": 640,
+     "alto": 418,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muu1q26ymrsg",
+   "orden_global": 63,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 4,
+   "nombre": "Cepillo Alisador",
+   "nombre_visible": "Cepillo Alisador",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": null,
+   "precio_texto": "Consultar",
+   "fotos": [],
+   "sin_foto": true,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcepillogiratorio2en1",
+   "orden_global": 64,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 5,
+   "nombre": "Cepillo Giratorio 2EN1",
+   "nombre_visible": "Cepillo Giratorio 2EN1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcepillogiratorio2en1-1.jpg",
+     "sha256": "061d9fa6161be6af3a4a1eabb2ea2ec789432da13874b47b24966ce609ac5c4b",
+     "bytes": 77120,
+     "ancho": 640,
+     "alto": 512,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26x39lr",
+   "orden_global": 65,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 6,
+   "nombre": "Cepillo Secador 5 en 1",
+   "nombre_visible": "Cepillo Secador 5 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26x39lr-1.jpg",
+     "sha256": "2d98ce9ecaf222150a76e3eed8ad0b6dc3e3a4f8a29a992b4e2b3596866bdcbc",
+     "bytes": 26183,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26xornl",
+   "orden_global": 66,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 7,
+   "nombre": "Cepillo Straight",
+   "nombre_visible": "Cepillo Straight",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26xornl-1.jpg",
+     "sha256": "4bb0a231d380a41fceda11c72643c9626c1676abf6ca3df617fd4781273270d0",
+     "bytes": 8423,
+     "ancho": 299,
+     "alto": 168,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26ywipk",
+   "orden_global": 67,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 8,
+   "nombre": "Combo Plancha & Cepillo",
+   "nombre_visible": "Combo Plancha & Cepillo",
+   "descripcion": "Aguacate / Keratina",
+   "descripcion_html": "Aguacate / Keratina",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26ywipk-1.jpg",
+     "sha256": "76ddd34977498a17a93c42c57ffe52bd1bcc6173f453328e00f0e0b422dc47e0",
+     "bytes": 44932,
+     "ancho": 640,
+     "alto": 512,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muw2jqqrqtt8",
+   "orden_global": 68,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 9,
+   "nombre": "Combo Plancha y Pinzas",
+   "nombre_visible": "Combo Plancha y Pinzas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muw2jqqrqtt8-1.jpg",
+     "sha256": "91062860da0cccdd6dc56b95d56e2003ed0d520ddfde8d7c4c9ef5dd4a51e413",
+     "bytes": 25664,
+     "ancho": 640,
+     "alto": 588,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muw2jqqrqtt8-2.jpg",
+     "sha256": "ac33e3c7910b2644fc8b7bfa2b05acff68fe98ce5174c8324877282d4def3b5e",
+     "bytes": 38161,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muucjnj8nljx",
+   "orden_global": 69,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 10,
+   "nombre": "Combo Secador 3 en 1",
+   "nombre_visible": "Combo Secador 3 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muucjnj8nljx-1.jpg",
+     "sha256": "e6895c802f749fe0906ffb33c4c8c33a3c7ec8cdedb28d579616bb6690fe4e97",
+     "bytes": 57355,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpcombosecadoryplancha",
+   "orden_global": 70,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 11,
+   "nombre": "Combo Secador y Plancha",
+   "nombre_visible": "Combo Secador y Plancha",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpcombosecadoryplancha-1.jpg",
+     "sha256": "76a129fb5beb71190f35c592d59b3d21f8303e607fe8e12bbf8a0d4d9bb4e032",
+     "bytes": 35219,
+     "ancho": 640,
+     "alto": 537,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q270s768",
+   "orden_global": 71,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 12,
+   "nombre": "Máquina V720",
+   "nombre_visible": "Máquina V720",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 75000,
+   "precio_texto": "$75.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q270s768-1.jpg",
+     "sha256": "a85fd2a3a75b92d20becb4ffaf3dd2d9cfdc123e3164f26f1bd6d554de736bcc",
+     "bytes": 16486,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvkk4kdpvst",
+   "orden_global": 72,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 13,
+   "nombre": "Mini Spa Facial",
+   "nombre_visible": "Mini Spa Facial",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvkk4kdpvst-1.jpg",
+     "sha256": "ccb521094dafc83bd60cc891f298adabdbc90922e5efc39e2c85f3d65239054e",
+     "bytes": 10434,
+     "ancho": 583,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hppinzasirena",
+   "orden_global": 73,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 14,
+   "nombre": "Pinza Sirena",
+   "nombre_visible": "Pinza Sirena",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hppinzasirena-1.jpg",
+     "sha256": "fc4cceffb3fa0395cc500453c4c55516c6c743c9baaa28289a4a5a5897676187",
+     "bytes": 51401,
+     "ancho": 638,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muyfez8g5aum",
+   "orden_global": 74,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 15,
+   "nombre": "Plancha Aguacate 4 en 1",
+   "nombre_visible": "Plancha Aguacate 4 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 58000,
+   "precio_texto": "$58.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muyfez8g5aum-1.jpg",
+     "sha256": "aa3fd05507e4f5a04b10f4f298ccfb60f550643d9f7b70878d7ec2e32cfccffc",
+     "bytes": 34190,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muyfq73yjjkt",
+   "orden_global": 75,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 16,
+   "nombre": "Plancha Pro Nova Keratina",
+   "nombre_visible": "Plancha Pro Nova Keratina",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 45000,
+   "precio_texto": "$45.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muyfq73yjjkt-1.jpg",
+     "sha256": "5d09ded44fc5561c8eb9024e95dd7f6b9224622b12b62cfea775c2c38b6ff83d",
+     "bytes": 24423,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvktu2p3hx9",
+   "orden_global": 76,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 17,
+   "nombre": "Pulidor de Callos",
+   "nombre_visible": "Pulidor de Callos",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 68000,
+   "precio_texto": "$68.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvktu2p3hx9-1.jpg",
+     "sha256": "eba4f2d9d29c9fc979852f602c17dc652849ea41910bc8f48f5b8d3fcff60eae",
+     "bytes": 28938,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9ox0djn3oa",
+   "orden_global": 77,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 18,
+   "nombre": "Pulidor de Uñas",
+   "nombre_visible": "Pulidor de Uñas",
+   "descripcion": "✨ Diseño portátil y elegante con pantalla digital. ⚡ Velocidad ajustable hasta 35.000 RPM. 🔄 Giro en ambas direcciones. 🔋 Batería recargable con autonomía de 8 a 10 horas. 🤫 Funcionamiento silencioso y de baja vibración. 💎 Ideal para manicura, pedicura y trabajos profesionales. 📦 Incluye: lápiz eléctrico, puntas intercambiables, bandas de lijado y accesorios.",
+   "descripcion_html": "✨ Diseño portátil y elegante con pantalla digital. ⚡ Velocidad ajustable hasta 35.000 RPM. 🔄 Giro en ambas direcciones. 🔋 Batería recargable con autonomía de 8 a 10 horas. 🤫 Funcionamiento silencioso y de baja vibración. 💎 Ideal para manicura, pedicura y trabajos profesionales. 📦 Incluye: lápiz eléctrico, puntas intercambiables, bandas de lijado y accesorios.",
+   "precio": 215000,
+   "precio_texto": "$215.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9ox0djn3oa-1.jpg",
+     "sha256": "f254875367cd5b83a9d5c3cc7c1d9b5166e1a595d26a7c41888257a4b8019489",
+     "bytes": 140961,
+     "ancho": 991,
+     "alto": 978,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9ox0djn3oa-2.jpg",
+     "sha256": "14e82aa35b46153483f14d1a4a7432d742304c52d90bc2908f1682845963c2e7",
+     "bytes": 121143,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q270d8hj",
+   "orden_global": 78,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 19,
+   "nombre": "Secador 5 en 1",
+   "nombre_visible": "Secador 5 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 55000,
+   "precio_texto": "$55.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q270d8hj-1.jpg",
+     "sha256": "37ba193f8a30f428cc6e3e1b58d04021cbcefb4459251d73df0caafbd08f4ff7",
+     "bytes": 34955,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9qa0ucktca",
+   "orden_global": 79,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 20,
+   "nombre": "Secador de Uñas 2 en 1 (S80)",
+   "nombre_visible": "Secador de Uñas 2 en 1 (S80)",
+   "descripcion": "Potente lámpara para el secado y curado de uñas en gel. Su diseño moderno incorpora temporizadores y modo de baja temperatura para mayor comodidad durante el uso. Características: 💡 Potencia: 108W. ⏱️ Temporizadores: 10, 30, 60 y 99 segundos. 🔋 Batería: 3 × 2000 mAh. ⚡ Tiempo de carga: 2 horas. 🔌 Tiempo de trabajo: hasta 4 horas. 🌈 Luz UV/LED de doble longitud de onda: 365 nm + 405 nm. 📏 Medidas: 22,5 × 19,5 × 10,2 cm. ⚖️ Peso neto: 820 g.",
+   "descripcion_html": "Potente lámpara para el secado y curado de uñas en gel. Su diseño moderno incorpora temporizadores y modo de baja temperatura para mayor comodidad durante el uso. Características: 💡 Potencia: 108W. ⏱️ Temporizadores: 10, 30, 60 y 99 segundos. 🔋 Batería: 3 × 2000 mAh. ⚡ Tiempo de carga: 2 horas. 🔌 Tiempo de trabajo: hasta 4 horas. 🌈 Luz UV/LED de doble longitud de onda: 365 nm + 405 nm. 📏 Medidas: 22,5 × 19,5 × 10,2 cm. ⚖️ Peso neto: 820 g.",
+   "precio": 96000,
+   "precio_texto": "$96.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9qa0ucktca-1.jpg",
+     "sha256": "a6ece8e3ffc62b8c60311b08d02d038b902b77fde5ca281d8e0430ea5709708d",
+     "bytes": 93767,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9q0ycus497",
+   "orden_global": 80,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 21,
+   "nombre": "Secador de Uñas AB-98",
+   "nombre_visible": "Secador de Uñas AB-98",
+   "descripcion": "✨ Dale un acabado profesional a tus manicuras desde casa o en tu salón de belleza. 🌸 Características principales: 💖 Diseño moderno en color rosado con detalles brillantes. ⚡ Potencia de 288W. 💡 Tecnología de secado UV/LED. ⏱️ 4 temporizadores: 10, 30, 60 y 99 segundos. 🔢 Pantalla digital para visualizar el tiempo. 💅 Ideal para el curado de esmaltes en gel compatibles con UV/LED. 45 luz led",
+   "descripcion_html": "✨ Dale un acabado profesional a tus manicuras desde casa o en tu salón de belleza. 🌸 Características principales: 💖 Diseño moderno en color rosado con detalles brillantes. ⚡ Potencia de 288W. 💡 Tecnología de secado UV/LED. ⏱️ 4 temporizadores: 10, 30, 60 y 99 segundos. 🔢 Pantalla digital para visualizar el tiempo. 💅 Ideal para el curado de esmaltes en gel compatibles con UV/LED. 45 luz led",
+   "precio": 59000,
+   "precio_texto": "$59.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9q0ycus497-1.jpg",
+     "sha256": "efe5818df824abf646367e7c40eadd0a7c3cf6d79611da4a3a0bd22bbaf930d3",
+     "bytes": 70922,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9q0ycus497-2.jpg",
+     "sha256": "f9d010f501b1cc2c35ea3da80afacd5e520289e30e86e4aa6c60c2bbaa36304b",
+     "bytes": 65032,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9q6m9goevx",
+   "orden_global": 81,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 22,
+   "nombre": "Secador de Uñas BT-8",
+   "nombre_visible": "Secador de Uñas BT-8",
+   "descripcion": "✨ Ideal para lograr un secado rápido y uniforme en manicuras y pedicuras. Su tecnología de doble fuente de luz permite trabajar con productos compatibles con UV y LED. 🌸 Características principales: ⚡ Potencia: 288W. 💡 45 luces LED de doble longitud de onda. 🌈 Tecnología UV + LED (365 + 405 nm). 💅 Ideal para secar esmaltes en gel compatibles. 🏠 Perfecta para uso en casa o salón de belleza. 📏 Medidas: Ancho: 23,5 cm. Profundidad: 21 cm. Alto: 10,9 cm.",
+   "descripcion_html": "✨ Ideal para lograr un secado rápido y uniforme en manicuras y pedicuras. Su tecnología de doble fuente de luz permite trabajar con productos compatibles con UV y LED. 🌸 Características principales: ⚡ Potencia: 288W. 💡 45 luces LED de doble longitud de onda. 🌈 Tecnología UV + LED (365 + 405 nm). 💅 Ideal para secar esmaltes en gel compatibles. 🏠 Perfecta para uso en casa o salón de belleza. 📏 Medidas: Ancho: 23,5 cm. Profundidad: 21 cm. Alto: 10,9 cm.",
+   "precio": 79000,
+   "precio_texto": "$79.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9q6m9goevx-1.jpg",
+     "sha256": "10c58283f324704b1a670e6767471cf5e99ea102afcbe41206143d0be5c8b80d",
+     "bytes": 104135,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9q6m9goevx-2.jpg",
+     "sha256": "bec125681396c5f276e486e5d377c1e27c261f336805838fbd13e54eb780fe28",
+     "bytes": 90766,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9p8dcbi779",
+   "orden_global": 82,
+   "categoria": "Belleza mujer",
+   "orden_en_categoria": 23,
+   "nombre": "Secador de Uñas Y-01",
+   "nombre_visible": "Secador de Uñas Y-01",
+   "descripcion": "Lámpara LED/UV ideal para el curado de esmaltes semipermanentes, gel constructor y otros productos compatibles. Su diseño moderno incorpora pantalla digital, sensor inteligente y diferentes temporizadores para facilitar el proceso de manicura. 🌸 Características principales: * 💡 Potencia indicada: 288W. * ✨ 58 cuentas LED. * ⏱️ Temporizadores de 10, 30, 60 y 99 segundos. * 🔆 Doble tecnología de luz LED/UV. * 👋 Sensor inteligente de encendido automático. * 📟 Pantalla digital. * 🛡️ Protección contra sobretemperatura. * 💗 Diseño moderno en color rosado.",
+   "descripcion_html": "Lámpara LED/UV ideal para el curado de esmaltes semipermanentes, gel constructor y otros productos compatibles. Su diseño moderno incorpora pantalla digital, sensor inteligente y diferentes temporizadores para facilitar el proceso de manicura. 🌸 Características principales: * 💡 Potencia indicada: 288W. * ✨ 58 cuentas LED. * ⏱️ Temporizadores de 10, 30, 60 y 99 segundos. * 🔆 Doble tecnología de luz LED/UV. * 👋 Sensor inteligente de encendido automático. * 📟 Pantalla digital. * 🛡️ Protección contra sobretemperatura. * 💗 Diseño moderno en color rosado.",
+   "precio": 59000,
+   "precio_texto": "$59.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9p8dcbi779-1.jpg",
+     "sha256": "82ec82a3713717d1c160dbfbe043fd8c7f8337cbbed4b7efe37a1c15a026e9b0",
+     "bytes": 66595,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9p8dcbi779-2.jpg",
+     "sha256": "ba9fbd2973061dfdca9793a732d80a48c60b50e4cef8c300676cf668fd5fa236",
+     "bytes": 76481,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9p8dcbi779-3.jpg",
+     "sha256": "3d419153e95fecc7663ce71bb4c3031a27d32a3f5d740bf05c160697891c9f71",
+     "bytes": 96394,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hptoposplataley925",
+   "orden_global": 83,
+   "categoria": "Joyería",
+   "orden_en_categoria": 1,
+   "nombre": "Topos Plata Ley 925",
+   "nombre_visible": "Topos Plata Ley 925",
+   "descripcion": "Muchos más diseños",
+   "descripcion_html": "Muchos más diseños",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hptoposplataley925-1.jpg",
+     "sha256": "f7142285fbe6718bc476025cbf934b141d5ba43ddca1e1e6e3f00819c6e7763a",
+     "bytes": 34294,
+     "ancho": 335,
+     "alto": 597,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mw9ui6mqv920",
+   "orden_global": 84,
+   "categoria": "Joyería",
+   "orden_en_categoria": 2,
+   "nombre": "Joyero en Acrilico 1018",
+   "nombre_visible": "Joyero en Acrilico 1018",
+   "descripcion": "✨ Mantén tus accesorios siempre organizados y al alcance de tu mano. Su diseño elegante con tapa transparente permite visualizar tus joyas fácilmente, mientras sus compartimentos y tres cajones ofrecen espacio para guardar anillos, aretes, cadenas, pulseras y mucho más. 🌸 Características: 💍 Compartimentos especiales para anillos y aretes. 📿 3 cajones para mayor organización. 💎 Manijas decorativas tipo cristal. ✨ Tapa transparente. 🎀 Diseño elegante y compacto.  📏Medida de: 10cmx23cmx15cm",
+   "descripcion_html": "✨ Mantén tus accesorios siempre organizados y al alcance de tu mano. Su diseño elegante con tapa transparente permite visualizar tus joyas fácilmente, mientras sus compartimentos y tres cajones ofrecen espacio para guardar anillos, aretes, cadenas, pulseras y mucho más. 🌸 Características: 💍 Compartimentos especiales para anillos y aretes. 📿 3 cajones para mayor organización. 💎 Manijas decorativas tipo cristal. ✨ Tapa transparente. 🎀 Diseño elegante y compacto.  📏Medida de: 10cmx23cmx15cm",
+   "precio": 38000,
+   "precio_texto": "$38.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9ui6mqv920-1.jpg",
+     "sha256": "f9e071b62bde89089e9d13b47a7267dbe4a9bf0b41434f3d16e1b5da72311af0",
+     "bytes": 148296,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9ui6mqv920-2.jpg",
+     "sha256": "cf6eeeefcb810f3924afcf9f1fe53ba35bb4aebf6a156195d086c81f1730ee79",
+     "bytes": 148005,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvkvykijxpl",
+   "orden_global": 85,
+   "categoria": "Joyería",
+   "orden_en_categoria": 3,
+   "nombre": "Joyero Viajero",
+   "nombre_visible": "Joyero Viajero",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvkvykijxpl-1.jpg",
+     "sha256": "a57edbd744f538eb279849b3fd97e895ed75d8249772580437943dd5ead7628d",
+     "bytes": 32429,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvkvykijxpl-2.jpg",
+     "sha256": "5dfa8bb271c551e7b89cc820076f0d40e4928be47c71fbe411831a5a46b3e9e6",
+     "bytes": 38344,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26z2qmn",
+   "orden_global": 86,
+   "categoria": "Masajeadores",
+   "orden_en_categoria": 1,
+   "nombre": "Masajeador Gun Frío & Calor",
+   "nombre_visible": "Masajeador Gun Frío & Calor",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26z2qmn-1.jpg",
+     "sha256": "e75e817630778da845ac751df78724d4fb88c7ec6b79949a81fe2a764f97a329",
+     "bytes": 54082,
+     "ancho": 640,
+     "alto": 535,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv60r1ahai34",
+   "orden_global": 87,
+   "categoria": "Masajeadores",
+   "orden_en_categoria": 2,
+   "nombre": "Masajeador de Pantorrilla",
+   "nombre_visible": "Masajeador de Pantorrilla",
+   "descripcion": "Termico Recargable",
+   "descripcion_html": "Termico Recargable",
+   "precio": 85000,
+   "precio_texto": "$85.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv60r1ahai34-1.jpg",
+     "sha256": "c45d40123dd1b13ec291a155a9faf241a3f29a14c016047b01c8828f845b8215",
+     "bytes": 50342,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv60r1ahai34-2.jpg",
+     "sha256": "eb9149fede106fb5bd8c5d6401f167f9305ed81e96d74f8facd808d75a046463",
+     "bytes": 26464,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv61hlxcrchu",
+   "orden_global": 88,
+   "categoria": "Masajeadores",
+   "orden_en_categoria": 3,
+   "nombre": "Masajeador Gun Frío & Calor Extensible",
+   "nombre_visible": "Masajeador Gun Frío & Calor Extensible",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv61hlxcrchu-1.jpg",
+     "sha256": "709bf53cbaf45612210cbedbbac801366a2adf0433b37768f35a28d15fc38365",
+     "bytes": 21559,
+     "ancho": 640,
+     "alto": 628,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26z7pp8",
+   "orden_global": 89,
+   "categoria": "Masajeadores",
+   "orden_en_categoria": 4,
+   "nombre": "Masajeador Tortuga",
+   "nombre_visible": "Masajeador Tortuga",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26z7pp8-1.jpg",
+     "sha256": "ec5730dfce14a39e2c7b03f80f4d4d09883e43eb5bb2e169ca03d010c664c929",
+     "bytes": 71510,
+     "ancho": 608,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9onaae5vb2",
+   "orden_global": 90,
+   "categoria": "Masajeadores",
+   "orden_en_categoria": 5,
+   "nombre": "Masajeador, 8 Electrodos Recargable",
+   "nombre_visible": "Masajeador, 8 Electrodos Recargable",
+   "descripcion": "🔋 Recargable tipo C 💆‍♀️ Ideal para masajes y estimulación muscular. 🔌 Incluye 8 electrodos con cables de conexión. 📟 Pantalla digital para visualizar las funciones. 🎛️ Intensidad y tiempo ajustables. 🔄 Diferentes modos de funcionamiento.",
+   "descripcion_html": "🔋 Recargable tipo C 💆‍♀️ Ideal para masajes y estimulación muscular. 🔌 Incluye 8 electrodos con cables de conexión. 📟 Pantalla digital para visualizar las funciones. 🎛️ Intensidad y tiempo ajustables. 🔄 Diferentes modos de funcionamiento.",
+   "precio": 29000,
+   "precio_texto": "$29.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9onaae5vb2-1.jpg",
+     "sha256": "b58e62f06407ae53b4f43d1ff135f3bd91c90ef9a96558d40364c8fd41eab65d",
+     "bytes": 66656,
+     "ancho": 714,
+     "alto": 694,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv8r39eyc18h",
+   "orden_global": 91,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 1,
+   "nombre": "Armaf - Odyssey Mandarin Sky",
+   "nombre_visible": "Armaf - Odyssey Mandarin Sky",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8r39eyc18h-1.jpg",
+     "sha256": "5c37ecde8346c8bbd12d5e56cbf1ff194a670ed9236ac8a1ac4f686f4c6ced88",
+     "bytes": 40734,
+     "ancho": 769,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8r39eyc18h-2.jpg",
+     "sha256": "0f4c44c0d0bf70f8629dfb2a4ec3b02e402b179af7e381506dd8b274c69b7142",
+     "bytes": 69153,
+     "ancho": 939,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8cp7fqpg5c",
+   "orden_global": 92,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 2,
+   "nombre": "Burberry Her Eau",
+   "nombre_visible": "Burberry Her Eau",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8cp7fqpg5c-1.jpg",
+     "sha256": "f0bfb5fb5fd21e6fa2ecfbda44e93478f0fcca900bb4efbca470d9d68aa6a276",
+     "bytes": 14706,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8cp7fqpg5c-2.jpg",
+     "sha256": "e8aabf348c2eaafee07ea565db4663820705ede6e0ba693214d8d63817e2d37b",
+     "bytes": 15666,
+     "ancho": 513,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpperfumeeternity",
+   "orden_global": 93,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 3,
+   "nombre": "Calvin Klein - Eternity",
+   "nombre_visible": "Calvin Klein - Eternity",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpperfumeeternity-1.jpg",
+     "sha256": "24fe10dbeb388ba7f294c8af252ae8a4c4e1175fbaf9dcecc2f1a80680599a34",
+     "bytes": 25631,
+     "ancho": 640,
+     "alto": 537,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/hpperfumeeternity-2.jpg",
+     "sha256": "0bc5de912a18de739538f1f136f7bd77aa60a85ddb81d82420d9c81ece5bc108",
+     "bytes": 23716,
+     "ancho": 640,
+     "alto": 536,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8q11wofly6",
+   "orden_global": 94,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 4,
+   "nombre": "Carolina Herrera - Good Girl",
+   "nombre_visible": "Carolina Herrera - Good Girl",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8q11wofly6-1.jpg",
+     "sha256": "1455dedb595c7199a103fa1bca31d56d44af7fadd640cdf435bf97d095b84b40",
+     "bytes": 20542,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8q11wofly6-2.jpg",
+     "sha256": "b6da42ba76cbfa6724e0c0fae1c8dd65432048a3eb63ae7ae2becb822d5b768a",
+     "bytes": 26631,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8diya30b3l",
+   "orden_global": 95,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 5,
+   "nombre": "Chanel - Coco Mademoiselle",
+   "nombre_visible": "Chanel - Coco Mademoiselle",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8diya30b3l-1.jpg",
+     "sha256": "4f9ace4bdf527222e250376ccf885691aebeb6f0f6621e59cbe024ac8caf3a38",
+     "bytes": 26558,
+     "ancho": 600,
+     "alto": 558,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8diya30b3l-2.jpg",
+     "sha256": "7ca5c0a7b2694808b4c2496dc5ffb4440dedf3c0b2605e3bf2df9c20eb5f01c5",
+     "bytes": 25231,
+     "ancho": 601,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muw2phi2htbs",
+   "orden_global": 96,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 6,
+   "nombre": "Dolce & Gabbana - Light Blue",
+   "nombre_visible": "Dolce & Gabbana - Light Blue",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muw2phi2htbs-1.jpg",
+     "sha256": "2ecbaab5aed6d3a4c79a49d83d75a51ddbfe8c23d82b3ca1960bb3eda6b0e58c",
+     "bytes": 26980,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muw2phi2htbs-2.jpg",
+     "sha256": "6e3cf4c1d169bc1b735b19853e53bdb8abc0098664a9be07ae4e1b8e910f46e9",
+     "bytes": 24754,
+     "ancho": 618,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8qq21i3e9v",
+   "orden_global": 97,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 7,
+   "nombre": "Lattafa - Berry On Top",
+   "nombre_visible": "Lattafa - Berry On Top",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 150000,
+   "precio_texto": "$150.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8qq21i3e9v-1.jpg",
+     "sha256": "a761bbd3c95fbf4f4b9184b9835fd7515379fdfdfa76029cea964b5367b45ed5",
+     "bytes": 19072,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8qq21i3e9v-2.jpg",
+     "sha256": "871534b64fee243c218b815a1d56a66a048744d0795e0cb86bd1a50a37be4a74",
+     "bytes": 41682,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8q8apuzkoa",
+   "orden_global": 98,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 8,
+   "nombre": "Paco Rabanne - Invictus",
+   "nombre_visible": "Paco Rabanne - Invictus",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8q8apuzkoa-1.jpg",
+     "sha256": "0dabdc54a3f9ff07260d2c9bfdf59349485b2545d2d348ddd9f5b40946db553b",
+     "bytes": 24520,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8q8apuzkoa-2.jpg",
+     "sha256": "7387f701a2eb099bb3f31109964a52fa4cc4f80b1f688d821475a62079c53214",
+     "bytes": 17020,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpperfumefrenchavenue",
+   "orden_global": 99,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 9,
+   "nombre": "Perfume French Avenue",
+   "nombre_visible": "Perfume French Avenue",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 140000,
+   "precio_texto": "$140.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpperfumefrenchavenue-1.jpg",
+     "sha256": "f18ca2ab2b13c0dfc901eb57e61d7fa20805378e13924dd0ecea08ecbbcc985e",
+     "bytes": 23773,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/hpperfumefrenchavenue-2.jpg",
+     "sha256": "a2d41b2351c9f332b0709d08f8cfd071809397f4594759b3c3e0881e70a71c50",
+     "bytes": 18650,
+     "ancho": 500,
+     "alto": 500,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv8b9a4h0c4r",
+   "orden_global": 100,
+   "categoria": "Perfumería",
+   "orden_en_categoria": 10,
+   "nombre": "Versace - Bright Crystal",
+   "nombre_visible": "Versace - Bright Crystal",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 85000,
+   "precio_texto": "$85.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv8b9a4h0c4r-1.jpg",
+     "sha256": "648b77acefcd7aa3a1f7cf17d4e057e538a7c10ad365cbb04a9b826b5c7d2b0f",
+     "bytes": 28813,
+     "ancho": 520,
+     "alto": 520,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv8b9a4h0c4r-2.jpg",
+     "sha256": "77b4817090d31bb5cca90a1a8af22547f5103d315bfaf0e9e2706d13d1bdd921",
+     "bytes": 29913,
+     "ancho": 640,
+     "alto": 376,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv60ge7ez2po",
+   "orden_global": 101,
+   "categoria": "Salud",
+   "orden_en_categoria": 1,
+   "nombre": "Bascula Digital Bluetooht",
+   "nombre_visible": "Bascula Digital Bluetooht",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv60ge7ez2po-1.jpg",
+     "sha256": "bc2e548d8cf17afb6dd994c732cafc4075791adc06ad5a1f72c4cbe8d74a50bf",
+     "bytes": 13414,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv61rmpojkoa",
+   "orden_global": 102,
+   "categoria": "Salud",
+   "orden_en_categoria": 2,
+   "nombre": "Cinturón para Colicos",
+   "nombre_visible": "Cinturón para Colicos",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 35000,
+   "precio_texto": "$35.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv61rmpojkoa-1.jpg",
+     "sha256": "bf0334e927765fb3957c8c75ce43ec249e5e740dd42139693cd505766bb97870",
+     "bytes": 34207,
+     "ancho": 640,
+     "alto": 578,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv61rmpojkoa-2.jpg",
+     "sha256": "561cd4b793f062d71fcc3b9efcae2115b89eeacffb017aa4ae477ec778ad54db",
+     "bytes": 37164,
+     "ancho": 640,
+     "alto": 626,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv61dtfzky6w",
+   "orden_global": 103,
+   "categoria": "Salud",
+   "orden_en_categoria": 3,
+   "nombre": "Ejercitador Antebrazo Manos",
+   "nombre_visible": "Ejercitador Antebrazo Manos",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv61dtfzky6w-1.jpg",
+     "sha256": "cec6767c39141f322f8997ee033d6114185a0ffb581c7a41690c38446da9388a",
+     "bytes": 49689,
+     "ancho": 631,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1vtwn6age7",
+   "orden_global": 104,
+   "categoria": "Salud",
+   "orden_en_categoria": 4,
+   "nombre": "Glucometro",
+   "nombre_visible": "Glucometro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1vtwn6age7-1.jpg",
+     "sha256": "2b6c82db57a7a9fb9a8f972dc5b996af9d97d44ff772f97353ae6f0d8b650275",
+     "bytes": 69703,
+     "ancho": 554,
+     "alto": 554,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hplimpiadordeoidosne3",
+   "orden_global": 105,
+   "categoria": "Salud",
+   "orden_en_categoria": 5,
+   "nombre": "Limpiador de Oídos NE3",
+   "nombre_visible": "Limpiador de Oídos NE3",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hplimpiadordeoidosne3-1.jpg",
+     "sha256": "e7ee684b148df7ef78376c2331eb33df3fcf22cc267deaacf812fad208bb1717",
+     "bytes": 24212,
+     "ancho": 456,
+     "alto": 456,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "hpoximetro",
+   "orden_global": 106,
+   "categoria": "Salud",
+   "orden_en_categoria": 6,
+   "nombre": "Oxímetro",
+   "nombre_visible": "Oxímetro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpoximetro-1.jpg",
+     "sha256": "e83c4e9da088bff590a584fc0b41e02007d88fecca0acf81f5c5097f9d9a4329",
+     "bytes": 40561,
+     "ancho": 456,
+     "alto": 507,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7cd0eeto9j",
+   "orden_global": 107,
+   "categoria": "Salud",
+   "orden_en_categoria": 7,
+   "nombre": "Tabla Base para Abdomen",
+   "nombre_visible": "Tabla Base para Abdomen",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7cd0eeto9j-1.jpg",
+     "sha256": "26b5ff655d1d83dacd20e4ccff884c2c0899f224be85c3ddb5c497181bfbb132",
+     "bytes": 44183,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7cd0eeto9j-2.jpg",
+     "sha256": "9ffdd5cecd1e3338f6af9a3668616708e46a7fef3dc4d8f27d182858c1ba4ccd",
+     "bytes": 49265,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7cd0eeto9j-3.jpg",
+     "sha256": "57bccfd0213ad2f8664cb5bd3d06e001e6d09aa42f3e40d27bbbc3cda5d5ca9b",
+     "bytes": 41076,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hptensiometro",
+   "orden_global": 108,
+   "categoria": "Salud",
+   "orden_en_categoria": 8,
+   "nombre": "Tensiómetro Digital",
+   "nombre_visible": "Tensiómetro Digital",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hptensiometro-1.jpg",
+     "sha256": "f0332f79555d249be54c78c3f03925012a61e21e5df6154fac48c7a56601caae",
+     "bytes": 59550,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26y58ek",
+   "orden_global": 109,
+   "categoria": "Hogar",
+   "orden_en_categoria": 1,
+   "nombre": "Hidrolavadora",
+   "nombre_visible": "Hidrolavadora",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26y58ek-1.jpg",
+     "sha256": "81efde5ee70c805f8c0dd7f20cf9113b596b28d2892d6faef47e9500f9f8ed5d",
+     "bytes": 95684,
+     "ancho": 613,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": true,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "hpmonitorbebe",
+   "orden_global": 110,
+   "categoria": "Hogar",
+   "orden_en_categoria": 2,
+   "nombre": "Monitor Bebé",
+   "nombre_visible": "Monitor Bebé",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 160000,
+   "precio_texto": "$160.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpmonitorbebe-1.jpg",
+     "sha256": "cf4bf7aababd2f5ef85d9fff728ed5d13a67d98a1b306e3b12607b710c832ccb",
+     "bytes": 49090,
+     "ancho": 640,
+     "alto": 577,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q271fjto",
+   "orden_global": 111,
+   "categoria": "Hogar",
+   "orden_en_categoria": 3,
+   "nombre": "Taladro Amarillo",
+   "nombre_visible": "Taladro Amarillo",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q271fjto-1.jpg",
+     "sha256": "6c8c640990ce0d3b5485d1e55d1aba8552e95b06a664ffefb651e800bf8810e1",
+     "bytes": 38997,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu1q26wahap",
+   "orden_global": 112,
+   "categoria": "Hogar",
+   "orden_en_categoria": 4,
+   "nombre": "Aspiradora Carro",
+   "nombre_visible": "Aspiradora Carro",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26wahap-1.jpg",
+     "sha256": "cd2371860f3df4bea59aef0376f8b7913b842d68d9fe7fd4c1cf0998cdb1c94b",
+     "bytes": 19943,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mvi9ee7ald9c",
+   "orden_global": 113,
+   "categoria": "Hogar",
+   "orden_en_categoria": 5,
+   "nombre": "Aspiradora de Mano",
+   "nombre_visible": "Aspiradora de Mano",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 35000,
+   "precio_texto": "$35.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mvi9ee7ald9c-1.jpg",
+     "sha256": "52eccc7fa20bff53be67703c6be0e0e96d7cbd505a8e82865fc6a284ab6ffcbe",
+     "bytes": 40118,
+     "ancho": 1000,
+     "alto": 803,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mvi9a826m06k",
+   "orden_global": 114,
+   "categoria": "Hogar",
+   "orden_en_categoria": 6,
+   "nombre": "Aspiradora Vacuum Mini 3 en 1",
+   "nombre_visible": "Aspiradora Vacuum Mini 3 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mvi9a826m06k-1.jpg",
+     "sha256": "65902d82bb619a665dc57d1953ed92f6d3e747f7858a5207f846d447c96ad830",
+     "bytes": 45357,
+     "ancho": 800,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9qg332sjm5",
+   "orden_global": 115,
+   "categoria": "Hogar",
+   "orden_en_categoria": 7,
+   "nombre": "Bascula Bluetooth",
+   "nombre_visible": "Bascula Bluetooth",
+   "descripcion": "Controla tu peso y conoce más detalles de tu composición corporal desde tu celular. ¡Ideal para llevar el seguimiento de tu progreso! ⚖️ Capacidad máxima: 180 kg. 🎯 Precisión: 50 g. 📲 Conexión Bluetooth con aplicación móvil. 💪 Mide peso, IMC, grasa corporal, músculo y agua. 🔢 Pantalla digital LCD. 📏 Diseño de vidrio de 26 × 26 cm. 🔋 Funciona con batería. 20 unidades por caja",
+   "descripcion_html": "Controla tu peso y conoce más detalles de tu composición corporal desde tu celular. ¡Ideal para llevar el seguimiento de tu progreso! ⚖️ Capacidad máxima: 180 kg. 🎯 Precisión: 50 g. 📲 Conexión Bluetooth con aplicación móvil. 💪 Mide peso, IMC, grasa corporal, músculo y agua. 🔢 Pantalla digital LCD. 📏 Diseño de vidrio de 26 × 26 cm. 🔋 Funciona con batería. 20 unidades por caja",
+   "precio": 28000,
+   "precio_texto": "$28.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9qg332sjm5-1.jpg",
+     "sha256": "c4c8b94c5fcc408235a835e8089ac7e5ed317c49988c05c8d58202681afe4041",
+     "bytes": 114948,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qg332sjm5-2.jpg",
+     "sha256": "145658fb9a0fe68cfbdfe2a0037fe354dfd3d513a1dae16967728bd41edcb6fb",
+     "bytes": 97176,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7c7rhbdte8",
+   "orden_global": 116,
+   "categoria": "Hogar",
+   "orden_en_categoria": 8,
+   "nombre": "Caja Fuerte Mediana",
+   "nombre_visible": "Caja Fuerte Mediana",
+   "descripcion": "incluye 2 llaves para abrir manualmente, pilas, chazos para pared",
+   "descripcion_html": "incluye 2 llaves para abrir manualmente, pilas, chazos para pared",
+   "precio": 140000,
+   "precio_texto": "$140.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7c7rhbdte8-1.jpg",
+     "sha256": "76ad26064c60f0df41db07bcfdebba32036473f1dff065074ddf051d6c094019",
+     "bytes": 35927,
+     "ancho": 640,
+     "alto": 470,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7c7rhbdte8-2.jpg",
+     "sha256": "9e8fefd529c71b37811cc48dfbd1273e5243141aa9d5d8122e4bb07c4af878f7",
+     "bytes": 35104,
+     "ancho": 640,
+     "alto": 470,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7c7rhbdte8-3.jpg",
+     "sha256": "24a69c0713550bc862f2577f763ab080b420262c2b83e757fe695ae79982502e",
+     "bytes": 61810,
+     "ancho": 635,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9uxniy2hpn",
+   "orden_global": 117,
+   "categoria": "Hogar",
+   "orden_en_categoria": 9,
+   "nombre": "Cajón Organizador 24L",
+   "nombre_visible": "Cajón Organizador 24L",
+   "descripcion": "🧺 Mantén tu ropa organizada y tus espacios en orden con este práctico organizador de tela en color azul. ✨ Características: 👖 Ideal para guardar ropa, prendas y accesorios. 🪟 Ventana transparente frontal para identificar fácilmente el contenido. 🔵 Diseño en tela azul con cremalleras a juego. 📦 Estructura rectangular, práctica y funcional. 🏠 Perfecto para clósets, armarios y estanterías. 👀 Tapa superior con cierre para proteger y mantener organizada la ropa.  Medidas: 40cmx29cmx20cm",
+   "descripcion_html": "🧺 Mantén tu ropa organizada y tus espacios en orden con este práctico organizador de tela en color azul. ✨ Características: 👖 Ideal para guardar ropa, prendas y accesorios. 🪟 Ventana transparente frontal para identificar fácilmente el contenido. 🔵 Diseño en tela azul con cremalleras a juego. 📦 Estructura rectangular, práctica y funcional. 🏠 Perfecto para clósets, armarios y estanterías. 👀 Tapa superior con cierre para proteger y mantener organizada la ropa.  Medidas: 40cmx29cmx20cm",
+   "precio": 38000,
+   "precio_texto": "$38.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9uxniy2hpn-1.jpg",
+     "sha256": "73db835cbcc0083322049e8f5261e8566b476bf653d821d9610b2615853c1fa2",
+     "bytes": 130222,
+     "ancho": 1000,
+     "alto": 750,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9uxniy2hpn-2.jpg",
+     "sha256": "86f81504e0f7097f508e0abfbfa6352e98f07994af86bbe1234c603db44e0964",
+     "bytes": 141246,
+     "ancho": 1000,
+     "alto": 750,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv62b8msxn13",
+   "orden_global": 118,
+   "categoria": "Hogar",
+   "orden_en_categoria": 10,
+   "nombre": "Cepillo de Limpieza Electrico 9 en 1",
+   "nombre_visible": "Cepillo de Limpieza Electrico 9 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv62b8msxn13-1.jpg",
+     "sha256": "b08a56fbce028d8ab695bdd752f8b4ae3fdcf6ebbf1b3346e5ed31a79c8ed5d9",
+     "bytes": 35288,
+     "ancho": 640,
+     "alto": 624,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv615dy3ldqa",
+   "orden_global": 119,
+   "categoria": "Hogar",
+   "orden_en_categoria": 11,
+   "nombre": "Dispensador de Aceite",
+   "nombre_visible": "Dispensador de Aceite",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv615dy3ldqa-1.jpg",
+     "sha256": "3bb2bc9b4de5ce076efca2caecf9206de963b3036c35a7f71b2a853286fb8d1b",
+     "bytes": 27104,
+     "ancho": 628,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mw9umowuhomi",
+   "orden_global": 120,
+   "categoria": "Hogar",
+   "orden_en_categoria": 12,
+   "nombre": "Estante Organizador de Cocina 0202",
+   "nombre_visible": "Estante Organizador de Cocina 0202",
+   "descripcion": "✨ Dale orden y funcionalidad a tu cocina con este práctico estante organizador. 🔹 Gabinete superior con puerta. 🔹 Varios niveles para organizar utensilios y alimentos. 🔹 Canastillas y espacios de almacenamiento. 🔹 Estructura metálica de diseño moderno. 🔹 Ruedas para facilitar su desplazamiento.",
+   "descripcion_html": "✨ Dale orden y funcionalidad a tu cocina con este práctico estante organizador. 🔹 Gabinete superior con puerta. 🔹 Varios niveles para organizar utensilios y alimentos. 🔹 Canastillas y espacios de almacenamiento. 🔹 Estructura metálica de diseño moderno. 🔹 Ruedas para facilitar su desplazamiento.",
+   "precio": 148000,
+   "precio_texto": "$148.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9umowuhomi-1.jpg",
+     "sha256": "f57f176c4e58dfd9fe78694edfef6783f6ed357e624aaefd093aa41492441c20",
+     "bytes": 130784,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9umowuhomi-2.jpg",
+     "sha256": "4ab42d5e8ff7273bd6d177c2249c6b21ea0376e8484f79708df3dd8d8b4ceb3d",
+     "bytes": 94797,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9uq1pyiyfv",
+   "orden_global": 121,
+   "categoria": "Hogar",
+   "orden_en_categoria": 13,
+   "nombre": "Estante Organizador de Cocina 0203",
+   "nombre_visible": "Estante Organizador de Cocina 0203",
+   "descripcion": "✨ Dale orden y funcionalidad a tu cocina con este práctico estante organizador. 🔹 Gabinete superior con puerta. 🔹 Varios niveles para organizar utensilios y alimentos. 🔹 Canastillas y espacios de almacenamiento. 🔹 Estructura metálica de diseño moderno. 🔹 Ruedas para facilitar su desplazamiento.  Medida de: 122cmx80cmx28cm",
+   "descripcion_html": "✨ Dale orden y funcionalidad a tu cocina con este práctico estante organizador. 🔹 Gabinete superior con puerta. 🔹 Varios niveles para organizar utensilios y alimentos. 🔹 Canastillas y espacios de almacenamiento. 🔹 Estructura metálica de diseño moderno. 🔹 Ruedas para facilitar su desplazamiento.  Medida de: 122cmx80cmx28cm",
+   "precio": 148000,
+   "precio_texto": "$148.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9uq1pyiyfv-1.jpg",
+     "sha256": "dfbb41d6c1cb569ff7ea6fb1e6e7fc765355e1aa91e6a89c40696a5503ef9cb9",
+     "bytes": 154346,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9uq1pyiyfv-2.jpg",
+     "sha256": "b9e88b4a11697aa8f2cd2d74efbae98f7d271f5edac6870fb29ff5c0cb8edaf6",
+     "bytes": 79225,
+     "ancho": 913,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9qpyz2ncrs",
+   "orden_global": 122,
+   "categoria": "Hogar",
+   "orden_en_categoria": 14,
+   "nombre": "Esterilizador UV",
+   "nombre_visible": "Esterilizador UV",
+   "descripcion": "Mantén tus objetos personales limpios y frescos con esta práctica caja esterilizadora UV, ideal para celulares y pequeños accesorios. ✨ Características: 🦠 Esterilización mediante luz ultravioleta UV. 🌸 Función aromatizante. 📱 Compatible con celulares de hasta 6,5 pulgadas. ⏱️ Ciclo automático de 10 minutos. 🔌 Alimentación USB tipo C. 💡 Indicadores de progreso: 25%, 50%, 75% y 100%. 📏 Medidas: 21,8 × 12,3 × 5,3 cm. ⚖️ Peso: 340 g 50 unidades por caja",
+   "descripcion_html": "Mantén tus objetos personales limpios y frescos con esta práctica caja esterilizadora UV, ideal para celulares y pequeños accesorios. ✨ Características: 🦠 Esterilización mediante luz ultravioleta UV. 🌸 Función aromatizante. 📱 Compatible con celulares de hasta 6,5 pulgadas. ⏱️ Ciclo automático de 10 minutos. 🔌 Alimentación USB tipo C. 💡 Indicadores de progreso: 25%, 50%, 75% y 100%. 📏 Medidas: 21,8 × 12,3 × 5,3 cm. ⚖️ Peso: 340 g 50 unidades por caja",
+   "precio": 48000,
+   "precio_texto": "$48.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9qpyz2ncrs-1.jpg",
+     "sha256": "e0a8fea2aca24b0564f52999064c3f43d44aedca0ff1c70e52ebab9ac0e6211f",
+     "bytes": 41693,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qpyz2ncrs-2.jpg",
+     "sha256": "0eb7289ba18b3f556e14a506757c38faae191a5dd7294d491473f2c06b44ed8c",
+     "bytes": 79805,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv60uvx1011b",
+   "orden_global": 123,
+   "categoria": "Hogar",
+   "orden_en_categoria": 15,
+   "nombre": "Mini Impresora de Etiquetas Bluetooth Portátil",
+   "nombre_visible": "Mini Impresora de Etiquetas Bluetooth Portátil",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 110000,
+   "precio_texto": "$110.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv60uvx1011b-1.jpg",
+     "sha256": "bc7891ada04827fb72a38854208658c269218ccc7d0b0e6a990bdd74cfa9edbc",
+     "bytes": 27495,
+     "ancho": 640,
+     "alto": 564,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv60uvx1011b-2.jpg",
+     "sha256": "d5095f5838eb4c4e4c3ffb1ee30ce7ce803812b2fc4187239abdb82799c480d7",
+     "bytes": 38876,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9qj2580hr0",
+   "orden_global": 124,
+   "categoria": "Hogar",
+   "orden_en_categoria": 16,
+   "nombre": "Organizador Utencilios",
+   "nombre_visible": "Organizador Utencilios",
+   "descripcion": "✨ Mantén tu cocina organizada y aprovecha mejor cada espacio con este práctico organizador de pared. 🔹 Incluye 8 ganchos para colgar utensilios. 🔹 2 recipientes inferiores para almacenar accesorios. 🔹 Compartimentos superiores para organizar elementos de cocina. 🔹 Barra frontal multiuso. 🔹 Diseño moderno y funcional. 🔹 Ideal para mantener cucharones, espátulas, paños y otros accesorios siempre a la mano 40 undiades por caja",
+   "descripcion_html": "✨ Mantén tu cocina organizada y aprovecha mejor cada espacio con este práctico organizador de pared. 🔹 Incluye 8 ganchos para colgar utensilios. 🔹 2 recipientes inferiores para almacenar accesorios. 🔹 Compartimentos superiores para organizar elementos de cocina. 🔹 Barra frontal multiuso. 🔹 Diseño moderno y funcional. 🔹 Ideal para mantener cucharones, espátulas, paños y otros accesorios siempre a la mano 40 undiades por caja",
+   "precio": 29000,
+   "precio_texto": "$29.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9qj2580hr0-1.jpg",
+     "sha256": "9eff3cad2c2a2b29117ee015840cfb2a1713b16eefe0a6df9c50060464f04c4c",
+     "bytes": 32530,
+     "ancho": 1000,
+     "alto": 333,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qj2580hr0-2.jpg",
+     "sha256": "57bd6f94b4275bbe638df791a4893ff239c5c18e01f223b4600bdd839e2d0a96",
+     "bytes": 128137,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv619e32ktkt",
+   "orden_global": 125,
+   "categoria": "Hogar",
+   "orden_en_categoria": 17,
+   "nombre": "Prensa Francesa 350ML",
+   "nombre_visible": "Prensa Francesa 350ML",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv619e32ktkt-1.jpg",
+     "sha256": "a825089f307da16cf9043824f9b183225b5c6a9a08e94b999acabe7657ed155c",
+     "bytes": 20854,
+     "ancho": 404,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv619e32ktkt-2.jpg",
+     "sha256": "46108783948eec6632bd40501e6400b89e249605b634dd171ddd838f613f2951",
+     "bytes": 37429,
+     "ancho": 631,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv612nn07kdd",
+   "orden_global": 126,
+   "categoria": "Hogar",
+   "orden_en_categoria": 18,
+   "nombre": "Tabla para Picar Acero Inoxidable",
+   "nombre_visible": "Tabla para Picar Acero Inoxidable",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv612nn07kdd-1.jpg",
+     "sha256": "7039846a41f5208641bf15083d6db1e3afacb883a66395ab731a7617d99baca6",
+     "bytes": 28448,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpwaffleraminimouse",
+   "orden_global": 127,
+   "categoria": "Hogar",
+   "orden_en_categoria": 19,
+   "nombre": "Wafflera Mini",
+   "nombre_visible": "Wafflera Mini",
+   "descripcion": "Tres diseños diferentes",
+   "descripcion_html": "Tres diseños diferentes ",
+   "precio": 40000,
+   "precio_texto": "$40.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpwaffleraminimouse-1.jpg",
+     "sha256": "8605e29aafde41bd8947e46284e3f636d85c8abcc9b398e29dc2b7003401e8ff",
+     "bytes": 63329,
+     "ancho": 640,
+     "alto": 357,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvwquvwrm1d",
+   "orden_global": 128,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 1,
+   "nombre": "Camión con Carritos de Construcción",
+   "nombre_visible": "Camión con Carritos de Construcción",
+   "descripcion": "Camion transportador de mini carritos para construcción, incluye 6 mini vehículos de construcción, maletín para transportar los carritos, diferentes modelos de maquinaria",
+   "descripcion_html": "Camion transportador de mini carritos para construcción, incluye 6 mini vehículos de construcción, maletín para transportar los carritos, diferentes modelos de maquinaria",
+   "precio": 80000,
+   "precio_texto": "$80.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvwquvwrm1d-1.jpg",
+     "sha256": "a5823950e5254bade729d8f11415d99a78716b289a270f8481fd96e952bd1d43",
+     "bytes": 60003,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvwquvwrm1d-2.jpg",
+     "sha256": "ff936a94389e405eddd44da85eee4a0e2b88bbaccd5edf028f913429985b0a7c",
+     "bytes": 49458,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muua439b2q54",
+   "orden_global": 129,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 2,
+   "nombre": "Camión Dinosaurio con Carritos",
+   "nombre_visible": "Camión Dinosaurio con Carritos",
+   "descripcion": "transporta y almacena carritos, función de lanzar carritos y se convierte en pista",
+   "descripcion_html": " transporta y almacena carritos, función de lanzar carritos y se convierte en pista",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muua439b2q54-1.jpg",
+     "sha256": "393e6c0d3d4720c196593ca6f05f816ed281ce8c45a4d56cf275bed7c69a046b",
+     "bytes": 75644,
+     "ancho": 640,
+     "alto": 585,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muu9tli77l2r",
+   "orden_global": 130,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 3,
+   "nombre": "Camión Volqueta Control Remoto",
+   "nombre_visible": "Camión Volqueta Control Remoto",
+   "descripcion": "Diseño de camión minero/industrial",
+   "descripcion_html": "Diseño de camión minero/industrial",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu9tli77l2r-1.jpg",
+     "sha256": "c340b3bdf838c82cfc403a37eb47957d2933ff07ba9472ca8c09f0e831a62478",
+     "bytes": 45585,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu9x1desspz",
+   "orden_global": 131,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 4,
+   "nombre": "Carro con Remolque",
+   "nombre_visible": "Carro con Remolque",
+   "descripcion": "Recomendado para mayores de 3 años",
+   "descripcion_html": "Recomendado para mayores de 3 años",
+   "precio": 115000,
+   "precio_texto": "$115.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu9x1desspz-1.jpg",
+     "sha256": "a4c4a7daa32c327b47e0ad0de12e0d9cbb9f7394f583490c1507a5a69ca157f6",
+     "bytes": 30587,
+     "ancho": 640,
+     "alto": 480,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muu9yh6p7hb2",
+   "orden_global": 132,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 5,
+   "nombre": "Carro Control Remoto",
+   "nombre_visible": "Carro Control Remoto",
+   "descripcion": "Carro a control remoto tipo buggy 4x4",
+   "descripcion_html": "Carro a control remoto tipo buggy 4x4",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu9yh6p7hb2-1.jpg",
+     "sha256": "d14a05dafc84114ab5e5320cbdf06322c42eec58f1e0436d5af6f9e1d3c8c205",
+     "bytes": 45842,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvx6jdc95c0",
+   "orden_global": 133,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 6,
+   "nombre": "Carro Control Remoto",
+   "nombre_visible": "Carro Control Remoto",
+   "descripcion": "Carro a control remoto con luces, batería recargable, permite movimientos hacia adelante y atrás, izquierda y derecha",
+   "descripcion_html": "Carro a control remoto con luces, batería recargable, permite movimientos hacia adelante y atrás, izquierda y derecha",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvx6jdc95c0-1.jpg",
+     "sha256": "a2fe0d50bc3545ac0e8b5af741f923f16ae73b1aa0e5cbce5e6ac9bf498a59eb",
+     "bytes": 37597,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvx6jdc95c0-2.jpg",
+     "sha256": "e5939aed93e165b767a493234d4a46c76cb1bc3e3c4401c2c99a6a633bb58e67",
+     "bytes": 36217,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muu9jyd5sm9i",
+   "orden_global": 134,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 7,
+   "nombre": "Carro Dinosaurio a Control Remoto",
+   "nombre_visible": "Carro Dinosaurio a Control Remoto",
+   "descripcion": "Combina la apariencia de un dinosaurio con un vehículo de ruedas especiales y múltiples funciones controladas desde el mando",
+   "descripcion_html": "Combina la apariencia de un dinosaurio con un vehículo de ruedas especiales y múltiples funciones controladas desde el mando",
+   "precio": 235000,
+   "precio_texto": "$235.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu9jyd5sm9i-1.jpg",
+     "sha256": "d2b399750a4a5edc9d277e7aa93173b0537385d6a80fc6b11f2ada73e1780ca3",
+     "bytes": 84171,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muua10bphbcb",
+   "orden_global": 135,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 8,
+   "nombre": "Carro Off Road Control Remoto",
+   "nombre_visible": "Carro Off Road Control Remoto",
+   "descripcion": "vehículo de control remoto con diseño off-road, suspensión, llantas de gran tamaño y estructura robusta",
+   "descripcion_html": "vehículo de control remoto con diseño off-road, suspensión, llantas de gran tamaño y estructura robusta",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muua10bphbcb-1.jpg",
+     "sha256": "75059b325ba849fad7ca874ed453e426f46ec7593ad7d19d65d6c0d799aa2a55",
+     "bytes": 40057,
+     "ancho": 640,
+     "alto": 480,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7alzy9xc77",
+   "orden_global": 136,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 9,
+   "nombre": "Gorro para Niños con Luz",
+   "nombre_visible": "Gorro para Niños con Luz",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7alzy9xc77-1.jpg",
+     "sha256": "a17a2fde2426b234ed7fb39a9b188bb9abaa605abe04d51cedfcfa7ff3b8e6f8",
+     "bytes": 47706,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-2.jpg",
+     "sha256": "57f91a2c843157ba7f28db2ba9cbfbdfe153c9677982eeeb24f75b3f56bbb224",
+     "bytes": 57217,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-3.jpg",
+     "sha256": "c06c8a8b0d077d45a1b12112fffaa06ee0239c0f8dd0b028598109af97c0cab6",
+     "bytes": 63544,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-4.jpg",
+     "sha256": "35fbf729643ab94c87ffb469f1b234bf35edb08ed4ee13db79c73e7b3d30b2ca",
+     "bytes": 61092,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-5.jpg",
+     "sha256": "eb9bde8814b147b0ccc7a4520b10f60f2269d2948b2e0c5ef79505625b3d0c3b",
+     "bytes": 70271,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-6.jpg",
+     "sha256": "be13c8727eeb63fa74db2c1c066a07a71933cce864202460082143e01793a8d4",
+     "bytes": 50560,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7alzy9xc77-7.jpg",
+     "sha256": "7b016c121de301bcfb11a8fd80f603518a23f31053854f11a0ecb2449e966b94",
+     "bytes": 58351,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv7a5is74ywa",
+   "orden_global": 137,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 10,
+   "nombre": "Juego Maleta de Chef",
+   "nombre_visible": "Juego Maleta de Chef",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7a5is74ywa-1.jpg",
+     "sha256": "b4c1a9d96b6f746852ca5bb241141fe8cfb128c1c05a310468cf5db7f268934b",
+     "bytes": 36366,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7a5is74ywa-2.jpg",
+     "sha256": "1d3e55be42ae1364fab8b6df138d4c604e7a2c7ae0d8a800c53f8f8ba5619eeb",
+     "bytes": 34148,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7ac51kagik",
+   "orden_global": 138,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 11,
+   "nombre": "Juego Maleta de Cocina 3 en 1",
+   "nombre_visible": "Juego Maleta de Cocina 3 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7ac51kagik-1.jpg",
+     "sha256": "05a0d4089a19111c5a3447434b9c5c58b5d9890ca7b5ac46dab236acbbd58b04",
+     "bytes": 52096,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7ac51kagik-2.jpg",
+     "sha256": "b930e427dc9cdfa22967a887f83bcb3a62adcf0bb9475882a1049df6a9f5764d",
+     "bytes": 36373,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7ac51kagik-3.jpg",
+     "sha256": "4fe134caadbc559a5e01d0e595eb97687b722cb3fe2958e0a375e84992e7015a",
+     "bytes": 48986,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7a7zqhpirr",
+   "orden_global": 139,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 12,
+   "nombre": "Juego Maleta de Doctora",
+   "nombre_visible": "Juego Maleta de Doctora",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7a7zqhpirr-1.jpg",
+     "sha256": "0747eb3095db3e90ed73169e99a032546ae95a8663a8f1dd26bd441ee8beffa8",
+     "bytes": 53886,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7a7zqhpirr-2.jpg",
+     "sha256": "0228eea839ef373528096785c31284390d01c630f417dd14feb182fdee21d6ff",
+     "bytes": 43349,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7ah5jcnfyp",
+   "orden_global": 140,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 13,
+   "nombre": "Juego Maleta Doctor",
+   "nombre_visible": "Juego Maleta Doctor",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7ah5jcnfyp-1.jpg",
+     "sha256": "6f55a062e6813f6f49f73c2f3417e5b2168553d1cd8440cb612f6e5921744bdb",
+     "bytes": 37886,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7ah5jcnfyp-2.jpg",
+     "sha256": "2cee8a16f66d26c6a08f3d16ba78edbdb88dea6753645294f2c310cc7e758c72",
+     "bytes": 38929,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv7ah5jcnfyp-3.jpg",
+     "sha256": "2205d52e36cc71e9e94794eb4b48eef31aed954300735b57911f86e3b9db3dc5",
+     "bytes": 40437,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv79qq3tck4f",
+   "orden_global": 141,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 14,
+   "nombre": "Juguete Maleta de Herramientas",
+   "nombre_visible": "Juguete Maleta de Herramientas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 100000,
+   "precio_texto": "$100.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv79qq3tck4f-1.jpg",
+     "sha256": "0e3a6eb4030fa676d9bf9c9578fd7d418c96c107722e731005de8b9fc8513dce",
+     "bytes": 54427,
+     "ancho": 640,
+     "alto": 632,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79qq3tck4f-2.jpg",
+     "sha256": "0e90ad7a794592b7639a69a9fe7ea1edf0d3afbc2eda0fddcc3b1af903d696c5",
+     "bytes": 41478,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79qq3tck4f-3.jpg",
+     "sha256": "21c85059ab8b4f09ff3338d0e00fd0a827a4b942b12962f6927356a32eba9dbb",
+     "bytes": 47201,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79qq3tck4f-4.jpg",
+     "sha256": "236aa01deefad69012f904f23f02781ce546fb91c2f14663a748c2ebed346378",
+     "bytes": 42926,
+     "ancho": 580,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvxascsuq1n",
+   "orden_global": 142,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 15,
+   "nombre": "Maleta Set de Belleza",
+   "nombre_visible": "Maleta Set de Belleza",
+   "descripcion": "Maleta de maquillaje para niñas con sombras, brillos, labiales, brochas, uñas, limas y más",
+   "descripcion_html": "Maleta de maquillaje para niñas con sombras, brillos, labiales, brochas, uñas, limas y más",
+   "precio": 75000,
+   "precio_texto": "$75.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvxascsuq1n-1.jpg",
+     "sha256": "bc62c76e19d2204462c935c965b4a91394ccb827e061510b7fe4318447d105ce",
+     "bytes": 25060,
+     "ancho": 500,
+     "alto": 450,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxascsuq1n-2.jpg",
+     "sha256": "90381bdf8d1024f41fe82f0c5449585b5e05ef0475dfd47b3ecc4901c2641bf9",
+     "bytes": 64116,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muvxu5s18j34",
+   "orden_global": 143,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 16,
+   "nombre": "Mesa de Bloques 304",
+   "nombre_visible": "Mesa de Bloques 304",
+   "descripcion": "Mesa didáctica de bloques para armar,incluye 156 bloques DIY y 148 bloques de deslizamiento, 2 sillas",
+   "descripcion_html": "Mesa didáctica de bloques para armar,incluye 156 bloques DIY y 148 bloques de deslizamiento, 2 sillas",
+   "precio": 210000,
+   "precio_texto": "$210.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvxu5s18j34-1.jpg",
+     "sha256": "7064ad84cfc8e7e2748007f41c0c950748ec7730dabd90542b28a0c713103dff",
+     "bytes": 60437,
+     "ancho": 640,
+     "alto": 533,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxu5s18j34-2.jpg",
+     "sha256": "413ee8cd185135e2c07aa98797c8d1e580d72eefa9f1a3cbd961301249c26cb3",
+     "bytes": 81629,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1tzvu14dib",
+   "orden_global": 144,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 17,
+   "nombre": "Minecraft Metálico X60 Piezas",
+   "nombre_visible": "Minecraft Metálico X60 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1tzvu14dib-1.jpg",
+     "sha256": "14f99527e6f4f888d9108d5f2b67157368b7f53a8fae6e2748854587fa0c895d",
+     "bytes": 72030,
+     "ancho": 640,
+     "alto": 437,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1tzvu14dib-2.jpg",
+     "sha256": "96fbf9f1d774363551709b09979a7b3dd13a3e8883203a42c5b39b9a2cab8c05",
+     "bytes": 37589,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mv1rwal5dahd",
+   "orden_global": 145,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 18,
+   "nombre": "Minecraft X100 Piezas",
+   "nombre_visible": "Minecraft X100 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1rwal5dahd-1.jpg",
+     "sha256": "85c9bcfbaaf6344af86a4cd10611dce92c44b0a4c7464792396506f012232962",
+     "bytes": 27839,
+     "ancho": 640,
+     "alto": 429,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1rwal5dahd-2.jpg",
+     "sha256": "ba80c92a6850603f57c22a0ae92574fa748a2cb52c067cfaa4b8c1725ca072be",
+     "bytes": 34142,
+     "ancho": 640,
+     "alto": 408,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv1scuwprhq4",
+   "orden_global": 146,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 19,
+   "nombre": "Minecraft X200 Piezas",
+   "nombre_visible": "Minecraft X200 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1scuwprhq4-1.jpg",
+     "sha256": "056080d9f366a44e4b72346ea0d02d53fa60ea02930897463db114d140d4a0c3",
+     "bytes": 67757,
+     "ancho": 427,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1scuwprhq4-2.jpg",
+     "sha256": "46f9c0206fb96cd1d6c88125f8cd5144317d00899b148cbf0588cf5169bafd36",
+     "bytes": 34353,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1scuwprhq4-3.jpg",
+     "sha256": "5f75890bcd31e8e3199db24612b468f1e153e663c846a7aed392f98d29b24f70",
+     "bytes": 23565,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mv1snoqmxw68",
+   "orden_global": 147,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 20,
+   "nombre": "Minecraft X312 Piezas",
+   "nombre_visible": "Minecraft X312 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 125000,
+   "precio_texto": "$125.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1snoqmxw68-1.jpg",
+     "sha256": "3ec08435bc880834e9594812501b56469fb1c66bba8353c255f92a06486a4f57",
+     "bytes": 18135,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1snoqmxw68-2.jpg",
+     "sha256": "8329db01afd8db5f2073751a4fa23e7ef2b7e55c7dd1fa2520fe27c9849db072",
+     "bytes": 39644,
+     "ancho": 637,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1snoqmxw68-3.jpg",
+     "sha256": "574270ea3be7c057904e9155bcac63ffed121616aac99cecfdf0ecd95bfd172e",
+     "bytes": 36303,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1snoqmxw68-4.jpg",
+     "sha256": "5ecc34c38eb1e61119ea07e8d71c28ea29ca297fa8945762ebca2764451cb8ea",
+     "bytes": 38887,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1uk86r7quf",
+   "orden_global": 148,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 21,
+   "nombre": "Mini Consola Tetris",
+   "nombre_visible": "Mini Consola Tetris",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1uk86r7quf-1.jpg",
+     "sha256": "ef82929eff70c25570aa46852a980d12d964284692ba9462d58a10fc0568417a",
+     "bytes": 47672,
+     "ancho": 640,
+     "alto": 632,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1uk86r7quf-2.jpg",
+     "sha256": "9690c6bc17ea706a5dea9c5c701931f6558498be0fe36ac08583577a620a7193",
+     "bytes": 84661,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mv1u8dqu5oqw",
+   "orden_global": 149,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 22,
+   "nombre": "Pistola de Agua Pequeña Eléctrica",
+   "nombre_visible": "Pistola de Agua Pequeña Eléctrica",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 50000,
+   "precio_texto": "$50.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1u8dqu5oqw-1.jpg",
+     "sha256": "29ce033fa629a40e69987df1a8f4ec6c05ba9aad489b86199f9e9e2dd125659a",
+     "bytes": 67708,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1u8dqu5oqw-2.jpg",
+     "sha256": "e07ac1c379cbafdc658f1e7b021bcae6afd55982385a8d79a059adcf6cb41c05",
+     "bytes": 38335,
+     "ancho": 640,
+     "alto": 468,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1vgtxmui4a",
+   "orden_global": 150,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 23,
+   "nombre": "Pistola Hidrogel 2 en 1",
+   "nombre_visible": "Pistola Hidrogel 2 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 75000,
+   "precio_texto": "$75.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1vgtxmui4a-1.jpg",
+     "sha256": "e70129502caf39caec0108e512bc215ecb9ac3285600f44d10f988f91221c45c",
+     "bytes": 46314,
+     "ancho": 640,
+     "alto": 597,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1vgtxmui4a-2.jpg",
+     "sha256": "cad2e385c13c766403b98b5283407626e10b315757eb5f146ba59d6eff855fc8",
+     "bytes": 46537,
+     "ancho": 640,
+     "alto": 597,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv7aph5bvqbr",
+   "orden_global": 151,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 24,
+   "nombre": "Pistola Hidrogel Mini Uzi",
+   "nombre_visible": "Pistola Hidrogel Mini Uzi",
+   "descripcion": "mini uzi con gafas de protección, 2 bolsas hidrogel, 2 envases para munición, 1 mira y puntero laser rojo. Colores: verde, roja y azul. Batería recargable de 7.4V",
+   "descripcion_html": "mini uzi con gafas de protección, 2 bolsas hidrogel, 2 envases para munición, 1 mira y puntero laser rojo. Colores: verde, roja y azul. Batería recargable de 7.4V",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv7aph5bvqbr-1.jpg",
+     "sha256": "0b2bf4b0139e565aa8b778eea5dffbed2026eeb22e794228b1dac36e29ba2694",
+     "bytes": 55272,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1uvzx2at5n",
+   "orden_global": 152,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 25,
+   "nombre": "Pistola Hidrogel Rifle M416",
+   "nombre_visible": "Pistola Hidrogel Rifle M416",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 105000,
+   "precio_texto": "$105.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1uvzx2at5n-1.jpg",
+     "sha256": "aca00ac093117016843c11f7399ff2695ec362802bb101037115b4abea6a6cc9",
+     "bytes": 35749,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1uvzx2at5n-2.jpg",
+     "sha256": "2d05e3ca71700ee4b234a671db5e7748eb4455f90401ad9c084d84b532d52ffd",
+     "bytes": 19014,
+     "ancho": 640,
+     "alto": 442,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv62k9xnb21t",
+   "orden_global": 153,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 26,
+   "nombre": "Proyector Astronauta",
+   "nombre_visible": "Proyector Astronauta",
+   "descripcion": "Proyector astronauta de atmósfera estrellada aurora, con parlante y música relajante, incluye stickers",
+   "descripcion_html": "Proyector astronauta de atmósfera estrellada aurora, con parlante y música relajante, incluye stickers",
+   "precio": 55000,
+   "precio_texto": "$55.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv62k9xnb21t-1.jpg",
+     "sha256": "9f3e8ea8c517a7332c246190239fd4717ebf5d5a7541ea7e97fbaf38fb98b2c9",
+     "bytes": 46211,
+     "ancho": 639,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62k9xnb21t-2.jpg",
+     "sha256": "a3ae6c54bc6a4e49a27e3ee8aea4b14b366536282a83a78cf9fba082f7e608f1",
+     "bytes": 33354,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mv79ce7tpfg5",
+   "orden_global": 154,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 27,
+   "nombre": "Retro",
+   "nombre_visible": "Retro",
+   "descripcion": "Este completo set incluye diferentes vehículos de construcción, como volqueta, excavadora, bulldozer, cargador frontal y camión transportador con remolque, además de accesorios y señales de tránsito para crear increíbles escenarios de juego. Características:",
+   "descripcion_html": "Este completo set incluye diferentes vehículos de construcción, como volqueta, excavadora, bulldozer, cargador frontal y camión transportador con remolque, además de accesorios y señales de tránsito para crear increíbles escenarios de juego. Características:",
+   "precio": 125000,
+   "precio_texto": "$125.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv79ce7tpfg5-1.jpg",
+     "sha256": "e8a72e17636931d24a4392d3db84fcf9f1f51ce5b47bcdb407c3f84c1f362353",
+     "bytes": 45415,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79ce7tpfg5-2.jpg",
+     "sha256": "a146747e43918c5b06d6e4513bf89117b95987f2ea1750eb6e3e07d1c5f5bfbc",
+     "bytes": 56131,
+     "ancho": 640,
+     "alto": 427,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe50tx748st",
+   "orden_global": 155,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 28,
+   "nombre": "Rifle ARP9 WH65-2EY",
+   "nombre_visible": "Rifle ARP9 WH65-2EY",
+   "descripcion": "- Modos de disparo. Cuenta con dos modos eléctricos de funcionamiento: disparo único (semiautomático) y disparo continuo en ráfaga (automático). - Iluminación LED. Incluye un cargador de tambor eléctrico y una boquilla frontal tipo silenciador que emiten luces multicolores brillantes durante su uso.  - Diseño táctico. Presenta un cuerpo en color negro con culata retráctil, empuñadura texturizada y una mira holográfica decorativa montada en el riel superior.",
+   "descripcion_html": "- Modos de disparo. Cuenta con dos modos eléctricos de funcionamiento: disparo único (semiautomático) y disparo continuo en ráfaga (automático). - Iluminación LED. Incluye un cargador de tambor eléctrico y una boquilla frontal tipo silenciador que emiten luces multicolores brillantes durante su uso.  - Diseño táctico. Presenta un cuerpo en color negro con culata retráctil, empuñadura texturizada y una mira holográfica decorativa montada en el riel superior.",
+   "precio": 320000,
+   "precio_texto": "$320.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe50tx748st-1.jpg",
+     "sha256": "fcc607eea84b96d4856919f45177faf3c853d661c8b1a3e1328b4730e0afb57d",
+     "bytes": 50775,
+     "ancho": 455,
+     "alto": 304,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe4t4rfen0l",
+   "orden_global": 156,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 29,
+   "nombre": "Rifle WH87-2EY",
+   "nombre_visible": "Rifle WH87-2EY",
+   "descripcion": "• Cargador de tambor con luces: Un cargador circular negro en la esquina inferior izquierda que muestra luces LED de varios colores en su interior. • Botella aplicadora: Un frasco plástico transparente con punta estrecha para cargar o hidratar las municiones. • Gafas de protección: Unos lentes de seguridad transparentes con montura azul. • Cable y batería: Un cable de carga USB negro y una batería recargable cilíndrica de color azul. • Municiones de hidrogel: Una pequeña bolsa transparente con bolitas de gel de colores (naranja, azul, verde y amarillo). • Cargadores adicionales: Dos cargadores curvos de color negro ubicados en la esquina inferior derecha.",
+   "descripcion_html": "• Cargador de tambor con luces: Un cargador circular negro en la esquina inferior izquierda que muestra luces LED de varios colores en su interior. • Botella aplicadora: Un frasco plástico transparente con punta estrecha para cargar o hidratar las municiones. • Gafas de protección: Unos lentes de seguridad transparentes con montura azul. • Cable y batería: Un cable de carga USB negro y una batería recargable cilíndrica de color azul. • Municiones de hidrogel: Una pequeña bolsa transparente con bolitas de gel de colores (naranja, azul, verde y amarillo). • Cargadores adicionales: Dos cargadores curvos de color negro ubicados en la esquina inferior derecha.",
+   "precio": 320000,
+   "precio_texto": "$320.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe4t4rfen0l-1.jpg",
+     "sha256": "2a87e154a9be55424e8201097a97701764397c14a973414aba81c56e642f114d",
+     "bytes": 46043,
+     "ancho": 455,
+     "alto": 306,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe52jq1f1f7",
+   "orden_global": 157,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 30,
+   "nombre": "Rifle WH88",
+   "nombre_visible": "Rifle WH88",
+   "descripcion": "• Diseño y color: Es un rifle de juguete de color negro con detalles tácticos, culata ajustable, mira telescópica superior y empuñadura delantera vertical. • Luces LED: Cuenta con iluminación multicolor en la punta del cañón, a lo largo del guardamanos y en el cargador de tambor redondo acoplado en la parte inferior. • Modos de disparo: Según las especificaciones de la caja, funciona de manera eléctrica con dos modos (disparo único y disparo continuo) y está recomendado para mayores de 14 años.",
+   "descripcion_html": "• Diseño y color: Es un rifle de juguete de color negro con detalles tácticos, culata ajustable, mira telescópica superior y empuñadura delantera vertical. • Luces LED: Cuenta con iluminación multicolor en la punta del cañón, a lo largo del guardamanos y en el cargador de tambor redondo acoplado en la parte inferior. • Modos de disparo: Según las especificaciones de la caja, funciona de manera eléctrica con dos modos (disparo único y disparo continuo) y está recomendado para mayores de 14 años.",
+   "precio": 320000,
+   "precio_texto": "$320.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe52jq1f1f7-1.jpg",
+     "sha256": "05c64ea4336cc7f2db2a9e2fa5b386b48cd63ed6d62818cbaa143f45eb05e3d7",
+     "bytes": 52109,
+     "ancho": 463,
+     "alto": 305,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe4y31z06j2",
+   "orden_global": 158,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 31,
+   "nombre": "Rifle WH89",
+   "nombre_visible": "Rifle WH89",
+   "descripcion": "• Diseño y color. Es una réplica de juguete en color negro con estilo táctico tipo AR15 y culata fija esqueletizada. • Iluminación LED. Cuenta con luces LED de colores en la punta del cañón (silenciador iluminado) y en la cara frontal de su cargador de tambor redondo de alta capacidad. • Accesorios montados. Incluye una mira óptica decorativa instalada en el riel superior.",
+   "descripcion_html": "• Diseño y color. Es una réplica de juguete en color negro con estilo táctico tipo AR15 y culata fija esqueletizada. • Iluminación LED. Cuenta con luces LED de colores en la punta del cañón (silenciador iluminado) y en la cara frontal de su cargador de tambor redondo de alta capacidad. • Accesorios montados. Incluye una mira óptica decorativa instalada en el riel superior.",
+   "precio": 320000,
+   "precio_texto": "$320.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe4y31z06j2-1.jpg",
+     "sha256": "b5e980e03af1f7ddc51967e64369ae4093fb33160009faeaf6709a5760f0fd32",
+     "bytes": 54416,
+     "ancho": 480,
+     "alto": 301,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv1swas51g11",
+   "orden_global": 159,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 32,
+   "nombre": "Robot Solar 701",
+   "nombre_visible": "Robot Solar 701",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1swas51g11-1.jpg",
+     "sha256": "9d4b499a03bb6796440303a481fa45a06949b49c7d72a5925b05aba7575706da",
+     "bytes": 30241,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1swas51g11-2.jpg",
+     "sha256": "92432749ca8ec38fe5f4c81a0722876179beea4e8b043551c10e9ee835207215",
+     "bytes": 24787,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1swas51g11-3.jpg",
+     "sha256": "171627e455600f435e451b5fbbeaf38f1f4d7e2652cc9c5b90c2cab504bf0f1d",
+     "bytes": 64023,
+     "ancho": 640,
+     "alto": 614,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mv1tb859zh4q",
+   "orden_global": 160,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 33,
+   "nombre": "Robot Solar 705",
+   "nombre_visible": "Robot Solar 705",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv1tb859zh4q-1.jpg",
+     "sha256": "fb238e3365bfdedcd8ba96e941dab0aa05bfc2daecf63a5ea40065555f645926",
+     "bytes": 41892,
+     "ancho": 640,
+     "alto": 399,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv1tb859zh4q-2.jpg",
+     "sha256": "f97a622c6b7926eab9476c09f2f758e451b1ade44d026bb88081d9abc8f18a26",
+     "bytes": 54399,
+     "ancho": 640,
+     "alto": 633,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muvxm5n2zdyj",
+   "orden_global": 161,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 34,
+   "nombre": "Set Belleza 43Pcs Maquillaje",
+   "nombre_visible": "Set Belleza 43Pcs Maquillaje",
+   "descripcion": "Set de belleza de maquillaje para niñas, incluye: sombras, esmaltes, labiales, uñas postizas, stickers y brochas",
+   "descripcion_html": "Set de belleza de maquillaje para niñas, incluye: sombras, esmaltes, labiales, uñas postizas, stickers y brochas",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvxm5n2zdyj-1.jpg",
+     "sha256": "1717d1518db74bbb91499ba4d9809c119559fa06d524828857f221a16887a19f",
+     "bytes": 43127,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxm5n2zdyj-2.jpg",
+     "sha256": "d3e39b4c8b85e70994fc2000447c3ea4ecc47d20c528fdac588be8f89a999546",
+     "bytes": 67536,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxm5n2zdyj-3.jpg",
+     "sha256": "54a066517c9b8c580a3682e62aeac55164a87037a70b2477b6973b838363df6f",
+     "bytes": 38628,
+     "ancho": 512,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxm5n2zdyj-4.jpg",
+     "sha256": "b50aa91f751d8f19e8a7673e4ac60b1ae5bad8f7c1251924d8c7aeb573e4d1af",
+     "bytes": 77494,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "muvxh7mg5rj2",
+   "orden_global": 162,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 35,
+   "nombre": "Set Belleza Maquillaje 21Pcs",
+   "nombre_visible": "Set Belleza Maquillaje 21Pcs",
+   "descripcion": "Set de maquillaje para niñas, contiene 21 piezas",
+   "descripcion_html": "Set de maquillaje para niñas, contiene 21 piezas",
+   "precio": 30000,
+   "precio_texto": "$30.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muvxh7mg5rj2-1.jpg",
+     "sha256": "a3f8c6230a8e7cef9e114d5082752ca88b08f042598b946938acde177f06b472",
+     "bytes": 73571,
+     "ancho": 640,
+     "alto": 585,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muvxh7mg5rj2-2.jpg",
+     "sha256": "91c2af879a0c40c29ff5f6ec7cb821aa44f982a57f989f640100ee6ac24633c6",
+     "bytes": 44313,
+     "ancho": 507,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muu9po4qq8k7",
+   "orden_global": 163,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 36,
+   "nombre": "Set Construcción Vehículos",
+   "nombre_visible": "Set Construcción Vehículos",
+   "descripcion": "Incluye: * 🚚 Camión volqueta * 🚜 Cargador frontal * 🏗️ Excavadora * 🪨 Piedra de juego * 🪖 Casco de construcción * 🔧 Tolva elevada",
+   "descripcion_html": " Incluye: * 🚚 Camión volqueta * 🚜 Cargador frontal * 🏗️ Excavadora * 🪨 Piedra de juego * 🪖 Casco de construcción * 🔧 Tolva elevada",
+   "precio": 85000,
+   "precio_texto": "$85.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu9po4qq8k7-1.jpg",
+     "sha256": "476a99dfa91c28c510640ed784edc385ad26c724e3776229c5a61929c7273fb4",
+     "bytes": 40833,
+     "ancho": 640,
+     "alto": 480,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mw9vy0a5p8pu",
+   "orden_global": 164,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 37,
+   "nombre": "Set de Maquillaje de Belleza Caballo",
+   "nombre_visible": "Set de Maquillaje de Belleza Caballo",
+   "descripcion": "Hermoso set de maquillaje infantil con diseño de caballito en color rosado, detalles brillantes y un elegante moño decorativo. Ideal para jugar, divertirse y estimular la creatividad. 🌈 Incluye: 🎨 Sombras de colores variados y tonos escarchados. 💋 Labial rosado. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 👑 Estuche con asa de cuentas decorativas y tapa transparente.",
+   "descripcion_html": "Hermoso set de maquillaje infantil con diseño de caballito en color rosado, detalles brillantes y un elegante moño decorativo. Ideal para jugar, divertirse y estimular la creatividad. 🌈 Incluye: 🎨 Sombras de colores variados y tonos escarchados. 💋 Labial rosado. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 👑 Estuche con asa de cuentas decorativas y tapa transparente.",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9vy0a5p8pu-1.jpg",
+     "sha256": "5df148b7850870fb5dcea2c7ef2326f6c7d11e8d807c27bc6b54341320f6b19a",
+     "bytes": 112677,
+     "ancho": 750,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9vy0a5p8pu-2.jpg",
+     "sha256": "bb84ffd52cda9b68b6959fe221da37d186c206c3045ad9713a7f3516ebc2ba7d",
+     "bytes": 125217,
+     "ancho": 853,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⚡ Pocas unidades"
+   }
+  },
+  {
+   "id": "mw9w6nv878xc",
+   "orden_global": 165,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 38,
+   "nombre": "Set Maquillaje de Belleza 36Pcs",
+   "nombre_visible": "Set Maquillaje de Belleza 36Pcs",
+   "descripcion": "¡Un mundo de color, creatividad y diversión para las pequeñas! 🌈 Este completo set de belleza infantil incluye una variedad de accesorios de juego y dos láminas de stickers decorativos con tiernos diseños de animalitos, flores, arcoíris y personajes adorables. Características: * 💖 Presentación en estuche turquesa con espejo en forma de corazón. * 🎨 Sombras de diferentes colores y tonos. * 💅 Accesorios para decorar las uñas. * 💄 Brillos, aplicadores y accesorios de belleza de juguete. * 💎 Pulseras, adornos y accesorios para el cabello. * 🦋 Incluye 2 láminas de stickers decorativos.",
+   "descripcion_html": "¡Un mundo de color, creatividad y diversión para las pequeñas! 🌈 Este completo set de belleza infantil incluye una variedad de accesorios de juego y dos láminas de stickers decorativos con tiernos diseños de animalitos, flores, arcoíris y personajes adorables. Características: * 💖 Presentación en estuche turquesa con espejo en forma de corazón. * 🎨 Sombras de diferentes colores y tonos. * 💅 Accesorios para decorar las uñas. * 💄 Brillos, aplicadores y accesorios de belleza de juguete. * 💎 Pulseras, adornos y accesorios para el cabello. * 🦋 Incluye 2 láminas de stickers decorativos.",
+   "precio": 55000,
+   "precio_texto": "$55.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9w6nv878xc-1.jpg",
+     "sha256": "83a80da7ad5c5d7400e6916e0813d94ae44949d1c039afca5a96e4037ddc9b1c",
+     "bytes": 121167,
+     "ancho": 1000,
+     "alto": 667,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9w6nv878xc-2.jpg",
+     "sha256": "e21e01d7e8013ff3cf9659836b479502c165dc02f9e1e9dac7c89f0c843f0f3a",
+     "bytes": 154262,
+     "ancho": 969,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9w6nv878xc-3.jpg",
+     "sha256": "dbbc83a77d8ee0955d241667ed385ff6623e94e6ba2e0f69f4cddef0a014317e",
+     "bytes": 165512,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9vznmi0mas",
+   "orden_global": 166,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 39,
+   "nombre": "Set Maquillaje de Belleza Corazon",
+   "nombre_visible": "Set Maquillaje de Belleza Corazon",
+   "descripcion": "Hermoso set de maquillaje infantil con diseño de corazón en color rosado, ideal para jugar, crear looks divertidos y estimular la imaginación de las niñas. 🎀 Incluye: 🎨 Sombras de colores variados y tonos brillantes. 💋 Labial rosado. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 💗 Estuche compacto con tapa transparente y detalles decorativos.",
+   "descripcion_html": "Hermoso set de maquillaje infantil con diseño de corazón en color rosado, ideal para jugar, crear looks divertidos y estimular la imaginación de las niñas. 🎀 Incluye: 🎨 Sombras de colores variados y tonos brillantes. 💋 Labial rosado. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 💗 Estuche compacto con tapa transparente y detalles decorativos.",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9vznmi0mas-1.jpg",
+     "sha256": "f60da6d7c93ec6068895cb1273088633929f2b198fca55c1328fb6852629b3b8",
+     "bytes": 114126,
+     "ancho": 884,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9vznmi0mas-2.jpg",
+     "sha256": "e555bae9b246da23294878f1f8e67e09a4b6d509cce8192e01a6b1565eaf7601",
+     "bytes": 95705,
+     "ancho": 750,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9vtjl3rwy6",
+   "orden_global": 167,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 40,
+   "nombre": "Set Maquillaje de Belleza Estrella",
+   "nombre_visible": "Set Maquillaje de Belleza Estrella",
+   "descripcion": "Set de maquillaje infantil con un hermoso diseño de estrella en color rosado, ideal para estimular la creatividad y disfrutar momentos de diversión. 💄 Incluye: 🎨 Sombras de diferentes colores y acabados brillantes. 💋 Labial infantil. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 👑 Asa decorativa y diseño llamat",
+   "descripcion_html": "Set de maquillaje infantil con un hermoso diseño de estrella en color rosado, ideal para estimular la creatividad y disfrutar momentos de diversión. 💄 Incluye: 🎨 Sombras de diferentes colores y acabados brillantes. 💋 Labial infantil. 🖌️ Aplicador doble para sombras. 🌸 Ligas de colores para el cabello. 👑 Asa decorativa y diseño llamat",
+   "precio": 18000,
+   "precio_texto": "$18.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9vtjl3rwy6-1.jpg",
+     "sha256": "8cbd69fd4753ea01b9d2a174a3dbfde310fd61c4da6b7d3460e196177b21815f",
+     "bytes": 88459,
+     "ancho": 750,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9vtjl3rwy6-2.jpg",
+     "sha256": "6f4a1d9ab6b1bb6a64b760c79d16e27f1778e5d9221a6aa63d63c9d1548a5bd5",
+     "bytes": 88116,
+     "ancho": 750,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe4onxbpckt",
+   "orden_global": 168,
+   "categoria": "Juguetería",
+   "orden_en_categoria": 41,
+   "nombre": "Triciclo Dragón",
+   "nombre_visible": "Triciclo Dragón",
+   "descripcion": "* Diseño sin pedales. El niño se impulsa con sus propios pies contra el suelo, lo que fortalece sus piernas y mejora el equilibrio. * Estabilidad en cuatro ruedas. Cuenta con dos ruedas delanteras y dos traseras anchas y cerradas para evitar vuelcos laterales. * Edad recomendada. Está diseñado principalmente para niños de 1 a 3 años.le voy",
+   "descripcion_html": "* Diseño sin pedales. El niño se impulsa con sus propios pies contra el suelo, lo que fortalece sus piernas y mejora el equilibrio. * Estabilidad en cuatro ruedas. Cuenta con dos ruedas delanteras y dos traseras anchas y cerradas para evitar vuelcos laterales. * Edad recomendada. Está diseñado principalmente para niños de 1 a 3 años.le voy",
+   "precio": 235000,
+   "precio_texto": "$235.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe4onxbpckt-1.jpg",
+     "sha256": "318926155876a9c94f421ed2e2e63493c3dc8268c430475a180a8025fde8af2e",
+     "bytes": 32310,
+     "ancho": 384,
+     "alto": 310,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mw9qv4g48knr",
+   "orden_global": 169,
+   "categoria": "Mascotas",
+   "orden_en_categoria": 1,
+   "nombre": "Corral de Mascota",
+   "nombre_visible": "Corral de Mascota",
+   "descripcion": "Brinda un espacio cómodo y seguro para que tu mascota descanse y juegue. Cuenta con paredes de malla transpirable, puerta de acceso con cremallera y cubierta superior con cierre. Ideal para perros pequeños y gatos. ✨ Fácil de armar, plegar y transportar. 📏Medida de: 57cmx80cm",
+   "descripcion_html": "Brinda un espacio cómodo y seguro para que tu mascota descanse y juegue. Cuenta con paredes de malla transpirable, puerta de acceso con cremallera y cubierta superior con cierre. Ideal para perros pequeños y gatos. ✨ Fácil de armar, plegar y transportar. 📏Medida de: 57cmx80cm",
+   "precio": 56000,
+   "precio_texto": "$56.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mw9qv4g48knr-1.jpg",
+     "sha256": "24b9768bf37b0f2737f42a1ddce0ed7818a43a89e465798a3bb53cf2d0df8a57",
+     "bytes": 133045,
+     "ancho": 888,
+     "alto": 888,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qv4g48knr-2.jpg",
+     "sha256": "39730cfd6d2633d448cff0d564f6ed3ffa8f740e92370a9024a612d5e12b595a",
+     "bytes": 149038,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qv4g48knr-3.jpg",
+     "sha256": "b9352b1fd0aeddd63d707f3ecc90fbc2c3e7d7ba365aa84218bfedf45384dcb6",
+     "bytes": 148697,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mw9qv4g48knr-4.jpg",
+     "sha256": "df11dc3e7b0f44dfde97891ba439e0723df77b85ca329313b876c73fbcb326b4",
+     "bytes": 147024,
+     "ancho": 1000,
+     "alto": 1000,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv630lcad4pj",
+   "orden_global": 170,
+   "categoria": "Viaje",
+   "orden_en_categoria": 1,
+   "nombre": "Bolso Expandible Viajero",
+   "nombre_visible": "Bolso Expandible Viajero",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 45000,
+   "precio_texto": "$45.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv630lcad4pj-1.jpg",
+     "sha256": "9007816b375925e99444b3f3538dce1e370efd46344da677d5913580a03b29eb",
+     "bytes": 19886,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv630lcad4pj-2.jpg",
+     "sha256": "76307d6bd42ac5dce0e66f433f3002da5d8eecdf62ac1fbda59907e15494f0f6",
+     "bytes": 15377,
+     "ancho": 613,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv630lcad4pj-3.jpg",
+     "sha256": "dca623de0f45fdca90ad45f978a13f9ba9522abe8f44e5cbe17981fc7217a991",
+     "bytes": 16924,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hpkitorganizador6piezas",
+   "orden_global": 171,
+   "categoria": "Viaje",
+   "orden_en_categoria": 2,
+   "nombre": "Kit Organizador 6 Piezas",
+   "nombre_visible": "Kit Organizador 6 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 35000,
+   "precio_texto": "$35.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hpkitorganizador6piezas-1.jpg",
+     "sha256": "f4cd3b9329f3d4962e45dcd08a3525fda80fd88fa0a4a895dabc7973f12a4bcc",
+     "bytes": 95369,
+     "ancho": 640,
+     "alto": 623,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "muu1q26ycxiw",
+   "orden_global": 172,
+   "categoria": "Viaje",
+   "orden_en_categoria": 3,
+   "nombre": "Maleta Amazon",
+   "nombre_visible": "Maleta Amazon",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 65000,
+   "precio_texto": "$65.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muu1q26ycxiw-1.jpg",
+     "sha256": "1b8f5ea972d3ed314c1268c661fd652dce3cba435404887930a75c16991a77b3",
+     "bytes": 17059,
+     "ancho": 448,
+     "alto": 446,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv62v8znp80x",
+   "orden_global": 173,
+   "categoria": "Viaje",
+   "orden_en_categoria": 4,
+   "nombre": "Organizador de Ropa 11 Piezas",
+   "nombre_visible": "Organizador de Ropa 11 Piezas",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 68000,
+   "precio_texto": "$68.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv62v8znp80x-1.jpg",
+     "sha256": "5b6b8b3c679acd22eaec94d7d6981c65ae4a83b04631ac79c3ac02cdee0b3170",
+     "bytes": 52331,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62v8znp80x-2.jpg",
+     "sha256": "eb1b1b757c37453cc463934179e2142de0e20517fb5cb3a79026816b865f0875",
+     "bytes": 50038,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62v8znp80x-3.jpg",
+     "sha256": "147125f9279eb04e452dbe4d7abfcb9768d1ddc507162ff186ee70ec6bc837b1",
+     "bytes": 52479,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62v8znp80x-4.jpg",
+     "sha256": "0eea64e801d42d09d7799a1797dbd352595b3c6f9d8f1c9481a770d640c492a4",
+     "bytes": 51697,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv62qjyuaexy",
+   "orden_global": 174,
+   "categoria": "Viaje",
+   "orden_en_categoria": 5,
+   "nombre": "Organizador Viajero",
+   "nombre_visible": "Organizador Viajero",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 45000,
+   "precio_texto": "$45.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv62qjyuaexy-1.jpg",
+     "sha256": "34e09dc383f54ec1e459d08674e6555fe333684524f59c5f0c0438f3866a6e7f",
+     "bytes": 30336,
+     "ancho": 630,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62qjyuaexy-2.jpg",
+     "sha256": "58f2844417d6f0c742351ca3b8e0c33487f5dd871a64f30a81e885c393298ee9",
+     "bytes": 28954,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv62qjyuaexy-3.jpg",
+     "sha256": "4c89c219b9ea9bae15d1b75e6fa20caeb1239ebd671d9c6ddaac1e4df45a9c20",
+     "bytes": 38486,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv63rl5cum92",
+   "orden_global": 175,
+   "categoria": "Accesorios para carro",
+   "orden_en_categoria": 1,
+   "nombre": "Cámara Carro 3 en 1",
+   "nombre_visible": "Cámara Carro 3 en 1",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 90000,
+   "precio_texto": "$90.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv63rl5cum92-1.jpg",
+     "sha256": "a0fccca020898de672f966a701acd19a6b7060381da5054409dbb140b7915600",
+     "bytes": 94267,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv63rl5cum92-2.jpg",
+     "sha256": "80fe768ef4e523fe9a3cd4df0c992e698ea13d42ba9baa8887841f99b3bf2e57",
+     "bytes": 48369,
+     "ancho": 583,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv63uosta09c",
+   "orden_global": 176,
+   "categoria": "Accesorios para carro",
+   "orden_en_categoria": 2,
+   "nombre": "Cámara Espejo Retrovisor",
+   "nombre_visible": "Cámara Espejo Retrovisor",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 70000,
+   "precio_texto": "$70.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv63uosta09c-1.jpg",
+     "sha256": "811b2675aba79173312413a73045074d884f17d301c228a3c1138baed1e0de6e",
+     "bytes": 38627,
+     "ancho": 640,
+     "alto": 593,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv63uosta09c-2.jpg",
+     "sha256": "8fa155fa2e6c5653a13dca9ad0919107385f77d223929510111c66b99ed3533f",
+     "bytes": 15803,
+     "ancho": 640,
+     "alto": 367,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe54ji4v88i",
+   "orden_global": 177,
+   "categoria": "Navidad",
+   "orden_en_categoria": 1,
+   "nombre": "Casa Navidad Pesebre",
+   "nombre_visible": "Casa Navidad Pesebre",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe54ji4v88i-1.jpg",
+     "sha256": "b4725344c350e4e44506fc308d6a23aa516aa25b3ee53e5370b1a82565c6c1a3",
+     "bytes": 29748,
+     "ancho": 229,
+     "alto": 312,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  },
+  {
+   "id": "mwe57kmkybk7",
+   "orden_global": 178,
+   "categoria": "Navidad",
+   "orden_en_categoria": 2,
+   "nombre": "Castillo Navideño",
+   "nombre_visible": "Castillo Navideño",
+   "descripcion": "• Diseño arquitectónico. Tiene una estructura de estilo gótico con acabado envejecido en tonos bronce y piedra, coronada por tres agujas puntiagudas y una escalinata frontal en la base. • Escena interior. Dentro de la ventana central arqueada se encuentra un pesebre o nacimiento con la Sagrada Familia (María, José y el Niño Jesús) bajo una estrella brillante. • Efecto luminoso y de nieve. Cuenta con luces LED cálidas que iluminan el interior y los vitrales laterales, haciendo girar continuamente partículas de purpurina en el líquido para simular nieve cayendo. • Función musical y alimentación. Incluye una caja de música integrada con melodías navideñas tradicionales",
+   "descripcion_html": "• Diseño arquitectónico. Tiene una estructura de estilo gótico con acabado envejecido en tonos bronce y piedra, coronada por tres agujas puntiagudas y una escalinata frontal en la base. • Escena interior. Dentro de la ventana central arqueada se encuentra un pesebre o nacimiento con la Sagrada Familia (María, José y el Niño Jesús) bajo una estrella brillante. • Efecto luminoso y de nieve. Cuenta con luces LED cálidas que iluminan el interior y los vitrales laterales, haciendo girar continuamente partículas de purpurina en el líquido para simular nieve cayendo. • Función musical y alimentación. Incluye una caja de música integrada con melodías navideñas tradicionales",
+   "precio": 120000,
+   "precio_texto": "$120.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe57kmkybk7-1.jpg",
+     "sha256": "960053ed9512f3a78ce7126b24089ee54331a1c8a9bd82813336c2a319a18b30",
+     "bytes": 24632,
+     "ancho": 214,
+     "alto": 311,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe5dq1sttcz",
+   "orden_global": 179,
+   "categoria": "Navidad",
+   "orden_en_categoria": 3,
+   "nombre": "Faro Navideño Mediano",
+   "nombre_visible": "Faro Navideño Mediano",
+   "descripcion": "• Acabado exterior. Estructura rectangular con bordes redondeados en la ventana frontal, fabricada en material ligero con pintura efecto bronce antiguo y ornamentos florales en relieve en la base. • Iluminación y efecto visual. Incorporan un foco LED de luz cálida en el techo interno que ilumina las figuras y refleja los destellos de la purpurina flotante en el líquido interior. • Función musical y alimentación. Este tipo de faroles navideños suelen integrar una caja de música con villancicos clásicos",
+   "descripcion_html": "• Acabado exterior. Estructura rectangular con bordes redondeados en la ventana frontal, fabricada en material ligero con pintura efecto bronce antiguo y ornamentos florales en relieve en la base. • Iluminación y efecto visual. Incorporan un foco LED de luz cálida en el techo interno que ilumina las figuras y refleja los destellos de la purpurina flotante en el líquido interior. • Función musical y alimentación. Este tipo de faroles navideños suelen integrar una caja de música con villancicos clásicos",
+   "precio": 60000,
+   "precio_texto": "$60.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe5dq1sttcz-1.jpg",
+     "sha256": "c9be367fd9d28838773e7624ff9239302a639b9feb8c806fe2959ee26bf8b0a9",
+     "bytes": 54418,
+     "ancho": 406,
+     "alto": 307,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mwe5b6qi5dya",
+   "orden_global": 180,
+   "categoria": "Navidad",
+   "orden_en_categoria": 4,
+   "nombre": "Tren Navideño",
+   "nombre_visible": "Tren Navideño",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mwe5b6qi5dya-1.jpg",
+     "sha256": "d160cbf29667c17162fe2a8ce70ef4f28ce2b9e58c1b4ab9fdd0e578185e36f0",
+     "bytes": 46516,
+     "ancho": 373,
+     "alto": 304,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "hppulsoreloj",
+   "orden_global": 181,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 1,
+   "nombre": "Pulso Reloj",
+   "nombre_visible": "Pulso Reloj",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 25000,
+   "precio_texto": "$25.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/hppulsoreloj-1.jpg",
+     "sha256": "2cd7e54583da4657cd065d5d499f9e4b70758997e7fcf80b8c92ce2fe1447a59",
+     "bytes": 21037,
+     "ancho": 447,
+     "alto": 447,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muzufyqjyszt",
+   "orden_global": 182,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 2,
+   "nombre": "Smartwatch JKMX 10 Ultra 3",
+   "nombre_visible": "Smartwatch JKMX 10 Ultra 3",
+   "descripcion": "Reloj inteligente 10 ULTRA 3 de JKMX con diseño rectangular de esquinas redondeadas, desarrollado para el monitoreo de actividad física, control de parámetros básicos de salud y gestión de funciones inteligentes mediante sincronización con smartphone. El dispositivo adopta una estética robusta tipo “ultra”, combinando pantalla de alta visibilidad con controles físicos laterales para un uso intensivo diario",
+   "descripcion_html": "Reloj inteligente 10 ULTRA 3 de JKMX con diseño rectangular de esquinas redondeadas, desarrollado para el monitoreo de actividad física, control de parámetros básicos de salud y gestión de funciones inteligentes mediante sincronización con smartphone. El dispositivo adopta una estética robusta tipo “ultra”, combinando pantalla de alta visibilidad con controles físicos laterales para un uso intensivo diario",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muzufyqjyszt-1.jpg",
+     "sha256": "604952b2dd210e93535800a4f572d07f91801dd84d8f3ad35b979d0766d31613",
+     "bytes": 13348,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muzufyqjyszt-2.jpg",
+     "sha256": "f4afea036ac7baca4da968fb30fc3a204de7eb1037aefa624fac08c783bfdc33",
+     "bytes": 20388,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv79290qgvrf",
+   "orden_global": 183,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 3,
+   "nombre": "Smartwatch Kw 98 Mini",
+   "nombre_visible": "Smartwatch Kw 98 Mini",
+   "descripcion": "",
+   "descripcion_html": "",
+   "precio": 95000,
+   "precio_texto": "$95.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv79290qgvrf-1.jpg",
+     "sha256": "7d08d47708e6e5f4abec2780643cc99d66e2a4bf764537f054cbdf8b24342b21",
+     "bytes": 46597,
+     "ancho": 600,
+     "alto": 600,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79290qgvrf-2.jpg",
+     "sha256": "39251c29441312ca2c38d0d58867c5f31887a95f4d9fac2a318d167e57c2d24f",
+     "bytes": 20187,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv79290qgvrf-3.jpg",
+     "sha256": "ec3a014b110220bcfcad6d28fc9e1fdb8d7545627585d987b01735ded1bc475f",
+     "bytes": 130012,
+     "ancho": 544,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv5h5zpoagjh",
+   "orden_global": 184,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 4,
+   "nombre": "Smartwatch Set D13 Gs",
+   "nombre_visible": "Smartwatch Set D13 Gs",
+   "descripcion": "Set es una edición exclusiva que combina elegancia, versatilidad y tecnología. Con dos relojes inteligentes de diseños diferentes (uno redondo y uno cuadrado tipo Apple Watch), este combo es perfecto para quienes buscan cambiar de estilo según la ocasión. Incluye 7 correas intercambiables, cargadores magnéticos y una presentación tipo regalo que lo convierte en un set de lujo para uso personal o para obsequiar.",
+   "descripcion_html": "Set es una edición exclusiva que combina elegancia, versatilidad y tecnología. Con dos relojes inteligentes de diseños diferentes (uno redondo y uno cuadrado tipo Apple Watch), este combo es perfecto para quienes buscan cambiar de estilo según la ocasión. Incluye 7 correas intercambiables, cargadores magnéticos y una presentación tipo regalo que lo convierte en un set de lujo para uso personal o para obsequiar.",
+   "precio": 150000,
+   "precio_texto": "$150.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv5h5zpoagjh-1.jpg",
+     "sha256": "793fb41191095dd7565a3bb76828a7290e762be5cd9c7e1d317a8aeff2bafab3",
+     "bytes": 25284,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv5h5zpoagjh-2.jpg",
+     "sha256": "5d10acac46b4ff80c38ab50f9647cf2a184c121d91a3d4dad32210da390afce8",
+     "bytes": 35074,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv5h5zpoagjh-3.jpg",
+     "sha256": "7ddfbff1548d72d13846b971c1678deed30565456896f28f727597bd463140b6",
+     "bytes": 39527,
+     "ancho": 640,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": true,
+    "escasez": null
+   }
+  },
+  {
+   "id": "muztndekkphq",
+   "orden_global": 185,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 5,
+   "nombre": "Smartwatch V36 – Pantalla Amoled",
+   "nombre_visible": "Smartwatch V36 – Pantalla Amoled",
+   "descripcion": "Smartwatch V36 – Pantalla AMOLED: El Smartwatch V36 combina diseño clásico con tecnología de punta. Su pantalla redonda AMOLED brinda una visualización nítida incluso bajo el sol, mientras que su compatibilidad con WearFit Pro te permite llevar un control detallado de tu salud, actividad física y notificaciones. Es perfecto para quienes desean un reloj con estilo y funciones inteligentes.",
+   "descripcion_html": "Smartwatch V36 – Pantalla AMOLED: El Smartwatch V36 combina diseño clásico con tecnología de punta. Su pantalla redonda AMOLED brinda una visualización nítida incluso bajo el sol, mientras que su compatibilidad con WearFit Pro te permite llevar un control detallado de tu salud, actividad física y notificaciones. Es perfecto para quienes desean un reloj con estilo y funciones inteligentes.",
+   "precio": 145000,
+   "precio_texto": "$145.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/muztndekkphq-1.jpg",
+     "sha256": "a9c58325c8cf6235ed39217548be75086c7c0190b62909d6888e23196f56dd1e",
+     "bytes": 14901,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/muztndekkphq-2.jpg",
+     "sha256": "4af02877db3f53fab70281f836343a1b7a3754a90277f3e43e9708bf3be698a4",
+     "bytes": 23515,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": null
+   }
+  },
+  {
+   "id": "mv5gtmjjzv5y",
+   "orden_global": 186,
+   "categoria": "Smartwatch",
+   "orden_en_categoria": 6,
+   "nombre": "Smartwatch Z01 Mini 2 - Pantalla Redonda Amoled",
+   "nombre_visible": "Smartwatch Z01 Mini 2 - Pantalla Redonda Amoled",
+   "descripcion": "Diseñado especialmente para mujeres que buscan un estilo sofisticado sin sacrificar tecnología. Su pantalla AMOLED redonda ofrece una visualización clara y brillante, mientras que sus funciones inteligentes permiten controlar notificaciones, monitorear la salud y acompañarte en la actividad física diaria. Una combinación perfecta de elegancia y funcionalidad.",
+   "descripcion_html": "Diseñado especialmente para mujeres que buscan un estilo sofisticado sin sacrificar tecnología. Su pantalla AMOLED redonda ofrece una visualización clara y brillante, mientras que sus funciones inteligentes permiten controlar notificaciones, monitorear la salud y acompañarte en la actividad física diaria. Una combinación perfecta de elegancia y funcionalidad.",
+   "precio": 115000,
+   "precio_texto": "$115.000",
+   "fotos": [
+    {
+     "archivo": "img/originales/mv5gtmjjzv5y-1.jpg",
+     "sha256": "7a4ad8c2b0d9b72955ab6a4ea615c69f04466ed98e1fea88738dcc362ca2977f",
+     "bytes": 21645,
+     "ancho": 480,
+     "alto": 640,
+     "formato": "jpeg"
+    },
+    {
+     "archivo": "img/originales/mv5gtmjjzv5y-2.jpg",
+     "sha256": "df308d2b7e6346ff12f1ca817648dd79a8a6bf1204affc93891af7b506dffd74",
+     "bytes": 39662,
+     "ancho": 640,
+     "alto": 584,
+     "formato": "jpeg"
+    }
+   ],
+   "sin_foto": false,
+   "etiquetas": {
+    "mas_vendido": false,
+    "nuevo": false,
+    "escasez": "⏳ Unidades limitadas"
+   }
+  }
+ ]
+}

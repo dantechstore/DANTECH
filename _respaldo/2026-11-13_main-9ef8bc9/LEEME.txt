@@ -1,0 +1,5 @@
+Respaldo completo hecho en la Etapa 1 (13-nov-2026), antes de cualquier cambio.
+Copia exacta (byte a byte) de los archivos publicados en main, commit 9ef8bc9:
+- index.html  -> el catalogo oficial publicado en https://dantechstore.github.io/DANTECH/
+- catalogo-dantestore.html -> version anterior (177 productos)
+Para restaurar: copiar index.html de esta carpeta a la raiz. No editar estos archivos.

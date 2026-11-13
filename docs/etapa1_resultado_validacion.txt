@@ -1,0 +1,31 @@
+OK    A1 186 productos en JSON  -> 186
+OK    A2 ids unicos
+OK    A3 ids HTML == ids JSON (mismo orden)  -> 186 en HTML
+OK    A4 20 categorias
+OK    B nombre: 186/186 coinciden con el HTML  -> []
+OK    B precio: 186/186 coinciden con el HTML  -> []
+OK    B precio_texto: 186/186 coinciden con el HTML  -> []
+OK    B categoria: 186/186 coinciden con el HTML  -> []
+OK    B fotos: 186/186 coinciden con el HTML  -> []
+OK    B desc: 186/186 coinciden con el HTML  -> []
+OK    B sinfoto: 186/186 coinciden con el HTML  -> []
+OK    B6 precio numerico == precio mostrado en el catalogo
+OK    B7 productos sin precio (Consultar)  -> ['muu1q26ymrsg Cepillo Alisador']
+OK    B8 sin precios <=0 ni duplicados raros
+OK    B9 nombres vacios
+OK    B10 productos SIN foto = exactamente los que tienen marcador vacio en el HTML  -> ['mvj15tw83a8t Bombox 3 LED', 'muu1q26ymrsg Cepillo Alisador']
+OK    C1 321 imagenes en HTML = 320 fotos + 1 logo  -> 321
+OK    C2 hashes de las 321 imagenes del HTML == JSON (mismo orden salvo logo)
+OK    C3 los 320 archivos de foto existen  -> []
+OK    C4 hash y tamano de cada archivo coincide (copia exacta)  -> []
+OK    C5 todas las fotos abren y miden lo declarado  -> []
+OK    C6 archivos en img/originales == 321  -> 321
+OK    D1 mas vendidos: 8 ids y existen  -> ['muu167a3kyoe', 'hpafeitadora', 'hpkeratina3dpro', 'hptoposplataley925', 'muu1q2701ujp', 'muu1q26w4d6h', 'muu1q26y58ek', 'muu1q26wblx4']
+OK    D2 whatsapp = 573134724702 (unico en el HTML)
+OK    D3 etiquetas Nuevo=36, Mas vendido=8
+OK    E1 ningun archivo existente modificado ni borrado (git)
+OK    E2 index.html == main publicado (sha256)
+OK    E3 respaldo identico al original
+
+RESULTADO: 28 de 28 verificaciones OK
+bytes fotos 15178302
