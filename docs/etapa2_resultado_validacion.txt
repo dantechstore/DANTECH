@@ -1,0 +1,26 @@
+/usr/local/lib/python3.13/dist-packages/PIL/Image.py:1136: UserWarning: Palette images with Transparency expressed in bytes should be converted to RGBA images
+  warnings.warn(
+OK    1.1 hay 321 archivos en img/originales  -> 321
+OK    1.2 los 321 originales son IDENTICOS byte a byte a los del commit de la etapa 1  -> []
+OK    1.3 hashes de los originales == hashes declarados en productos.json
+OK    1.4 git: img/originales sin cambios respecto al commit de la etapa 1
+OK    1.5 productos.json sin cambios (productos, precios, nombres, IDs, categorias, descripciones, WhatsApp)
+OK    2.1 manifiesto cubre los 321 originales
+OK    2.2 img/miniaturas: 321 archivos y ninguno huerfano  -> 321
+OK    2.2 img/completas: 321 archivos y ninguno huerfano  -> 321
+OK    2.3 cada producto tiene todas sus fotos optimizadas
+OK    3.1 los 642 WebP abren y son WebP validos  -> []
+OK    3.2 ninguno excede 400 px (miniatura) / 900 px (completa)
+OK    3.3 no se amplio ninguna imagen  -> []
+OK    3.4 proporcion conservada  -> []
+OK    3.5 hashes de los WebP coinciden con el manifiesto  -> []
+OK    3.6 SSIM minimo recalculado (metodo independiente) >= 0.94 en ambas versiones  -> {'miniatura': 0.9521, 'completa': 0.9555}
+OK    3.7 sin errores de conversion en el manifiesto
+OK    4.1 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32
+OK    4.2 rama dantechstore-catalogo remota sin cambios
+OK    4.3 index.html == main publicado
+OK    4.4 catalogo-dantestore.html sin cambios
+OK    4.5 ningun archivo del commit de la etapa 1 fue modificado o borrado (solo se agregan archivos)  -> []
+
+RESULTADO: 21 de 21 OK
+bytes miniaturas 4473182 completas 9612560
