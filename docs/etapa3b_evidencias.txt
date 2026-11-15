@@ -1,0 +1,35 @@
+OK    1.1 el logo del catálogo PUBLICADO (index.html de main) es byte a byte igual a img/originales/_logo-marca.png  -> e3d030e0ab687dcd
+OK    1.2 el logo de catalogo-dantestore.html (versión anterior) también es idéntico (misma identidad en todas las versiones)
+OK    1.3 el WebP que usa la beta (img/miniaturas/_logo-marca.webp) es idéntico píxel a píxel al PNG original (200×200, sin pérdida)  -> ["miniaturas True","completas True"]
+OK    1.4 la versión completa del logo también es idéntica píxel a píxel
+OK    1.5 el logo original no se modificó (sha256 = el de la etapa 1 en productos.json)
+OK    1.6 git: img/originales sin cambios
+OK    1.7 [iPhone 14 (emulado)] el logo del perro se ve en el ENCABEZADO (visible, dentro de la pantalla, cargó bien)  -> {"y":73,"nat":200}
+OK    1.8 [iPhone 14 (emulado)] tamaño visible 60×60 px (≥ 56 px, proporción 1:1, sin deformar)  -> [60,60]
+OK    1.9 [iPhone 14 (emulado)] sin filtros, marco, recorte, máscara ni transformaciones sobre el logo  -> {"x":14,"y":72.96875,"w":60,"h":60,"nat":200,"natH":200,"src":"../img/miniaturas/_logo-marca.webp","filter":"none","border":"0px","radius":"0px","transform":"none","opacity":"1","fit":"fill","vis":"visible","clip":"none","mask":"none","pad":"0px","ok":true}
+OK    1.10 [iPhone 14 (emulado)] usa el archivo del logo original (img/miniaturas/_logo-marca.webp, copia sin pérdida)  -> ../img/miniaturas/_logo-marca.webp
+OK    1.11 [iPhone 14 (emulado)] sin errores de consola  -> []
+OK    1.7 [escritorio 1280] el logo del perro se ve en el ENCABEZADO (visible, dentro de la pantalla, cargó bien)  -> {"y":74,"nat":200}
+OK    1.8 [escritorio 1280] tamaño visible 72×72 px (≥ 56 px, proporción 1:1, sin deformar)  -> [72,72]
+OK    1.9 [escritorio 1280] sin filtros, marco, recorte, máscara ni transformaciones sobre el logo  -> {"x":24,"y":73.6875,"w":72,"h":72,"nat":200,"natH":200,"src":"../img/miniaturas/_logo-marca.webp","filter":"none","border":"0px","radius":"0px","transform":"none","opacity":"1","fit":"fill","vis":"visible","clip":"none","mask":"none","pad":"0px","ok":true}
+OK    1.10 [escritorio 1280] usa el archivo del logo original (img/miniaturas/_logo-marca.webp, copia sin pérdida)  -> ../img/miniaturas/_logo-marca.webp
+OK    1.11 [escritorio 1280] sin errores de consola  -> []
+OK    1.12 el ícono de pestaña/pantalla de inicio es el mismo logo (favicon WebP + apple-touch-icon PNG original)  -> ["icon:../img/miniaturas/_logo-marca.webp","apple-touch-icon:../img/originales/_logo-marca.png"]
+OK    2.1 el servidor local sirve la beta, el CSS/JS, fotos, datos e imagen OG (200)  -> []
+OK    2.2 NO expone respaldos, herramientas, docs, .git ni el index.html oficial (403)  -> [["/herramientas/servir_beta.py",403],["/_respaldo/2026-11-13_main-9ef8bc9/index.html",403],["/index.html",403],["/docs/ETAPA3_INFORME.md",403],["/.git/config",403]]
+OK    2.3 la raíz redirige a /beta/ y las respuestas llevan Cache-Control: no-store  -> [302,"no-store","/beta/"]
+OK    2.4 existen la guía de prueba y el .bat para Windows
+OK    3.1 etiquetas Open Graph y Twitter Card completas (16)  -> []
+OK    3.2 og:url y og:image son direcciones https ABSOLUTAS bajo la URL oficial  -> ["https://dantechstore.github.io/DANTECH/beta/","https://dantechstore.github.io/DANTECH/beta/img/og-dantestore.jpg"]
+OK    3.3 la imagen de og:image existe en el repositorio en esa misma ruta (beta/img/og-dantestore.jpg)  -> beta/img/og-dantestore.jpg
+OK    3.4 la imagen mide 1200×630 (formato recomendado) y es JPEG  -> 1200 630 JPEG
+OK    3.5 pesa menos de 300 KB (WhatsApp exige < 600 KB; aquí 88 KB)
+OK    3.6 la imagen se genera SOLO con el logo original + textos de marca: la plantilla contiene una única imagen y es el logo (sin fotos de productos)  -> ["file:///home/claude/dantech/img/originales/_logo-marca.png"]
+OK    3.7 la descripción cabe en el límite recomendado (≤ 160 caracteres)  -> 117
+OK    3.8 la beta mantiene noindex (no se indexa en Google)
+OK    4.1 ningún archivo fuera de beta/, herramientas/ y docs/ fue modificado
+OK    4.2 index.html y catalogo-dantestore.html intactos (sha256)
+OK    4.3 no hay archivos de configuración de publicación (CNAME, .github/workflows, _config.yml) agregados
+OK    4.4 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32
+
+RESULTADO: 33 de 33 verificaciones OK

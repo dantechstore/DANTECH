@@ -31,7 +31,9 @@ a{color:inherit}
 .cabecera{background:var(--papel);border-bottom:1px solid var(--linea)}
 .cabecera__fila{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;padding-bottom:10px}
 .marca{display:flex;align-items:center;gap:10px;text-decoration:none}
-.marca__logo{width:46px;height:46px;border-radius:50%;border:2px solid var(--tinta)}
+/* Logo oficial SIN marco, recorte ni filtros: se muestra tal cual (ya trae su propio círculo). */
+.marca__logo{width:60px;height:60px;flex:none}
+@media(min-width:768px){.marca__logo{width:72px;height:72px}}
 .marca__texto{display:flex;flex-direction:column;line-height:1.1}
 .marca__texto b{font-size:21px;letter-spacing:.06em;font-weight:900}
 .marca__texto small{font-size:13px;color:var(--oro-osc);font-weight:700;letter-spacing:.04em;margin-top:2px}
