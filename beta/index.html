@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DANTESTORE · Mucho más para ti</title>
+<meta name="description" content="DANTESTORE: tecnología, belleza, hogar, accesorios, juguetes, perfumería y más. Pide fácil por WhatsApp con domicilio en Bogotá o recoge gratis.">
+<!-- BETA: no indexar. Quitar esta línea solo cuando se autorice publicar. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#17130F">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DANTESTORE · Mucho más para ti">
+<meta property="og:description" content="Tecnología, belleza, hogar, juguetes y más. Pide por WhatsApp.">
+<link rel="icon" type="image/webp" href="../img/miniaturas/_logo-marca.webp">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<a class="saltar" href="#catalogo">Saltar al catálogo</a>
+<div class="beta-banner" id="bannerBeta" hidden>VERSIÓN BETA DE PRUEBA · no es el catálogo oficial</div>
+<div class="anuncio" role="note"><span>🛵 Domicilio en Bogotá</span><span>🏪 Recoge gratis</span><span>💬 Pide por WhatsApp</span></div>
+
+<header class="cabecera">
+  <div class="contenedor cabecera__fila">
+    <a class="marca" href="./" aria-label="DANTESTORE, ir al inicio">
+      <img class="marca__logo" src="../img/miniaturas/_logo-marca.webp" alt="" width="200" height="200">
+      <span class="marca__texto"><b>DANTESTORE</b><small>Mucho más para ti</small></span>
+    </a>
+    <button class="btn-carrito" id="btnCarrito" type="button" aria-label="Abrir carrito" data-accion="carrito">
+      <span aria-hidden="true">🛒</span><span class="btn-carrito__txt">Carrito</span><span class="insignia" id="insCarrito" hidden>0</span>
+    </button>
+  </div>
+</header>
+
+<section class="portada" id="portada" aria-labelledby="tituloPortada">
+  <div class="contenedor portada__grid">
+    <div class="portada__texto">
+      <p class="portada__kicker" id="pKicker"></p>
+      <h1 id="tituloPortada">Mucho más <span>para ti</span></h1>
+      <p class="portada__sub" id="pTitulo"></p>
+      <p class="portada__mini" id="pSub"></p>
+      <div class="portada__botones" id="pBotones"></div>
+      <ul class="portada__datos"><li>🛵 Domicilio en Bogotá</li><li>💵 Pago contraentrega</li><li>🏪 Recoge gratis</li></ul>
+    </div>
+    <div class="mosaico" id="mosaico" aria-hidden="true"></div>
+  </div>
+</section>
+
+<div class="barra" id="barra">
+  <div class="contenedor">
+    <form class="buscador" role="search" id="formBuscar" autocomplete="off">
+      <label class="sr" for="buscar">Buscar productos por nombre</label>
+      <span class="buscador__icono" aria-hidden="true">🔎</span>
+      <input id="buscar" type="search" inputmode="search" enterkeyhint="search" placeholder="Buscar producto…" maxlength="60">
+      <button class="buscador__borrar" id="borrarBusqueda" type="button" aria-label="Borrar búsqueda" hidden>✕</button>
+    </form>
+    <nav class="chips" id="chips" aria-label="Categorías"></nav>
+  </div>
+</div>
+
+<main class="contenedor" id="catalogo" aria-busy="true" tabindex="-1">
+  <div class="cargando" role="status">
+    <p>Cargando catálogo…</p>
+    <div class="grilla"><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div><div class="esqueleto"></div></div>
+  </div>
+  <noscript><p class="vacio">Para ver el catálogo necesitas activar JavaScript. También puedes escribirnos por WhatsApp: <a href="https://wa.me/573134724702">+57 313 472 4702</a>.</p></noscript>
+</main>
+<p class="sr" id="anuncioVivo" role="status" aria-live="polite"></p>
+
+<footer class="pie">
+  <div class="contenedor pie__grid">
+    <div><b class="pie__marca">DANTESTORE</b><p>Mucho más para ti.</p><p>Tecnología, belleza, hogar, accesorios, juguetes, perfumería y más.</p></div>
+    <div><b>Entrega</b><p>🛵 Domicilio en Bogotá +$10.000, pago contraentrega</p><p>🚚 Otras ciudades: te confirmamos el envío</p><p>🏪 Recoger en tienda: gratis</p></div>
+    <div><b>Pedidos</b><p>Arma tu carrito y envía el pedido por WhatsApp.</p><a class="pie__wa" id="pieWa" href="https://wa.me/573134724702" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a></div>
+  </div>
+  <p class="pie__fin">Precios en pesos colombianos (COP) · Productos bajo pedido, sujetos a disponibilidad.</p>
+</footer>
+
+<button class="barra-carrito" id="barraCarrito" type="button" data-accion="carrito" hidden></button>
+<div class="aviso" id="aviso" aria-hidden="true"></div>
+
+<!-- Capas: detalle de producto, carrito y ventanas emergentes -->
+<div class="capa" id="capaDetalle" role="dialog" aria-modal="true" aria-labelledby="detNombre" hidden></div>
+<div class="capa capa--carrito" id="capaCarrito" role="dialog" aria-modal="true" aria-labelledby="carTitulo" hidden></div>
+<div class="pm" id="capaPopup" role="dialog" aria-modal="true" hidden></div>
+
+<script src="js/config.js"></script>
+<script src="js/datos.js"></script>
+<script src="js/carrito.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

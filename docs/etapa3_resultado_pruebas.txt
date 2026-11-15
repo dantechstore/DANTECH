@@ -1,0 +1,82 @@
+OK    1.1 se muestran los 186 productos (vista Todo)  -> 186
+OK    1.2 ids únicos y en el mismo orden que productos.json
+OK    1.3 nombres idénticos a productos.json (186/186)  -> []
+OK    1.4 precios idénticos a productos.json (186/186; «Consultar» conservado)
+OK    1.5 categoría de cada tarjeta idéntica a productos.json
+OK    1.6 las 20 categorías disponibles (+ «Todo»), en el orden original  -> 21
+OK    1.7 conteo por categoría correcto en cada chip
+OK    1.8 «Más vendidos» = configuración original (8, mismo orden)
+OK    1.9 portada y textos originales conservados
+OK    1.10 etiquetas Nuevo (36) y escasez conservadas
+OK    1.11 productos sin foto conservados (marcador «Foto próximamente», sin inventar imagen)  -> ["mvj15tw83a8t","muu1q26ymrsg"]
+OK    1.12 «Eslogan» Mucho más para ti visible
+OK    2.1 sin imágenes rotas (todas cargan, tras recorrer la página)  -> []
+OK    2.2 las tarjetas usan SOLO miniaturas WebP (img/miniaturas/)  -> []
+OK    2.3 imágenes de tarjeta = 184 productos con foto + 8 destacados repetidos (sin foto: 2 productos, mostrados con marcador)  -> 192
+OK    3.1 buscar «airpods» devuelve exactamente los esperados  -> 3
+OK    3.2 insensible a mayúsculas y tildes («CAMARA» encuentra «Cámara»)  -> 7
+OK    3.3 varias palabras (todas deben coincidir)  -> ["Cepillo Secador Aguacate","Cepillo Secador 5 en 1"]
+OK    3.4 sin resultados: mensaje claro y botones de ayuda
+OK    3.5 botón del mensaje vacío usa solo el WhatsApp autorizado
+OK    3.6 borrar la búsqueda restaura los 186 productos
+OK    4.1 el filtro de cada una de las 20 categorías muestra exactamente sus productos  -> []
+OK    4.2 el chip activo se marca (aria-pressed=true) y «Todo» queda sin marcar
+OK    4.3 hash de categoría compartible (#cat=Navidad)
+OK    4.4 «Todo» vuelve a mostrar los 186
+OK    4.5 abrir un enlace con #cat=Juguetería muestra esa categoría
+OK    5.1 el detalle abre con la imagen COMPLETA (img/completas/)  -> ../img/completas/muu1q26wblx4-1.webp
+OK    5.2 el detalle muestra nombre y precio idénticos
+OK    5.3 la imagen completa carga (no rota)
+OK    5.4 galería: la flecha cambia a la 2.ª foto completa  -> ../img/completas/muu1q26wblx4-2.webp
+OK    5.5 el hash cambia a #p=ID (enlace directo al producto)
+OK    5.6 la descripción original se muestra
+OK    5.7 Esc cierra el detalle
+OK    5.8 el botón Atrás del teléfono cierra el detalle (sin salir de la página)
+OK    5.9 enlace directo #p=ID abre el detalle
+OK    6.1 agregar desde las tarjetas: insignia = 4 unidades  -> 4
+OK    6.2 subtotal correcto (sin contar el producto «Consultar»)  -> $280.000
+OK    6.3 nota de producto por consultar visible
+OK    6.4 cambiar cantidad (+) recalcula subtotal
+OK    6.5 cambiar cantidad (−) recalcula subtotal
+OK    6.6 quitar un producto lo elimina y desaparece la nota
+OK    6.7 entrega Bogotá suma $10.000 al total  -> $270.000
+OK    6.8 otra ciudad: no suma envío y el total indica «(sin envío)»  -> Total (sin envío)$260.000
+OK    6.9 recoger en tienda: gratis, total = subtotal
+OK    6.10 se conservan las 3 opciones de entrega originales
+OK    6.11 el aviso emergente no tapa el botón «Enviar pedido por WhatsApp»  -> {"aviso":[14,54],"boton":[796,848]}
+OK    7.1 el enlace usa el WhatsApp autorizado 573134724702  -> https://wa.me/573134724702?text=Hola%20D
+OK    7.2 el mensaje incluye productos, cantidades y valores correctos (formato idéntico al catálogo publicado)
+OK    7.3 el mensaje de respaldo (copiar) coincide con el enviado
+OK    7.4 el enlace abre en pestaña nueva con rel=noopener
+OK    8.1 el carrito se conserva al recargar (3 unidades)
+OK    8.2 se conservan entrega, nombre y cantidades
+OK    8.3 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)  -> ["dtb_ent","dtb_nombre","dtb_cart"]
+OK    8.4 un id inexistente guardado se descarta sin errores
+OK    8.5 «Vaciar» pide confirmación (no vacía al primer toque)
+OK    8.6 al confirmar, el carrito queda vacío con mensaje claro
+OK    9.1 primera ventana: Navidad (textos originales)
+OK    9.2 segunda ventana: Juguetería (textos originales)
+OK    9.3 el botón de Juguetería lleva a la categoría Juguetería
+OK    9.4 no se vuelven a mostrar el mismo día
+OK    10.x columnas móvil 375 = 2
+OK    10.x columnas móvil 390 = 2
+OK    10.x columnas tablet 768 = 3
+OK    10.x columnas portátil 1280 = 5
+OK    10.x columnas escritorio 1920 = 5
+OK    10.1 sin desbordamiento horizontal en 5 tamaños de pantalla  -> []
+OK    10.2 botones y controles táctiles ≥ 44 px (en la vista principal móvil)  -> []
+OK    10.3 idioma, título y viewport definidos
+OK    10.4 todas las imágenes tienen texto alternativo coherente (alt = nombre del producto)
+OK    10.5 enlace «Saltar al catálogo» disponible con teclado
+OK    11.1 también abre con doble clic (file://): 186 productos
+OK    11.2 file://: imágenes cargan
+OK    12.1 CERO errores/advertencias de consola, peticiones fallidas o HTTP ≥400 (todas las pruebas, http y file://)  -> []
+OK    12.2 las peticiones canceladas por cambiar de página (ERR_ABORTED) se cargaron bien en otra visita  -> {"canceladas":0,"sin_recuperar":[]}
+OK    13.1 datos.js == productos.json (id, nombre, precio, descripción, categoría, orden, etiquetas, whatsapp) en los 186
+OK    13.2 ningún archivo existente fuera de beta/, herramientas/ y docs/ fue modificado (originales, WebP, productos.json, manifiestos, index.html…)
+OK    13.3 index.html y catalogo-dantestore.html intactos (sha256)
+OK    13.4 productos.json y manifiestos sin cambios desde la etapa 2
+OK    13.5 el único número de WhatsApp en toda la beta es 573134724702  -> ["573134724702"]
+OK    13.6 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32  -> 9ef8bc95f5023ec2160e8590c643e26605a5db32	refs/heads/main
+
+RESULTADO: 80 de 80 verificaciones OK

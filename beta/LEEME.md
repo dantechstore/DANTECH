@@ -1,0 +1,33 @@
+# DANTESTORE · Catálogo BETA
+
+Versión de prueba del nuevo catálogo. **No reemplaza** al catálogo publicado (`/index.html` en la raíz).
+Sitio 100 % estático: sin servidores, sin bases de datos, sin servicios pagos ni librerías externas.
+
+## Cómo abrirla
+- **En tu computador:** descarga la rama como ZIP, descomprime y abre `beta/index.html` con doble clic.
+- **Con GitHub Pages:** quedaría en `https://dantechstore.github.io/DANTECH/beta/` solo cuando se autorice publicar (hoy Pages sirve solo `main`).
+- Agrega `#sinpopups` a la dirección para ocultar las ventanas emergentes al probar.
+
+## Estructura
+```
+beta/
+├── index.html        Estructura de la página (encabezado, portada, buscador, categorías, pie)
+├── css/estilos.css   Todos los estilos (móvil primero, adapta a tablet y escritorio)
+└── js/
+    ├── config.js     WhatsApp autorizado, opciones de entrega, claves de almacenamiento (editable)
+    ├── datos.js      GENERADO desde data/productos.json (no editar a mano)
+    ├── carrito.js    Lógica del carrito y del mensaje de WhatsApp (sin interfaz)
+    └── app.js        Interfaz: tarjetas, búsqueda, filtros, detalle, carrito, ventanas emergentes
+```
+Las fotos se leen de `../img/miniaturas/` (tarjetas) y `../img/completas/` (detalle). Las originales no se usan ni se tocan.
+
+## Cómo se actualizan los datos
+1. Cambia `data/productos.json` (la fuente única).
+2. Ejecuta `python3 herramientas/etapa3_generar_datos.py` para regenerar `beta/js/datos.js`.
+3. Ejecuta `node herramientas/etapa3_pruebas.js` para verificar todo (80 comprobaciones).
+
+## Notas importantes
+- El carrito guarda solo `{id: cantidad}`; nombre y precio se leen siempre de los datos (nunca hay precios viejos).
+- Claves de almacenamiento propias (`dtb_*`): no se mezclan con el carrito del catálogo publicado (`dtcart`/`dtent`), aunque comparten dominio.
+- La beta lleva `noindex` (Google no la indexa). Quitar esa línea solo al publicar.
+- Las etiquetas «Pocas unidades» / «Unidades limitadas» son estrategia de marketing (el negocio es bajo pedido), no inventario real.
