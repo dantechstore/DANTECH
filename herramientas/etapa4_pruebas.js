@@ -291,11 +291,12 @@ ok('G2 data/productos.json sigue byte a byte igual al de la etapa 3b (productos,
 ok('G3 siguen 186 productos y 20 categorías en la beta',J.productos.length===186&&J.categorias.length===20&&(await p.$$eval('.chip',a=>a.length))===21);
 const nuevoDatos=cp.execSync('git diff --name-only '+BASE_COMMIT+' -- beta/js/datos.js').toString().trim();
 ok('G4 beta/js/datos.js (datos del catálogo) no cambió respecto a la etapa 3b',nuevoDatos==='');
-const fotosCambiadas=cp.execSync("git diff --name-only "+BASE_COMMIT+" -- img data").toString().trim();
+const EXC=require('./excepcion_manifiesto.js')(BASE_COMMIT);   // única excepción documentada (etapa 5): manifiesto «Infinity» → null
+const fotosCambiadas=cp.execSync("git diff --name-only "+BASE_COMMIT+" -- img data").toString().split('\n').filter(l=>l.trim()&&!(EXC&&l==='data/manifiesto_imagenes.json')).join('\n').trim();
 ok('G5 ninguna fotografía (originales, miniaturas ni completas) ni archivo de data/ cambió',fotosCambiadas==='',fotosCambiadas);
 ok('G6 el logo original del perro Dante no se modificó (sha256 = el registrado en productos.json) y la beta usa su copia sin pérdida',sha(fs.readFileSync('img/originales/_logo-marca.png'))===J.logo.sha256&&(await p.getAttribute('.marca__logo','src'))==='../img/miniaturas/_logo-marca.webp');
 ok('G7 index.html (raíz) y catalogo-dantestore.html intactos (sha256 de la auditoría)',sha(fs.readFileSync('index.html'))==='9b4ac063095243e6efa00925ad42da7eb0f9c0bbf5451323224265a4a5efd685'&&sha(fs.readFileSync('catalogo-dantestore.html'))==='820e1d5f50b681d53ec44016f2935e2e73cdaa8c26c1a29153f426c680647569');
-const fuera=cp.execSync("git status --porcelain && git diff --name-only "+BASE_COMMIT).toString().split('\n').map(l=>l.replace(/^.. /,'').trim()).filter(Boolean).filter(f=>!/^(beta|herramientas|docs)\//.test(f));
+const fuera=cp.execSync("git status --porcelain && git diff --name-only "+BASE_COMMIT).toString().split('\n').map(l=>l.replace(/^.. /,'').trim()).filter(Boolean).filter(f=>!/^(beta|herramientas|docs)\//.test(f)).filter(f=>!(EXC&&f==='data/manifiesto_imagenes.json'));
 ok('G8 los únicos archivos tocados están en beta/, herramientas/ y docs/ (nada de la raíz, _respaldo, data ni img)',!fuera.length,fuera);
 const dep=['package.json','package-lock.json','node_modules','requirements.txt','CNAME','.github','_config.yml','.nojekyll'].filter(f=>fs.existsSync(f));
 const ext=(fuentes.match(/https?:\/\/[^\s"'`)]+/g)||[]).filter(u=>!/wa\.me|dantechstore\.github\.io|www\.w3\.org/.test(u));

@@ -11811,7 +11811,7 @@
     "alto": 200,
     "calidad": "lossless",
     "ssim": 1.0,
-    "psnr_db": Infinity,
+    "psnr_db": null,
     "redimensionada": false
    },
    "completa": {
@@ -11822,7 +11822,7 @@
     "alto": 200,
     "calidad": "lossless",
     "ssim": 1.0,
-    "psnr_db": Infinity,
+    "psnr_db": null,
     "redimensionada": false
    }
   }

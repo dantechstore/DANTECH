@@ -21,14 +21,14 @@ def encode(ref,size,logo):
     """ref: PIL RGB/RGBA original. Devuelve (bytes,calidad,ssim,psnr,dims)"""
     im=ref if size==ref.size else ref.resize(size,Image.LANCZOS)
     if logo:
-        b=io.BytesIO();im.save(b,'WEBP',lossless=True,method=6);return b.getvalue(),'lossless',1.0,float('inf'),im.size
+        b=io.BytesIO();im.save(b,'WEBP',lossless=True,method=6);return b.getvalue(),'lossless',1.0,None,im.size   # PSNR infinito (sin pérdida): null, porque Infinity no es JSON válido
     last=None
     for q in LADDER:
         b=io.BytesIO();im.save(b,'WEBP',quality=q,method=6);data=b.getvalue()
         dec=Image.open(io.BytesIO(data)).convert('RGB')
         a=np.asarray(im.convert('RGB'),dtype=np.uint8);d=np.asarray(dec,dtype=np.uint8)
         s=ssim(a,d,channel_axis=2,data_range=255);mse=((a.astype(float)-d.astype(float))**2).mean()
-        p=float('inf') if mse==0 else 10*np.log10(255**2/mse);last=(data,q,round(float(s),4),round(float(p),2),im.size)
+        p=None if mse==0 else 10*np.log10(255**2/mse);last=(data,q,round(float(s),4),None if p is None else round(float(p),2),im.size)
         if s>=UMBRAL:break
     return last
 def main():

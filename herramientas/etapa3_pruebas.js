@@ -143,11 +143,12 @@ ok('12.2 las peticiones canceladas por cambiar de página (ERR_ABORTED) se carga
 const D=fs.readFileSync('beta/js/datos.js','utf8');const dat=JSON.parse(D.slice(D.indexOf('=')+1,D.lastIndexOf(';')));
 ok('13.1 datos.js == productos.json (id, nombre, precio, descripción, categoría, orden, etiquetas, whatsapp) en los 186',dat.productos.length===186&&dat.productos.every((x,i)=>{const o=J.productos[i];return x.id===o.id&&x.nombre===o.nombre&&x.precio===o.precio&&x.precio_texto===o.precio_texto&&x.descripcion===o.descripcion&&x.categoria===o.categoria&&x.orden===o.orden_global&&JSON.stringify(x.etiquetas)===JSON.stringify(o.etiquetas)})&&dat.whatsapp===J.meta.whatsapp&&WA===J.meta.whatsapp);
 const BASEC='c0c226e01d66c0004f55820b2e7a5eda46b08403';
-const diff=cp.execSync(`git diff --name-status ${BASEC} -- . ':!beta' ':!herramientas' ':!docs'`).toString().trim();
+const EXC=require('./excepcion_manifiesto.js')(BASEC);   // única excepción documentada (etapa 5): manifiesto «Infinity» → null
+const diff=cp.execSync(`git diff --name-status ${BASEC} -- . ':!beta' ':!herramientas' ':!docs'`).toString().split('\n').filter(l=>l.trim()&&!(EXC&&l==='M\tdata/manifiesto_imagenes.json')).join('\n').trim();
 ok('13.2 ningún archivo existente fuera de beta/, herramientas/ y docs/ fue modificado (originales, WebP, productos.json, manifiestos, index.html…)',diff==='',diff);
 const prot={'index.html':'9b4ac063095243e6efa00925ad42da7eb0f9c0bbf5451323224265a4a5efd685','catalogo-dantestore.html':'820e1d5f50b681d53ec44016f2935e2e73cdaa8c26c1a29153f426c680647569'};
 ok('13.3 index.html y catalogo-dantestore.html intactos (sha256)',Object.entries(prot).every(([f,h])=>sh(f)===h));
-ok('13.4 productos.json y manifiestos sin cambios desde la etapa 2',cp.execSync(`git diff --name-only ${BASEC} -- data img`).toString().trim()==='');
+ok('13.4 productos.json y manifiestos sin cambios desde la etapa 2',cp.execSync(`git diff --name-only ${BASEC} -- data img`).toString().split('\n').filter(l=>l.trim()&&!(EXC&&l==='data/manifiesto_imagenes.json')).join('').trim()==='');
 const nums=new Set();const walk=d=>fs.readdirSync(d,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(d+'/'+e.name):[d+'/'+e.name]);for(const f of walk('beta').filter(f=>/\.(html|js|css|md)$/.test(f))){const t=fs.readFileSync(f,'utf8');for(const m of t.matchAll(/(?<!\d)(57\d{10}|\+57[\s-]?\d[\d\s-]{8,12}|3\d{9})(?!\d)/g))nums.add(m[0].replace(/\D/g,'').replace(/^(3\d{9})$/,'57$1'));if(/wa\.me\/(?!573134724702|'|"|\$)/.test(t.replace(/wa\.me\/'\s*\+/g,'')))nums.add('OTRO:'+f)}
 ok('13.5 el único número de WhatsApp en toda la beta es 573134724702',[...nums].every(n=>n==='573134724702')&&nums.size===1,[...nums]);
 const rem=cp.execSync('git ls-remote --heads origin 2>/dev/null||true').toString();

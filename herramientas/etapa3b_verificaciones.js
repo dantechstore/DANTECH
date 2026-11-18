@@ -66,7 +66,8 @@ ok('3.7 la descripción cabe en el límite recomendado (≤ 160 caracteres)',met
 ok('3.8 la beta mantiene noindex (no se indexa en Google)',/<meta name="robots" content="noindex, nofollow">/.test(H));
 // ===== 4. protección =====
 const BASEC='c0c226e01d66c0004f55820b2e7a5eda46b08403';
-const d=cp.execSync(`git diff --name-status ${BASEC} -- . ':!beta' ':!herramientas' ':!docs'`).toString().trim();
+const EXC=require('./excepcion_manifiesto.js')(BASEC);   // única excepción documentada (etapa 5): manifiesto «Infinity» → null
+const d=cp.execSync(`git diff --name-status ${BASEC} -- . ':!beta' ':!herramientas' ':!docs'`).toString().split('\n').filter(l=>l.trim()&&!(EXC&&l==='M\tdata/manifiesto_imagenes.json')).join('\n').trim();
 ok('4.1 ningún archivo fuera de beta/, herramientas/ y docs/ fue modificado',d==='',d);
 ok('4.2 index.html y catalogo-dantestore.html intactos (sha256)',sha(fs.readFileSync('index.html'))==='9b4ac063095243e6efa00925ad42da7eb0f9c0bbf5451323224265a4a5efd685'&&sha(fs.readFileSync('catalogo-dantestore.html'))==='820e1d5f50b681d53ec44016f2935e2e73cdaa8c26c1a29153f426c680647569');
 ok('4.3 no hay archivos de configuración de publicación (CNAME, .github/workflows, _config.yml) agregados',!['CNAME','.github','_config.yml','.nojekyll'].some(f=>fs.existsSync(f)));

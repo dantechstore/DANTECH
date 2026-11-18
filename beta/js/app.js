@@ -49,7 +49,7 @@
   function tarjeta(p) {
     var c = catPorNombre[p.categoria], q = K.cantidad(p.id);
     return '<article class="tarjeta" data-id="' + esc(p.id) + '" style="--ac:' + esc(c ? c.color : '#B8913A') + '">' +
-      '<button class="tarjeta__foto" type="button" data-accion="detalle" data-id="' + esc(p.id) + '"' + (p.fotos.length ? '' : ' aria-label="Ver detalle de ' + esc(p.nombre) + '"') + '>' + imagen(p, 'm', 0) + '</button>' +
+      '<button class="tarjeta__foto" type="button" tabindex="-1" data-accion="detalle" data-id="' + esc(p.id) + '"' + (p.fotos.length ? '' : ' aria-label="Ver detalle de ' + esc(p.nombre) + '"') + '>' + imagen(p, 'm', 0) + '</button>' +
       insignias(p) + '<span class="enCarro" data-enc="' + esc(p.id) + '"' + (q ? '' : ' hidden') + '>' + q + ' en carrito</span>' +
       '<div class="tarjeta__cuerpo"><h3 class="tarjeta__nombre"><button type="button" data-accion="detalle" data-id="' + esc(p.id) + '">' + esc(p.nombre) + '</button></h3>' +
       '<div class="tarjeta__precio">' + precioHtml(p) + '</div>' +
