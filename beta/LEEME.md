@@ -20,7 +20,7 @@ beta/
 └── js/
     ├── config.js     WhatsApp autorizado, opciones de entrega, claves de almacenamiento (editable)
     ├── datos.js      GENERADO desde data/productos.json (no editar a mano)
-    ├── carrito.js    Lógica del carrito y del mensaje de WhatsApp (sin interfaz)
+    ├── carrito.js    Lógica del carrito, validaciones y mensaje de WhatsApp (sin interfaz)
     └── app.js        Interfaz: tarjetas, búsqueda, filtros, detalle, carrito, ventanas emergentes
 ```
 Las fotos se leen de `../img/miniaturas/` (tarjetas) y `../img/completas/` (detalle). Las originales no se usan ni se tocan.
@@ -28,10 +28,12 @@ Las fotos se leen de `../img/miniaturas/` (tarjetas) y `../img/completas/` (deta
 ## Cómo se actualizan los datos
 1. Cambia `data/productos.json` (la fuente única).
 2. Ejecuta `python3 herramientas/etapa3_generar_datos.py` para regenerar `beta/js/datos.js`.
-3. Ejecuta `node herramientas/etapa3_pruebas.js` para verificar todo (80 comprobaciones).
+3. Ejecuta `node herramientas/etapa3_pruebas.js` para verificar todo (66 comprobaciones) y `node herramientas/etapa4_pruebas.js` (94 del carrito y el pedido).
 
 ## Notas importantes
 - El carrito guarda solo `{id: cantidad}`; nombre y precio se leen siempre de los datos (nunca hay precios viejos).
+- Los datos del comprador (nombre, dirección, ciudad) viven solo en `sessionStorage`: se borran al cerrar la pestaña o al vaciar el carrito y nunca van a `localStorage`.
+- El carrito tiene 2 pasos (Carrito → Entrega y datos) con los botones principales siempre visibles. Las 3 modalidades de entrega y sus condiciones no cambiaron.
 - Claves de almacenamiento propias (`dtb_*`): no se mezclan con el carrito del catálogo publicado (`dtcart`/`dtent`), aunque comparten dominio.
 - La beta lleva `noindex` (Google no la indexa). Quitar esa línea solo al publicar.
 - Las etiquetas «Pocas unidades» / «Unidades limitadas» son estrategia de marketing (el negocio es bajo pedido), no inventario real.

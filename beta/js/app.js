@@ -22,6 +22,7 @@
   var avisoT;
   function aviso(t) { var a = $('#aviso'); a.textContent = t; a.classList.add('on'); clearTimeout(avisoT); avisoT = setTimeout(function () { a.classList.remove('on'); }, 1800); anunciar(t); }
   function plural(n, s, p) { return n + ' ' + (n === 1 ? s : p); }
+  function avisoAgregado(r, p) { aviso(!r.ok ? 'No se pudo agregar el producto' : r.tope ? 'Máximo ' + K.max + ' unidades de ' + p.nombre : '✓ ' + p.nombre + ' agregado al carrito'); }
 
   /* ---------- Imágenes: miniaturas en tarjetas, completas en el detalle ---------- */
   function sinFoto() { return '<div class="sinfoto" role="img" aria-label="Foto próximamente"><span aria-hidden="true">📷</span><small>Foto próximamente</small></div>'; }
@@ -131,11 +132,13 @@
   function cerrarCapa(el) {
     if (!el || el.hidden) return; el.hidden = true; if (capaActual === el) capaActual = null;
     if (!$('.capa:not([hidden])')) document.body.classList.remove('sin-scroll');
+    actualizarBarra();
     if (abridor && document.body.contains(abridor) && abridor.focus) { try { abridor.focus({ preventScroll: true }); } catch (e) { /* ignorar */ } } abridor = null;
   }
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       if (!$('#capaPopup').hidden) { cerrarPopup(); return; }
+      if (capaActual === $('#capaCarrito') && cp.confirmando) { cp.confirmando = false; pintarCarrito(); return; }
       if (capaActual) { cerrarConAtras(); }
     }
     if (e.key === 'Tab' && capaActual) {                              // el foco no sale de la capa abierta
@@ -190,47 +193,128 @@
   }
   function cambiarFoto(d) { var p = porId[det.id], n = p.fotos.length; if (n < 2) return; det.foto = (det.foto + d + n) % n; pintarGaleria(); }
 
-  /* ---------- Carrito (panel) ---------- */
+  /* ---------- Carrito (panel de 2 pasos: 1 Carrito · 2 Entrega y datos) ---------- */
+  var cp = { paso: 1, intentado: false, confirmando: false, enviado: false };
+  function reiniciarPanel() { cp = { paso: 1, intentado: false, confirmando: false, enviado: false }; }
+  function byId(i) { return document.getElementById(i); }
+  /* Texto del total según la entrega elegida: nunca se presenta como definitivo si falta cotizar el envío o hay productos por consultar. */
+  function totalTexto(t, ent) {
+    if (!ent) return { etq: 'Total', v: 'Elige la entrega', nota: '' };
+    if (t.envioPorCotizar) return { etq: 'Total definitivo', v: 'Pendiente de cotización', nota: 'Productos con precio: ' + din(t.subtotal) + ' + envío por cotizar. Te confirmamos el total por WhatsApp.' + (t.sinPrecio ? ' Además hay ' + plural(t.sinPrecio, 'producto', 'productos') + ' con precio por consultar.' : '') };
+    if (t.sinPrecio) return { etq: 'Total definitivo', v: 'Por confirmar', nota: 'Sin contar ' + plural(t.sinPrecio, 'producto', 'productos') + ' con precio por consultar: ' + din(t.total) + (t.envio ? ' (incluye domicilio)' : '') + '.' };
+    return { etq: 'Total', v: din(t.total), nota: '' };
+  }
+  function cuerpoPaso1(t, it) {
+    var h = '<p class="carrito__conteo"><b>' + plural(t.unidades, 'unidad', 'unidades') + '</b> · ' + plural(t.lineas, 'producto diferente', 'productos diferentes') + '</p>';
+    h += '<ul class="carrito__lista">' + it.map(function (i) {
+      var p = i.p, id = esc(p.id), tope = i.q >= K.max;
+      return '<li class="citem"><div class="citem__foto">' + imagen(p, 'm', 0, true) + '</div><div class="citem__info"><b>' + esc(p.nombre) + '</b><span>' + (p.precio ? din(p.precio) + ' c/u' : esc(p.precio_texto)) + '</span>' +
+        '<div class="cantidad cantidad--mini" role="group" aria-label="Cantidad de ' + esc(p.nombre) + '">' +
+        '<button type="button" id="menos-' + id + '" data-accion="menos" data-id="' + id + '" aria-label="Quitar una unidad de ' + esc(p.nombre) + '"' + (i.q <= 1 ? ' disabled' : '') + '>−</button><output>' + i.q + '</output>' +
+        '<button type="button" id="mas-' + id + '" data-accion="mas" data-id="' + id + '" aria-label="' + (tope ? 'Máximo ' + K.max + ' unidades de ' + esc(p.nombre) : 'Agregar una unidad de ' + esc(p.nombre)) + '"' + (tope ? ' disabled' : '') + '>＋</button></div>' +
+        (tope ? '<small class="citem__tope">Máximo ' + K.max + ' por producto</small>' : '') + '</div>' +
+        '<div class="citem__der"><span class="citem__sub"><small>Subtotal</small><b>' + (p.precio ? din(i.total) : 'Consultar') + '</b></span><button class="enlace enlace--peligro" type="button" data-accion="quitar" data-id="' + id + '" aria-label="Quitar ' + esc(p.nombre) + ' del carrito">Quitar</button></div></li>';
+    }).join('') + '</ul>';
+    h += '<div class="resumen"><div class="resumen__total"><b>Subtotal</b><b>' + din(t.subtotal) + '</b></div>' +
+      (t.sinPrecio ? '<p class="nota">Incluye ' + plural(t.sinPrecio, 'producto', 'productos') + ' con precio por consultar (no suma al subtotal).</p>' : '') +
+      '<p class="nota">En el siguiente paso eliges la entrega y ves el total.</p></div>';
+    h += '<button class="enlace enlace--peligro carrito__vaciar" type="button" data-accion="vaciar">Vaciar carrito</button>';
+    return h;
+  }
+  function campoHTML(k) {
+    var d = K.campos[k], obl = d.min > 0, ac = { nombre: 'name', direccion: 'address-line1', barrio: 'address-level3', ciudad: 'address-level2', departamento: 'address-level1' }[k] || 'off';
+    return '<div class="campo-g"><label class="campo" for="c-' + k + '">' + esc(d.etiqueta) + (obl ? ' <span class="obl">(obligatorio)</span>' : ' <span class="opc">(opcional)</span>') + '</label>' +
+      '<input class="campo__in" id="c-' + k + '" data-campo="' + k + '" type="text" maxlength="' + d.max + '" value="' + esc(K.comprador(k)) + '" autocomplete="' + ac + '" enterkeyhint="next"' + (obl ? ' aria-required="true"' : '') + ' aria-describedby="err-' + k + '">' +
+      '<small class="campo__err" id="err-' + k + '"></small></div>';
+  }
+  function cuerpoPaso2(t, it, ent) {
+    var h = '<div class="errores" id="carErrores" tabindex="-1" hidden><b>Faltan datos para enviar tu pedido:</b><ul></ul></div>';
+    h += campoHTML('nombre');
+    h += '<fieldset class="entrega" aria-describedby="errEntrega"><legend>¿Cómo quieres recibirlo? <span class="obl">(obligatorio)</span></legend>' + Object.keys(C.entregas).map(function (k) {
+      var e = C.entregas[k]; return '<label class="entrega__op' + (ent === k ? ' on' : '') + '"><input type="radio" id="ent-' + k + '" name="entrega" value="' + k + '"' + (ent === k ? ' checked' : '') + '><span><b>' + e.icono + ' ' + esc(e.titulo) + '</b><small>' + esc(e.detalle) + '</small></span></label>';
+    }).join('') + '<small class="campo__err" id="errEntrega"></small></fieldset>';
+    var vis = K.camposVisibles().filter(function (k) { return k !== 'nombre'; });
+    if (vis.length) h += '<div class="datos-entrega"><h3>' + (ent === 'dom' ? 'Datos del domicilio' : 'Datos para cotizar el envío') + '</h3>' + vis.map(campoHTML).join('') + '</div>';
+    else if (ent === 'tienda') h += '<p class="nota nota--ok">Para recoger en tienda solo necesitamos tu nombre.</p>';
+    var tt = totalTexto(t, ent), E = ent ? C.entregas[ent] : null;
+    h += '<section class="resumen resumen--det" aria-labelledby="resTit"><h3 id="resTit">Resumen de tu pedido</h3><ul class="res__lineas">' + it.map(function (i) {
+      return '<li><div><b>' + esc(i.p.nombre) + '</b><small>' + (i.p.precio ? i.q + ' × ' + din(i.p.precio) : plural(i.q, 'unidad', 'unidades') + ' · precio por consultar') + '</small></div><b>' + (i.p.precio ? din(i.total) : '—') + '</b></li>';
+    }).join('') + '</ul>' +
+      '<div class="res__fila"><span>Subtotal (' + plural(t.unidades, 'unidad', 'unidades') + ')</span><b>' + din(t.subtotal) + '</b></div>' +
+      '<div class="res__fila"><span>Entrega</span><b>' + (E ? esc(E.titulo) : 'Sin elegir') + '</b></div>' +
+      (ent === 'dom' ? '<div class="res__fila"><span>Domicilio (pago contraentrega)</span><b>' + din(t.envio) + '</b></div>' : '') +
+      (ent === 'otra' ? '<div class="res__fila"><span>Envío</span><b>Por cotizar</b></div>' : '') +
+      (ent === 'tienda' ? '<div class="res__fila"><span>Recoger en tienda</span><b>Gratis</b></div>' : '') +
+      '<div class="resumen__total"><b>' + tt.etq + '</b><b>' + esc(tt.v) + '</b></div>' + (tt.nota ? '<p class="nota">' + esc(tt.nota) + '</p>' : '') + '</section>';
+    if (cp.enviado) h += '<div class="enviado" role="status"><b>Se abrió WhatsApp con tu pedido.</b><p>Revísalo y envíalo desde allí. Tu carrito se conserva por si necesitas corregir algo. Si ya lo enviaste, puedes vaciarlo.</p><button class="btn btn--sec" type="button" data-accion="vaciar">Ya envié mi pedido: vaciar carrito</button></div>';
+    h += '<details class="copiar"><summary>¿No se abre WhatsApp?</summary><p>Copia este mensaje y envíalo al +' + esc(C.whatsapp) + ':</p><textarea id="carTexto" readonly rows="8" aria-label="Mensaje del pedido, para copiar">' + esc(K.mensaje()) + '</textarea></details>';
+    return h;
+  }
   function pintarCarrito() {
     var el = $('#capaCarrito'), t = K.totales(), it = K.items(), ent = K.entrega();
     var ins = $('#insCarrito'); ins.textContent = t.unidades; ins.hidden = !t.unidades;
-    $('#btnCarrito').setAttribute('aria-label', 'Abrir carrito, ' + plural(t.unidades, 'producto', 'productos'));
+    $('#btnCarrito').setAttribute('aria-label', 'Abrir carrito, ' + plural(t.unidades, 'unidad', 'unidades'));
     var bc = $('#barraCarrito'); bc.hidden = !t.unidades || !!capaActual;
-    bc.innerHTML = '<span>🛒 Ver carrito · ' + plural(t.unidades, 'producto', 'productos') + '</span><b>' + (t.subtotal ? din(t.subtotal) : 'Consultar') + '</b>';
+    bc.innerHTML = '<span>🛒 Ver carrito · ' + plural(t.unidades, 'unidad', 'unidades') + '</span><b>' + (t.subtotal ? din(t.subtotal) : 'Consultar') + '</b>';
     $$('.enCarro').forEach(function (e) { var q = K.cantidad(e.dataset.enc); e.hidden = !q; e.textContent = q + ' en carrito'; });
     if (el.hidden) return;
-    var h = '<div class="capa__fondo" data-accion="cerrar"></div><div class="capa__hoja capa__hoja--carrito"><div class="carrito__cab"><h2 id="carTitulo">Tu pedido</h2><button class="capa__cerrar capa__cerrar--fijo" type="button" data-cerrar data-accion="cerrar" aria-label="Cerrar carrito">✕</button></div>';
-    if (!it.length) {
-      h += '<div class="carrito__vacio"><p class="vacio__icono" aria-hidden="true">🛒</p><p><b>Aún no has agregado productos.</b></p><p>Explora el catálogo y agrega lo que te guste.</p><button class="btn btn--pri" type="button" data-accion="cerrar">Ver productos</button></div></div>';
+    if (!it.length) reiniciarPanel();
+    var vacio = !it.length, p2 = cp.paso === 2 && !vacio;
+    var foco = document.activeElement && document.activeElement.id, sel = null;
+    if (foco && /^c-/.test(foco) && document.activeElement.setSelectionRange) sel = [document.activeElement.selectionStart, document.activeElement.selectionEnd];
+    var cuerpoPrev = el.querySelector('.carrito__cuerpo'), sc = cuerpoPrev ? cuerpoPrev.scrollTop : 0;
+    var h = '<div class="capa__fondo" data-accion="cerrar"></div><div class="capa__hoja capa__hoja--carrito"><div class="carrito__cab">' +
+      (p2 ? '<button class="capa__cerrar capa__atras" type="button" data-accion="paso-1" aria-label="Volver al carrito">‹</button>' : '') +
+      '<h2 id="carTitulo" tabindex="-1">' + (p2 ? 'Entrega y datos' : 'Tu carrito') + '</h2>' +
+      '<button class="capa__cerrar capa__cerrar--fijo" type="button" data-cerrar data-accion="cerrar" aria-label="Cerrar carrito y seguir comprando">✕</button></div>';
+    if (vacio) {
+      h += '<div class="carrito__cuerpo"><div class="carrito__vacio"><p class="vacio__icono" aria-hidden="true">🛒</p><p><b>Aún no has agregado productos.</b></p><p>Explora el catálogo y agrega lo que te guste.</p><button class="btn btn--pri" type="button" data-accion="cerrar">Ver productos</button></div></div></div>';
     } else {
-      h += '<ul class="carrito__lista">' + it.map(function (i) {
-        var p = i.p;
-        return '<li class="citem"><div class="citem__foto">' + imagen(p, 'm', 0, true) + '</div><div class="citem__info"><b>' + esc(p.nombre) + '</b><span>' + (p.precio ? din(p.precio) + ' c/u' : esc(p.precio_texto)) + '</span>' +
-          '<div class="cantidad cantidad--mini" role="group" aria-label="Cantidad de ' + esc(p.nombre) + '"><button type="button" data-accion="menos" data-id="' + esc(p.id) + '" aria-label="Quitar una unidad de ' + esc(p.nombre) + '">−</button><output>' + i.q + '</output><button type="button" data-accion="mas" data-id="' + esc(p.id) + '" aria-label="Agregar una unidad de ' + esc(p.nombre) + '">＋</button></div></div>' +
-          '<div class="citem__der"><b>' + (p.precio ? din(i.total) : '—') + '</b><button class="enlace enlace--peligro" type="button" data-accion="quitar" data-id="' + esc(p.id) + '" aria-label="Quitar ' + esc(p.nombre) + ' del carrito">Quitar</button></div></li>';
-      }).join('') + '</ul>';
-      h += '<fieldset class="entrega"><legend>¿Cómo quieres recibirlo?</legend>' + Object.keys(C.entregas).map(function (k) {
-        var e = C.entregas[k]; return '<label class="entrega__op' + (ent === k ? ' on' : '') + '"><input type="radio" name="entrega" value="' + k + '"' + (ent === k ? ' checked' : '') + '><span><b>' + e.icono + ' ' + esc(e.titulo) + '</b><small>' + esc(e.detalle) + '</small></span></label>';
-      }).join('') + '</fieldset>';
-      h += '<div class="resumen"><div><span>Subtotal</span><span>' + din(t.subtotal) + '</span></div>' + (t.envio ? '<div><span>Domicilio</span><span>' + din(t.envio) + '</span></div>' : '') +
-        '<div class="resumen__total"><b>Total' + (ent === 'otra' ? ' (sin envío)' : '') + '</b><b>' + din(t.total) + '</b></div>' +
-        (t.sinPrecio ? '<p class="nota">Incluye ' + plural(t.sinPrecio, 'producto', 'productos') + ' con precio por consultar (no suma al total).</p>' : '') + '</div>';
-      h += '<label class="campo" for="carNombre">Tu nombre</label><input class="campo__in" id="carNombre" placeholder="Escribe tu nombre" autocomplete="name" maxlength="60" value="' + esc(K.nombre()) + '">';
-      h += '<a class="btn btn--wa btn--grande" id="carEnviar" target="_blank" rel="noopener" href="' + esc(K.enlace()) + '">💬 Enviar pedido por WhatsApp</a>';
-      h += '<details class="copiar"><summary>¿No se abre WhatsApp?</summary><p>Copia este mensaje y envíalo al +' + esc(C.whatsapp) + ':</p><textarea id="carTexto" readonly rows="7">' + esc(K.mensaje()) + '</textarea></details>';
-      h += '<button class="enlace enlace--peligro carrito__vaciar" type="button" data-accion="vaciar">Vaciar carrito</button></div>';
+      h += '<ol class="pasos" aria-label="Pasos del pedido"><li' + (p2 ? '' : ' aria-current="step"') + '><span>1</span> Carrito</li><li' + (p2 ? ' aria-current="step"' : '') + '><span>2</span> Entrega y datos</li></ol>';
+      h += '<div class="carrito__cuerpo">' + (p2 ? cuerpoPaso2(t, it, ent) : cuerpoPaso1(t, it)) + '</div><div class="carrito__pie">';
+      if (cp.confirmando) {
+        h += '<div class="confirmar" role="alertdialog" aria-labelledby="confTit" aria-describedby="confTxt"><p id="confTit"><b>¿Vaciar el carrito?</b></p><p id="confTxt">Se quitarán ' + plural(t.lineas, 'producto', 'productos') + ' (' + plural(t.unidades, 'unidad', 'unidades') + ') y los datos que escribiste.</p>' +
+          '<div class="pie__fila"><button class="btn btn--sec" id="vaciarNo" type="button" data-accion="vaciar-no">Cancelar</button><button class="btn btn--peligro" id="vaciarSi" type="button" data-accion="vaciar-si">Sí, vaciar</button></div></div>';
+      } else if (p2) {
+        var tt = totalTexto(t, ent), v = K.validar();
+        h += '<div class="carrito__total"><span>' + tt.etq + '</span><b id="carTotalPie">' + esc(tt.v) + '</b></div>' +
+          '<a class="btn btn--wa btn--grande" id="carEnviar" data-accion="enviar" target="_blank" rel="noopener" href="' + esc(v.ok ? K.enlace() : '#carrito') + '">💬 Enviar pedido por WhatsApp</a>';
+      } else {
+        h += '<div class="carrito__total"><span>Subtotal</span><b>' + din(t.subtotal) + '</b></div><div class="pie__fila"><button class="btn btn--sec" type="button" data-accion="cerrar">← Seguir comprando</button><button class="btn btn--pri" id="carContinuar" type="button" data-accion="paso-2">Continuar →</button></div>';
+      }
+      h += '</div></div>';
     }
-    // se conserva el foco y el texto del nombre al repintar
-    var foco = document.activeElement && document.activeElement.id; var sel = foco === 'carNombre' ? [document.activeElement.selectionStart, document.activeElement.selectionEnd] : null;
-    var sc = el.querySelector('.capa__hoja') ? el.querySelector('.capa__hoja').scrollTop : 0;
-    el.innerHTML = h; var hoja = el.querySelector('.capa__hoja'); if (hoja) hoja.scrollTop = sc;
-    var cerrar = $('[data-cerrar]', el); if (foco && $('#' + foco, el)) { var f = $('#' + foco, el); f.focus(); if (sel && f.setSelectionRange) f.setSelectionRange(sel[0], sel[1]); } else if (!el.contains(document.activeElement) && cerrar) cerrar.focus();
+    el.innerHTML = h;
+    var cuerpo = el.querySelector('.carrito__cuerpo'); if (cuerpo) cuerpo.scrollTop = sc;
+    marcarErrores();
+    // foco: se conserva el control que se estaba usando (por id); si ya no existe, su pareja (+/−), el título o el botón de cerrar
+    var f = foco && byId(foco), par = foco && /^(mas|menos)-/.test(foco) ? byId(foco.replace(/^(mas|menos)/, function (m) { return m === 'mas' ? 'menos' : 'mas'; })) : null;
+    if (f && el.contains(f) && !f.disabled) { f.focus({ preventScroll: true }); if (sel && f.setSelectionRange) f.setSelectionRange(sel[0], sel[1]); }
+    else if (par && !par.disabled) par.focus({ preventScroll: true });
+    else if (cp.confirmando && byId('vaciarNo')) byId('vaciarNo').focus();
+    else if (!el.contains(document.activeElement)) { var tt2 = byId('carTitulo') || $('[data-cerrar]', el); if (tt2) tt2.focus({ preventScroll: true }); }
   }
-  function actualizarEnlace() {                                         // al escribir el nombre solo se actualiza el enlace y el texto
-    var a = $('#carEnviar'); if (a) a.href = K.enlace(); var t = $('#carTexto'); if (t) t.value = K.mensaje();
+  /* Mensajes de error junto a cada campo y resumen al inicio; solo después de intentar enviar. */
+  function marcarErrores() {
+    var sum = byId('carErrores'); if (!sum) return;
+    var v = K.validar(), lista = [], ord = ['nombre', 'entrega'].concat(K.orden.filter(function (k) { return k !== 'nombre'; }));
+    K.orden.forEach(function (k) {
+      var i = byId('c-' + k), e = byId('err-' + k); if (!i) return;
+      var m = cp.intentado && v.errores[k] || ''; e.textContent = m; if (m) i.setAttribute('aria-invalid', 'true'); else i.removeAttribute('aria-invalid');
+    });
+    var ee = byId('errEntrega'); if (ee) ee.textContent = cp.intentado && v.errores.entrega || '';
+    if (cp.intentado) ord.forEach(function (k) { if (v.errores[k]) lista.push([k === 'entrega' ? 'ent-dom' : 'c-' + k, v.errores[k]]); });
+    sum.hidden = !lista.length;
+    sum.querySelector('ul').innerHTML = lista.map(function (x) { return '<li><a href="#' + x[0] + '" data-accion="ir-campo" data-campo="' + x[0] + '">' + esc(x[1]) + '</a></li>'; }).join('');
   }
-  function mostrarCarrito() { var el = $('#capaCarrito'); if (!el.hidden) return; abrirCapa(el); pintarCarrito(); $('#barraCarrito').hidden = true; }
-  K.alCambiar(function (soloNombre) { if (soloNombre === true) actualizarEnlace(); else pintarCarrito(); });
+  function actualizarDatos() {                                         // al escribir: solo se actualizan enlace, texto de respaldo y errores (sin repintar, para no perder el foco)
+    var a = byId('carEnviar'); if (a) a.href = K.validar().ok ? K.enlace() : '#carrito';
+    var t = byId('carTexto'); if (t) t.value = K.mensaje();
+    marcarErrores();
+  }
+  function actualizarBarra() { var b = $('#barraCarrito'); if (b) b.hidden = !K.totales().unidades || !!capaActual; }   // la barra flotante reaparece al cerrar el carrito o el detalle
+  function mostrarCarrito() { var el = $('#capaCarrito'); if (!el.hidden) return; reiniciarPanel(); abrirCapa(el); pintarCarrito(); $('#barraCarrito').hidden = true; }
+  K.alCambiar(function (tipo) { if (tipo === 'datos') actualizarDatos(); else pintarCarrito(); });
 
   /* ---------- Ventanas emergentes (Navidad y Juguetería), una vez al día ---------- */
   var colaPopup = [];
@@ -279,7 +363,7 @@
     var a = t.dataset.accion, id = t.dataset.id;
     if (t.classList.contains('capa__fondo') && e.target !== t) return;
     switch (a) {
-      case 'agregar': K.agregar(id, 1); aviso('✓ ' + porId[id].nombre + ' agregado al carrito'); t.classList.add('ok'); t.textContent = '✓ Agregado'; setTimeout(function () { t.classList.remove('ok'); t.textContent = '＋ Agregar'; }, 1100); break;
+      case 'agregar': avisoAgregado(K.agregar(id, 1), porId[id]); t.classList.add('ok'); t.textContent = '✓ Agregado'; setTimeout(function () { t.classList.remove('ok'); t.textContent = '＋ Agregar'; }, 1100); break;
       case 'detalle': irHash('p=' + encodeURIComponent(id)); break;
       case 'detalle-rel': history.replaceState(null, '', '#p=' + encodeURIComponent(id)); sincronizar(); break;
       case 'cat': elegirCategoria(t.dataset.cat); break;
@@ -293,17 +377,28 @@
       case 'foto-sig': cambiarFoto(1); break;
       case 'det-menos': det.cant = Math.max(1, det.cant - 1); pintarCantidad(); break;
       case 'det-mas': det.cant = Math.min(C.cantidadMaxima, det.cant + 1); pintarCantidad(); break;
-      case 'det-agregar': K.agregar(det.id, det.cant); aviso('✓ ' + porId[det.id].nombre + ' agregado al carrito'); det.cant = 1; pintarCantidad(); break;
-      case 'mas': K.cambiar(id, 1); break;
+      case 'det-agregar': avisoAgregado(K.agregar(det.id, det.cant), porId[det.id]); det.cant = 1; pintarCantidad(); break;
+      case 'mas': if (!K.cambiar(id, 1)) aviso('Máximo ' + K.max + ' unidades por producto'); break;
       case 'menos': K.cambiar(id, -1); break;
       case 'quitar': K.quitar(id); aviso('Producto quitado'); break;
-      case 'vaciar': if (t.dataset.confirma) { K.vaciar(); aviso('Carrito vaciado'); } else { t.dataset.confirma = '1'; t.textContent = 'Toca otra vez para confirmar'; setTimeout(function () { if (t.isConnected) { delete t.dataset.confirma; t.textContent = 'Vaciar carrito'; } }, 3000); } break;
+      case 'vaciar': cp.confirmando = true; pintarCarrito(); break;
+      case 'vaciar-no': cp.confirmando = false; pintarCarrito(); break;
+      case 'vaciar-si': cp.confirmando = false; K.vaciar(); aviso('Carrito vaciado'); break;
+      case 'paso-2': cp.paso = 2; cp.intentado = false; cp.enviado = false; pintarCarrito(); { var h2 = byId('carTitulo'); if (h2) h2.focus({ preventScroll: true }); } break;
+      case 'paso-1': cp.paso = 1; cp.intentado = false; pintarCarrito(); { var h1 = byId('carTitulo'); if (h1) h1.focus({ preventScroll: true }); } break;
+      case 'ir-campo': e.preventDefault(); { var tg = byId(t.dataset.campo); if (tg) { tg.focus(); tg.scrollIntoView({ block: 'center' }); } } break;
+      case 'enviar':
+        if (!K.validar().ok) {                                                      // faltan datos: no se abre WhatsApp y se explican los errores
+          e.preventDefault(); cp.intentado = true; pintarCarrito();
+          var sm = byId('carErrores'); if (sm && !sm.hidden) { sm.focus(); var cu = $('.carrito__cuerpo'); if (cu) cu.scrollTop = 0; }
+        } else { setTimeout(function () { cp.enviado = true; if (!$('#capaCarrito').hidden) pintarCarrito(); }, 700); }   // el carrito NO se vacía: el cliente puede revisar y corregir
+        break;
       case 'popup-cerrar': cerrarPopup(); break;
       case 'popup-ir': cerrarPopup(t.dataset.cat); break;
     }
   });
-  document.addEventListener('change', function (e) { if (e.target.name === 'entrega') K.fijarEntrega(e.target.value); });
-  document.addEventListener('input', function (e) { if (e.target.id === 'carNombre') K.fijarNombre(e.target.value); });
+  document.addEventListener('change', function (e) { if (e.target.name === 'entrega') { cp.enviado = false; K.fijarEntrega(e.target.value); } });
+  document.addEventListener('input', function (e) { var k = e.target.dataset && e.target.dataset.campo; if (k) { cp.enviado = false; K.fijarDato(k, e.target.value); } });
   var tb; $('#buscar').addEventListener('input', function (e) {
     var v = e.target.value; $('#borrarBusqueda').hidden = !v; clearTimeout(tb);
     tb = setTimeout(function () { estado.q = v.trim(); if (!estado.q) { render(); } else { render(); } if (estado.q) irAlCatalogo(); }, 140);

@@ -1,0 +1,96 @@
+OK    A1 agregar varios productos distintos desde las tarjetas: 3 unidades, insignia visible
+OK    A2 agregar varias unidades del mismo producto: cantidad 3 de ese producto y 5 en total
+OK    A3 el carrito muestra unidades totales y productos diferentes
+OK    A4 subtotal por producto y subtotal general correctos
+OK    A5 modificar cantidades con «＋» recalcula (subtotal por producto y general)
+OK    A6 modificar cantidades con «−» recalcula
+OK    A7 la cantidad nunca baja de 1: «−» queda desactivado en 1 (no hay cero ni negativos)
+OK    A8 eliminar un producto individualmente (los demás no cambian)
+OK    A9 «Vaciar carrito» pide confirmación y no vacía al primer toque
+OK    A10 «Cancelar» conserva el carrito
+OK    A11 Esc cancela la confirmación sin cerrar ni vaciar el carrito
+OK    A12 confirmar vacía el carrito y muestra el mensaje de carrito vacío
+OK    A13 vaciar también borra los datos del comprador y la entrega
+OK    B1 el carrito, la entrega y los datos escritos se conservan al recargar
+OK    B2 recuperación ante datos locales inválidos (18 variantes: JSON roto, arreglos, claves heredadas, cantidades negativas/cero/decimales/texto/exceso): sin errores y el panel abre
+OK    B3 producto inexistente en el almacenamiento: se descarta y se conserva el válido
+OK    B4 entrega guardada inválida («constructor») se descarta
+OK    B5 entrega desconocida y datos del comprador rotos: no producen errores
+OK    B6 protección contra cantidades inválidas (negativas, cero, decimales, texto, NaN, Infinity, null, objetos): se rechazan y el carrito no cambia
+OK    B7 cantidad por omisión = 1; exceso se limita a 99 (con aviso de tope); «−» nunca baja de 1; decimales y textos en cambiar() se rechazan
+OK    B8 fijarCantidad: 0 se rechaza, 200 se limita a 99, «7» (texto numérico) vale 7
+OK    B9 ids inválidos («constructor», «__proto__», inexistentes, null, números) se rechazan al agregar y al quitar
+OK    B10 al llegar a 99: «＋» queda desactivado y se explica el máximo
+OK    B11 agregar desde el catálogo con 99 unidades no pasa del máximo y avisa
+OK    B12 el carrito se sincroniza entre pestañas abiertas
+OK    C1 las 3 modalidades y sus condiciones se conservan EXACTAS: dom $10.000 contraentrega · otra ciudad por confirmar · tienda gratis (config.js idéntico al de la etapa 3b)
+OK    C2 sin entrega elegida: el total dice «Elige la entrega» (no inventa un total)
+OK    C3 domicilio en Bogotá: +$10.000 y total = subtotal + $10.000
+OK    C4 recoger en tienda: gratis y total = subtotal
+OK    C5 envío a otra ciudad: «Envío: Por cotizar» y «Total definitivo: Pendiente de cotización» (no se suma como $0 ni se presenta como gratis)
+OK    C6 envío a otra ciudad: el aviso aclara el subtotal de productos y que el envío se confirma
+OK    C7 el cálculo interno no cuenta el envío de otra ciudad como costo cero definitivo (pendiente = true)
+OK    C8 las 3 opciones se muestran con sus textos originales
+OK    C9 producto «Consultar»: no suma al subtotal, se avisa y el total queda «Por confirmar»
+OK    D1 enviar sin datos: NO abre WhatsApp y muestra un resumen de errores (nombre y entrega) con el foco en él
+OK    D2 el campo con error se marca (aria-invalid) y su mensaje está asociado (aria-describedby)
+OK    D3 nombre de 1 carácter: se pide al menos 2 (los errores se actualizan al escribir sin perder el foco)
+OK    D4 al corregir el nombre desaparece su error
+OK    D5 con nombre pero sin entrega: sigue faltando la entrega y no se habilita el enlace de WhatsApp (href interno)
+OK    D6 domicilio en Bogotá: pide dirección (obligatoria), barrio e indicaciones (opcionales); no pide ciudad
+OK    D7 domicilio sin dirección: error específico y no se envía
+OK    D8 dirección muy corta (4 caracteres): se pide al menos 5
+OK    D9 con nombre + entrega + dirección ya es válido (barrio e indicaciones son opcionales)
+OK    D10 otra ciudad: pide ciudad (obligatoria), departamento y dirección/barrio de destino (opcionales); ya no pide dirección de domicilio
+OK    D11 otra ciudad sin ciudad: no es válido y la tarjeta de datos se titula «Datos para cotizar el envío»
+OK    D12 con la ciudad ya es válido (departamento y destino opcionales)
+OK    D13 otra ciudad solo con la ciudad: el mensaje no deja líneas vacías de departamento ni destino
+OK    D14 recoger en tienda: solo se necesita el nombre (no aparecen campos de dirección ni de ciudad)
+OK    D15 cambiar de entrega no filtra datos de otra modalidad al mensaje (tienda: sin dirección ni ciudad aunque estén escritas)
+OK    D16 datos personales: NADA de nombre, dirección, ciudad o indicaciones en localStorage (persistente)
+OK    D17 los datos escritos solo viven en sessionStorage (se borran al cerrar la pestaña) y la clave antigua dtb_nombre ya no existe
+OK    D18 al cargar, se elimina el nombre guardado de forma permanente por la versión anterior
+OK    D19 nombres con saltos de línea, tabulaciones y espacios: el mensaje queda en una sola línea limpia («Ana Pérez») y no se puede falsear una línea de TOTAL
+OK    D20 longitud máxima por campo (barrio 500 → 60) y campos desconocidos («constructor», «__proto__») se ignoran
+OK    D21 un nombre con HTML no se ejecuta ni se inserta como etiquetas (se escapa en el cuadro y en el texto de respaldo)
+OK    E1 el mensaje incluye TODOS los productos con cantidad, precio unitario y total por producto, en el formato esperado
+OK    E2 el mensaje incluye cliente, subtotal, entrega, dirección, barrio, indicaciones, domicilio y total
+OK    E3 el mensaje abre con «PEDIDO DANTESTORE» y cierra con el origen; la estructura es la esperada
+OK    E4 codificado correctamente: URL de wa.me al único número autorizado y el texto decodificado es idéntico al mensaje (con tildes, emojis, &, #, +, %, ?, saltos de línea)
+OK    E5 otra ciudad: el mensaje trae ciudad y departamento, «Envío: por cotizar» y total pendiente de confirmar (nunca un TOTAL numérico)
+OK    E6 producto sin precio: aparece con su cantidad y «precio por consultar», y el subtotal lo aclara
+OK    E7 recoger en tienda: entrega «gratis», sin datos de dirección y TOTAL = subtotal
+OK    E8 único WhatsApp autorizado 573134724702: es el único número de 9+ dígitos en el código de la beta y los enlaces de consulta lo usan
+OK    E9 todos los enlaces a WhatsApp visibles en la página apuntan al número autorizado
+OK    E10 enviar con datos completos abre WhatsApp en una pestaña nueva hacia el número autorizado con el mensaje
+OK    E11 el carrito NO se vacía al enviar (el cliente puede revisar y corregir en WhatsApp)
+OK    E12 después de enviar se informa que el carrito se conserva y se ofrece vaciarlo (con confirmación)
+OK    E13 «Ya envié mi pedido: vaciar» también pide confirmación
+OK    E14 el texto de respaldo («¿No se abre WhatsApp?») coincide exactamente con el mensaje enviado
+OK    E15 el enlace de envío abre en pestaña nueva con rel=noopener
+OK    E16 carrito grande (25 productos): el mensaje incluye los 25 y la URL mide 2698 caracteres (si WhatsApp no la abriera, existe el texto de respaldo)
+OK    F1 cinco tamaños de pantalla (320, 360, 390, 768, 1280): «Continuar», «Seguir comprando» y «Enviar pedido» siempre visibles sin hacer scroll; sin desbordes horizontales; el último campo no queda tapado; controles táctiles ≥ 44 px
+OK    F2 los avisos emergentes no tapan los botones «Continuar» / «Enviar pedido» ni la cantidad
+OK    F3 «Seguir comprando» vuelve al catálogo sin perder el carrito (la barra inferior sigue mostrando las unidades)
+OK    F4 Esc y el botón «Atrás» del navegador cierran el carrito sin perderlo
+OK    F5 el gesto «Atrás» (historial) cierra el carrito y el carrito se conserva
+OK    F6 volver al paso 1 conserva los productos y los datos escritos
+OK    F7 al volver al paso 2 los datos siguen ahí
+OK    F8 teclado: con Enter sobre «＋» la cantidad sube y el foco se queda en el mismo control
+OK    F9 teclado: con Espacio también funciona y la cantidad sigue coherente con el almacenamiento
+OK    F10 al escribir en un campo no se pierde el foco ni el texto (no se repinta el panel)
+OK    F11 teclado: el foco recorre solo el carrito abierto (no se escapa al fondo)
+OK    F12 accesibilidad: diálogo modal con título, todos los campos con etiqueta, botones con nombre, opciones de entrega en fieldset con legend, paso actual marcado, campos obligatorios con aria-required, texto de campos ≥ 16 px (sin zoom en iPhone)
+OK    G1 los 186 productos (id, nombre, categoría, precio, texto de precio, descripción) son idénticos a data/productos.json
+OK    G2 data/productos.json sigue byte a byte igual al de la etapa 3b (productos, precios, nombres, IDs, categorías, descripciones sin cambios)
+OK    G3 siguen 186 productos y 20 categorías en la beta
+OK    G4 beta/js/datos.js (datos del catálogo) no cambió respecto a la etapa 3b
+OK    G5 ninguna fotografía (originales, miniaturas ni completas) ni archivo de data/ cambió
+OK    G6 el logo original del perro Dante no se modificó (sha256 = el registrado en productos.json) y la beta usa su copia sin pérdida
+OK    G7 index.html (raíz) y catalogo-dantestore.html intactos (sha256 de la auditoría)
+OK    G8 los únicos archivos tocados están en beta/, herramientas/ y docs/ (nada de la raíz, _respaldo, data ni img)
+OK    G9 sin dependencias nuevas ni servicios externos: sin package.json, sin librerías, sin URLs externas en el código; sin archivos de publicación (CNAME, workflows)
+OK    G10 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32 (y dantechstore-catalogo en b343f5a)
+OK    G11 consola sin errores ni advertencias, sin recursos rotos (404) en TODO el recorrido de pruebas
+
+RESULTADO: 94 de 94 verificaciones OK

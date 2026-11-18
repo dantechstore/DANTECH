@@ -89,56 +89,24 @@ await p.click(`.tarjeta[data-id="${prod.id}"] .tarjeta__foto`);await p.waitForTi
 await p.goto(BASE+'?sinpopups#p='+prod.id); await p.waitForTimeout(600);
 ok('5.9 enlace directo #p=ID abre el detalle',await p.isVisible('#capaDetalle')&&(await p.textContent('#detNombre'))===prod.nombre);
 await p.goto(BASE+'#sinpopups');await p.waitForTimeout(400);
-// ---- 6. carrito
-await p.evaluate(()=>localStorage.clear());await p.reload();await p.waitForTimeout(500);
-const A=J.productos.find(x=>x.precio&&!x.sin_foto),B=J.productos.filter(x=>x.precio&&x.id!==A.id)[5],Cn=J.productos.find(x=>!x.precio);
-await p.click(`#catalogo > .seccion .tarjeta[data-id="${A.id}"] .btn--add`);await p.click(`#catalogo > .seccion .tarjeta[data-id="${A.id}"] .btn--add`);await p.click(`#catalogo > .seccion .tarjeta[data-id="${B.id}"] .btn--add`);
-await p.click(`#catalogo > .seccion .tarjeta[data-id="${Cn.id}"] .btn--add`);
-ok('6.1 agregar desde las tarjetas: insignia = 4 unidades',(await p.textContent('#insCarrito'))==='4',await p.textContent('#insCarrito'));
-await p.click('#btnCarrito');await p.waitForSelector('#capaCarrito:not([hidden])');
-let st=A.precio*2+B.precio;
-ok('6.2 subtotal correcto (sin contar el producto «Consultar»)',(await p.textContent('.resumen > div:first-child span:last-child'))===din(st),din(st));
-ok('6.3 nota de producto por consultar visible',(await p.textContent('.nota')).includes('por consultar'));
-await p.click(`[data-accion="mas"][data-id="${B.id}"]`);st+=B.precio;await p.waitForTimeout(100);
-ok('6.4 cambiar cantidad (+) recalcula subtotal',(await p.textContent('.resumen > div:first-child span:last-child'))===din(st));
-await p.click(`[data-accion="menos"][data-id="${A.id}"]`);st-=A.precio;await p.waitForTimeout(100);
-ok('6.5 cambiar cantidad (−) recalcula subtotal',(await p.textContent('.resumen > div:first-child span:last-child'))===din(st));
-await p.click(`[data-accion="quitar"][data-id="${Cn.id}"]`);await p.waitForTimeout(100);
-ok('6.6 quitar un producto lo elimina y desaparece la nota',(await p.$$('.citem')).length===2&&(await p.$$('.nota')).length===0);
-await p.click('input[value="dom"]');await p.waitForTimeout(100);
-ok('6.7 entrega Bogotá suma $10.000 al total',(await p.textContent('.resumen__total b:last-child'))===din(st+10000),await p.textContent('.resumen__total b:last-child'));
-await p.click('input[value="otra"]');await p.waitForTimeout(100);
-ok('6.8 otra ciudad: no suma envío y el total indica «(sin envío)»',(await p.textContent('.resumen__total'))===('Total (sin envío)'+din(st)),await p.textContent('.resumen__total'));
-await p.click('input[value="tienda"]');await p.waitForTimeout(100);
-ok('6.9 recoger en tienda: gratis, total = subtotal',(await p.textContent('.resumen__total b:last-child'))===din(st));
-ok('6.10 se conservan las 3 opciones de entrega originales',(await p.$$eval('.entrega__op',a=>a.map(e=>e.textContent.replace(/\s+/g,' ').trim()))).join('|')==='🛵 Domicilio en Bogotá+$10.000 · pago contraentrega|🚚 Envío a otra ciudadTe confirmamos el valor del envío|🏪 Recoger en tiendaGratis');
-await p.click(`[data-accion="mas"][data-id="${B.id}"]`);await p.waitForTimeout(60);await p.click(`[data-accion="menos"][data-id="${B.id}"]`);await p.waitForTimeout(60);
-await p.evaluate(()=>{const a=document.getElementById('aviso');a.textContent='probando';a.classList.add('on')});await p.waitForTimeout(300);
-{const t=await p.$eval('#aviso',e=>e.getBoundingClientRect().toJSON()),b=await p.$eval('#carEnviar',e=>e.getBoundingClientRect().toJSON());
- ok('6.11 el aviso emergente no tapa el botón «Enviar pedido por WhatsApp»',t.bottom<b.top||t.top>b.bottom,{aviso:[Math.round(t.top),Math.round(t.bottom)],boton:[Math.round(b.top),Math.round(b.bottom)]})}
-await p.evaluate(()=>document.getElementById('aviso').classList.remove('on'));
-// ---- 7. WhatsApp
-await p.click('input[value="dom"]');await p.fill('#carNombre','Oscar Prueba');await p.waitForTimeout(150);
+// ---- 6-8. carrito: la lógica completa (cantidades, entrega, validaciones, mensaje de WhatsApp, persistencia) se prueba desde la Etapa 4 en
+//      herramientas/etapa4_pruebas.js. Aquí solo quedan comprobaciones de humo para que esta suite siga cubriendo todo el recorrido.
+await p.evaluate(()=>{localStorage.clear();sessionStorage.clear()});await p.reload();await p.waitForTimeout(500);
+const A=J.productos.find(x=>x.precio&&!x.sin_foto);
+await p.click(`#catalogo > .seccion .tarjeta[data-id="${A.id}"] .btn--add`);await p.click(`#catalogo > .seccion .tarjeta[data-id="${A.id}"] .btn--add`);
+ok('6.1 agregar desde las tarjetas: insignia = 2 unidades',(await p.textContent('#insCarrito'))==='2',await p.textContent('#insCarrito'));
+await p.click('#btnCarrito');await p.waitForSelector('#capaCarrito:not([hidden]) .carrito__pie');
+ok('6.2 el carrito abre en el paso 1 con subtotal y botón «Continuar» visibles',(await p.textContent('.resumen .resumen__total b:last-child'))===din(A.precio*2)&&await p.isVisible('#carContinuar'));
+await p.click('#carContinuar');await p.click('#ent-dom');await p.fill('#c-nombre','Oscar Prueba');await p.fill('#c-direccion','Calle 1 # 2-3');await p.waitForTimeout(150);
 const href=await p.getAttribute('#carEnviar','href');
 ok('7.1 el enlace usa el WhatsApp autorizado 573134724702',href.startsWith('https://wa.me/'+WA+'?text='),href.slice(0,40));
-const msg=decodeURIComponent(href.split('?text=')[1]);
-const qa=1,qb=2; // A: 2-1=1 ; B: 1+1=2
-const esperado=`Hola DANTESTORE 👋, quiero pedir:\n• ${qa} × ${A.nombre} — ${din(A.precio)} c/u\n• ${qb} × ${B.nombre} — ${din(B.precio)} c/u\nSubtotal: ${din(A.precio*qa+B.precio*qb)}\nEntrega: Domicilio en Bogotá (+$10.000, pago contraentrega)\nTotal: ${din(A.precio*qa+B.precio*qb+10000)}\nOrigen: catálogo web\nMi nombre: Oscar Prueba`;
-ok('7.2 el mensaje incluye productos, cantidades y valores correctos (formato idéntico al catálogo publicado)',msg===esperado,msg===esperado?'':msg);
-ok('7.3 el mensaje de respaldo (copiar) coincide con el enviado',(await p.inputValue('#carTexto'))===msg);
-ok('7.4 el enlace abre en pestaña nueva con rel=noopener',(await p.getAttribute('#carEnviar','target'))==='_blank'&&(await p.getAttribute('#carEnviar','rel')).includes('noopener'));
-// ---- 8. persistencia
+ok('7.2 el mensaje incluye producto, cantidad, total y datos de entrega',decodeURIComponent(href.split('?text=')[1]).includes(`2 × ${din(A.precio)} = ${din(A.precio*2)}`)&&decodeURIComponent(href.split('?text=')[1]).includes('*TOTAL:* '+din(A.precio*2+10000)));
 await p.keyboard.press('Escape');await p.reload();await p.waitForTimeout(600);
-ok('8.1 el carrito se conserva al recargar (3 unidades)',(await p.textContent('#insCarrito'))==='3');
-await p.click('#btnCarrito');await p.waitForTimeout(300);
-ok('8.2 se conservan entrega, nombre y cantidades',(await p.isChecked('input[value="dom"]'))&&(await p.inputValue('#carNombre'))==='Oscar Prueba'&&(await p.$$('.citem')).length===2);
+ok('8.1 el carrito se conserva al recargar (2 unidades)',(await p.textContent('#insCarrito'))==='2');
 const ls=await p.evaluate(()=>Object.keys(localStorage));
-ok('8.3 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)',ls.every(k=>k.startsWith('dtb_')),ls);
-await p.keyboard.press('Escape');await p.waitForTimeout(300);
-await p.evaluate(()=>localStorage.setItem('dtb_cart',JSON.stringify({'noexiste':3,[Object.keys(JSON.parse(localStorage.dtb_cart))[0]]:2})));await p.reload();await p.waitForTimeout(400);
-ok('8.4 un id inexistente guardado se descarta sin errores',(await p.textContent('#insCarrito'))==='2');
-await p.click('#btnCarrito');await p.waitForTimeout(300);await p.click('[data-accion="vaciar"]');ok('8.5 «Vaciar» pide confirmación (no vacía al primer toque)',(await p.$$('.citem')).length>=1);
-await p.click('[data-accion="vaciar"]');await p.waitForTimeout(200);ok('8.6 al confirmar, el carrito queda vacío con mensaje claro',(await p.textContent('.carrito__vacio')).includes('Aún no has agregado'));
+ok('8.2 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)',ls.every(k=>k.startsWith('dtb_')),ls);
+await p.click('#btnCarrito');await p.waitForSelector('#capaCarrito:not([hidden]) .carrito__pie');await p.click('[data-accion="vaciar"]');await p.click('#vaciarSi');await p.waitForTimeout(200);
+ok('8.3 vaciar (con confirmación) deja el carrito vacío con mensaje claro',(await p.textContent('.carrito__vacio')).includes('Aún no has agregado'));
 await p.keyboard.press('Escape');
 // ---- 9. popups
 await p.evaluate(()=>localStorage.clear());await p.goto(BASE);await p.waitForSelector('#capaPopup:not([hidden])',{timeout:5000});

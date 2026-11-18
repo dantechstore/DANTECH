@@ -33,27 +33,13 @@ OK    5.6 la descripción original se muestra
 OK    5.7 Esc cierra el detalle
 OK    5.8 el botón Atrás del teléfono cierra el detalle (sin salir de la página)
 OK    5.9 enlace directo #p=ID abre el detalle
-OK    6.1 agregar desde las tarjetas: insignia = 4 unidades  -> 4
-OK    6.2 subtotal correcto (sin contar el producto «Consultar»)  -> $280.000
-OK    6.3 nota de producto por consultar visible
-OK    6.4 cambiar cantidad (+) recalcula subtotal
-OK    6.5 cambiar cantidad (−) recalcula subtotal
-OK    6.6 quitar un producto lo elimina y desaparece la nota
-OK    6.7 entrega Bogotá suma $10.000 al total  -> $270.000
-OK    6.8 otra ciudad: no suma envío y el total indica «(sin envío)»  -> Total (sin envío)$260.000
-OK    6.9 recoger en tienda: gratis, total = subtotal
-OK    6.10 se conservan las 3 opciones de entrega originales
-OK    6.11 el aviso emergente no tapa el botón «Enviar pedido por WhatsApp»  -> {"aviso":[14,54],"boton":[796,848]}
-OK    7.1 el enlace usa el WhatsApp autorizado 573134724702  -> https://wa.me/573134724702?text=Hola%20D
-OK    7.2 el mensaje incluye productos, cantidades y valores correctos (formato idéntico al catálogo publicado)
-OK    7.3 el mensaje de respaldo (copiar) coincide con el enviado
-OK    7.4 el enlace abre en pestaña nueva con rel=noopener
-OK    8.1 el carrito se conserva al recargar (3 unidades)
-OK    8.2 se conservan entrega, nombre y cantidades
-OK    8.3 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)  -> ["dtb_ent","dtb_nombre","dtb_cart"]
-OK    8.4 un id inexistente guardado se descarta sin errores
-OK    8.5 «Vaciar» pide confirmación (no vacía al primer toque)
-OK    8.6 al confirmar, el carrito queda vacío con mensaje claro
+OK    6.1 agregar desde las tarjetas: insignia = 2 unidades  -> 2
+OK    6.2 el carrito abre en el paso 1 con subtotal y botón «Continuar» visibles
+OK    7.1 el enlace usa el WhatsApp autorizado 573134724702  -> https://wa.me/573134724702?text=*PEDIDO%
+OK    7.2 el mensaje incluye producto, cantidad, total y datos de entrega
+OK    8.1 el carrito se conserva al recargar (2 unidades)
+OK    8.2 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)  -> ["dtb_ent","dtb_cart"]
+OK    8.3 vaciar (con confirmación) deja el carrito vacío con mensaje claro
 OK    9.1 primera ventana: Navidad (textos originales)
 OK    9.2 segunda ventana: Juguetería (textos originales)
 OK    9.3 el botón de Juguetería lleva a la categoría Juguetería
@@ -79,4 +65,4 @@ OK    13.4 productos.json y manifiestos sin cambios desde la etapa 2
 OK    13.5 el único número de WhatsApp en toda la beta es 573134724702  -> ["573134724702"]
 OK    13.6 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32  -> 9ef8bc95f5023ec2160e8590c643e26605a5db32	refs/heads/main
 
-RESULTADO: 80 de 80 verificaciones OK
+RESULTADO: 66 de 66 verificaciones OK
