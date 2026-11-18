@@ -266,7 +266,8 @@ if(quiere('C')){
   const campos=new Set();J.productos.forEach(x=>Object.keys(x).forEach(k=>campos.add(k)));
   ok('C10','datos expuestos mínimos: productos.json solo tiene campos de catálogo (sin costos, proveedores, stock, márgenes, clientes)',![...campos].some(k=>/cost|proveed|stock|margen|utilid|client|compra|venta|cantidad|inventario/i.test(k)),[...campos].join(','));
   const todo=sh('git ls-files').split('\n').filter(f=>f&&!/\.(webp|jpg|png)$/.test(f));
-  let hits=[];todo.forEach(f=>{let s='';try{s=fs.readFileSync(f,'utf8').replace(/\b[0-9a-f]{64}\b/g,'')}catch(e){return}   // se quitan las huellas sha256 (64 hex): sus dígitos no son teléfonosif(f.startsWith('_respaldo')||f==='index.html'||f==='catalogo-dantestore.html')return;if(f==='herramientas/etapa5_pruebas.js')return;
+  let hits=[];todo.forEach(f=>{let s='';try{s=fs.readFileSync(f,'utf8').replace(/\b[0-9a-f]{64}\b/g,'')}catch(e){return}   /* las huellas sha256 (64 hex) se quitan: sus dígitos no son teléfonos */
+    if(f.startsWith('_respaldo')||f==='index.html'||f==='catalogo-dantestore.html')return;if(f==='herramientas/etapa5_pruebas.js')return;
     if(/hotmail|@[a-z0-9-]+\.(com|es|co)\b|oskar_toledo/i.test(s.replace(/@(media|keyframes|import|font-face|supports|charset|types)/g,'')))hits.push(f+': correo/identidad');
     const n=[...s.matchAll(/(?<![\w.#-])(\+?57[ -]?)?3\d{2}[ -]?\d{3}[ -]?\d{4}(?!\d)/g)].map(m=>m[0].replace(/\D/g,'')).filter(x=>!(x===WA||x===WA.slice(2)));if(n.length&&!/sha|hash/i.test(f))hits.push(f+': '+[...new Set(n)].join(','))});
   ok('C11','ningún correo, identidad personal ni teléfono distinto del autorizado en beta/, data/, docs/, herramientas/ (los respaldos del catálogo original se excluyen)',!hits.length,hits.slice(0,5));

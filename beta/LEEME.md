@@ -9,7 +9,7 @@ Sitio 100 % estático: sin servidores, sin bases de datos, sin servicios pagos n
 - Agrega `#sinpopups` a la dirección para ocultar las ventanas emergentes al probar.
 
 ## Probar en iPhone
-Guía paso a paso: `docs/ETAPA5_GUIA_IPHONE.md` (alternativas en `docs/PROBAR_EN_IPHONE.md`) (servidor local gratuito por Wi-Fi: `herramientas/PROBAR_BETA_EN_IPHONE.bat` en Windows).
+Guía paso a paso: `docs/ETAPA5_GUIA_IPHONE.md` (servidor local gratuito por Wi-Fi: `herramientas/PROBAR_BETA_EN_IPHONE.bat` en Windows; otras alternativas en `docs/PROBAR_EN_IPHONE.md`).
 
 ## Estructura
 ```
@@ -28,7 +28,7 @@ Las fotos se leen de `../img/miniaturas/` (tarjetas) y `../img/completas/` (deta
 ## Cómo se actualizan los datos
 1. Cambia `data/productos.json` (la fuente única).
 2. Ejecuta `python3 herramientas/etapa3_generar_datos.py` para regenerar `beta/js/datos.js`.
-3. Ejecuta `node herramientas/etapa3_pruebas.js` para verificar todo (66 comprobaciones) `node herramientas/etapa4_pruebas.js` (94 del carrito y el pedido) y `node herramientas/etapa5_pruebas.js` (102 de auditoría final: dispositivos emulados, seguridad, rendimiento, accesibilidad y protección).
+3. Ejecuta `node herramientas/etapa3_pruebas.js` para verificar todo (66 comprobaciones), `node herramientas/etapa4_pruebas.js` (94 del carrito y el pedido) y `node herramientas/etapa5_pruebas.js` (102 de auditoría final: dispositivos emulados, seguridad, rendimiento, accesibilidad y protección).
 
 ## Notas importantes
 - El carrito guarda solo `{id: cantidad}`; nombre y precio se leen siempre de los datos (nunca hay precios viejos).

@@ -1,0 +1,411 @@
+DANTESTORE · ETAPA 5 · RESULTADO DE PRUEBAS
+=============================================
+Fecha de ejecución: 18-nov-2026 · Rama: renovacion-dantestore
+Código probado: commit 8307479 (etapa 5) + corrección del script de pruebas C11 incluida en el commit final de la etapa 5.
+Todas las suites se ejecutaron DE NUEVO al cierre, con el commit guardado (la suite de la etapa 1 exige árbol limpio).
+
+LÍMITES: emulación sobre Chromium (NO Safari/WebKit ni dispositivos físicos); mediciones de rendimiento y accesibilidad PROPIAS (NO Lighthouse ni axe-core, no disponibles sin red);
+teclado virtual emulado; configuración de GitHub Pages y URL pública NO verificables desde esta sesión.
+
+RESUMEN
+-------
+  28 de 28   OK   Etapa 1 · datos y respaldo   (python3 herramientas/etapa1_validar.py)
+  21 de 21   OK   Etapa 2 · imágenes WebP   (python3 herramientas/etapa2_validar.py)
+  66 de 66   OK   Etapa 3 · catálogo completo   (node herramientas/etapa3_pruebas.js)
+  33 de 33   OK   Etapa 3b · logo, servidor local, Open Graph   (node herramientas/etapa3b_verificaciones.js)
+  94 de 94   OK   Etapa 4 · carrito y pedido   (node herramientas/etapa4_pruebas.js)
+ 102 de 102  OK   Etapa 5 · auditoría final   (node herramientas/etapa5_pruebas.js)
+ 344 de 344  OK   TOTAL (aprobadas: 344 · fallidas: 0)
+
+Nota: la suite de la etapa 3 tiene 66 comprobaciones (eran 80 antes de la etapa 4, cuando las pruebas del carrito anterior pasaron a la suite de la etapa 4).
+Ajustes hechos a las propias pruebas durante la etapa 5 (no a la beta): ver docs/ETAPA5_AUDITORIA.md, sección «Ajustes a mis propias pruebas».
+
+Prueba negativa de la excepción del manifiesto: con un cambio extra en data/manifiesto_imagenes.json las guardas FALLAN (verificado); solo se acepta «Infinity» → null.
+Prueba negativa de C11: un correo @hotmail y un teléfono de 10 dígitos ajeno colocados en docs/ hacen FALLAR la comprobación (verificado y retirado).
+
+
+====================================================================================================
+Etapa 1 · datos y respaldo   —   python3 herramientas/etapa1_validar.py
+====================================================================================================
+OK    A1 186 productos en JSON  -> 186
+OK    A2 ids unicos
+OK    A3 ids HTML == ids JSON (mismo orden)  -> 186 en HTML
+OK    A4 20 categorias
+OK    B nombre: 186/186 coinciden con el HTML  -> []
+OK    B precio: 186/186 coinciden con el HTML  -> []
+OK    B precio_texto: 186/186 coinciden con el HTML  -> []
+OK    B categoria: 186/186 coinciden con el HTML  -> []
+OK    B fotos: 186/186 coinciden con el HTML  -> []
+OK    B desc: 186/186 coinciden con el HTML  -> []
+OK    B sinfoto: 186/186 coinciden con el HTML  -> []
+OK    B6 precio numerico == precio mostrado en el catalogo
+OK    B7 productos sin precio (Consultar)  -> ['muu1q26ymrsg Cepillo Alisador']
+OK    B8 sin precios <=0 ni duplicados raros
+OK    B9 nombres vacios
+OK    B10 productos SIN foto = exactamente los que tienen marcador vacio en el HTML  -> ['mvj15tw83a8t Bombox 3 LED', 'muu1q26ymrsg Cepillo Alisador']
+OK    C1 321 imagenes en HTML = 320 fotos + 1 logo  -> 321
+OK    C2 hashes de las 321 imagenes del HTML == JSON (mismo orden salvo logo)
+OK    C3 los 320 archivos de foto existen  -> []
+OK    C4 hash y tamano de cada archivo coincide (copia exacta)  -> []
+OK    C5 todas las fotos abren y miden lo declarado  -> []
+OK    C6 archivos en img/originales == 321  -> 321
+OK    D1 mas vendidos: 8 ids y existen  -> ['muu167a3kyoe', 'hpafeitadora', 'hpkeratina3dpro', 'hptoposplataley925', 'muu1q2701ujp', 'muu1q26w4d6h', 'muu1q26y58ek', 'muu1q26wblx4']
+OK    D2 whatsapp = 573134724702 (unico en el HTML)
+OK    D3 etiquetas Nuevo=36, Mas vendido=8
+OK    E1 ningun archivo existente modificado ni borrado (git)
+OK    E2 index.html == main publicado (sha256)
+OK    E3 respaldo identico al original
+
+RESULTADO: 28 de 28 verificaciones OK
+bytes fotos 15178302
+
+====================================================================================================
+Etapa 2 · imágenes WebP   —   python3 herramientas/etapa2_validar.py
+====================================================================================================
+OK    1.1 hay 321 archivos en img/originales  -> 321
+OK    1.2 los 321 originales son IDENTICOS byte a byte a los del commit de la etapa 1  -> []
+OK    1.3 hashes de los originales == hashes declarados en productos.json
+OK    1.4 git: img/originales sin cambios respecto al commit de la etapa 1
+OK    1.5 productos.json sin cambios (productos, precios, nombres, IDs, categorias, descripciones, WhatsApp)
+OK    2.1 manifiesto cubre los 321 originales
+OK    2.2 img/miniaturas: 321 archivos y ninguno huerfano  -> 321
+OK    2.2 img/completas: 321 archivos y ninguno huerfano  -> 321
+OK    2.3 cada producto tiene todas sus fotos optimizadas
+OK    3.1 los 642 WebP abren y son WebP validos  -> []
+OK    3.2 ninguno excede 400 px (miniatura) / 900 px (completa)
+OK    3.3 no se amplio ninguna imagen  -> []
+OK    3.4 proporcion conservada  -> []
+OK    3.5 hashes de los WebP coinciden con el manifiesto  -> []
+OK    3.6 SSIM minimo recalculado (metodo independiente) >= 0.94 en ambas versiones  -> {'miniatura': 0.9521, 'completa': 0.9555}
+OK    3.7 sin errores de conversion en el manifiesto
+OK    4.1 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32
+OK    4.2 rama dantechstore-catalogo remota sin cambios
+OK    4.3 index.html == main publicado
+OK    4.4 catalogo-dantestore.html sin cambios
+OK    4.5 ningun archivo del commit de la etapa 1 fue modificado o borrado (solo se agregan archivos)  -> ['A\tbeta/LEEME.md', 'A\tbeta/css/estilos.css', 'A\tbeta/img/og-dantestore.jpg']
+
+RESULTADO: 21 de 21 OK
+bytes miniaturas 4473182 completas 9612560
+
+====================================================================================================
+Etapa 3 · catálogo completo   —   node herramientas/etapa3_pruebas.js
+====================================================================================================
+OK    1.1 se muestran los 186 productos (vista Todo)  -> 186
+OK    1.2 ids únicos y en el mismo orden que productos.json
+OK    1.3 nombres idénticos a productos.json (186/186)  -> []
+OK    1.4 precios idénticos a productos.json (186/186; «Consultar» conservado)
+OK    1.5 categoría de cada tarjeta idéntica a productos.json
+OK    1.6 las 20 categorías disponibles (+ «Todo»), en el orden original  -> 21
+OK    1.7 conteo por categoría correcto en cada chip
+OK    1.8 «Más vendidos» = configuración original (8, mismo orden)
+OK    1.9 portada y textos originales conservados
+OK    1.10 etiquetas Nuevo (36) y escasez conservadas
+OK    1.11 productos sin foto conservados (marcador «Foto próximamente», sin inventar imagen)  -> ["mvj15tw83a8t","muu1q26ymrsg"]
+OK    1.12 «Eslogan» Mucho más para ti visible
+OK    2.1 sin imágenes rotas (todas cargan, tras recorrer la página)  -> []
+OK    2.2 las tarjetas usan SOLO miniaturas WebP (img/miniaturas/)  -> []
+OK    2.3 imágenes de tarjeta = 184 productos con foto + 8 destacados repetidos (sin foto: 2 productos, mostrados con marcador)  -> 192
+OK    3.1 buscar «airpods» devuelve exactamente los esperados  -> 3
+OK    3.2 insensible a mayúsculas y tildes («CAMARA» encuentra «Cámara»)  -> 7
+OK    3.3 varias palabras (todas deben coincidir)  -> ["Cepillo Secador Aguacate","Cepillo Secador 5 en 1"]
+OK    3.4 sin resultados: mensaje claro y botones de ayuda
+OK    3.5 botón del mensaje vacío usa solo el WhatsApp autorizado
+OK    3.6 borrar la búsqueda restaura los 186 productos
+OK    4.1 el filtro de cada una de las 20 categorías muestra exactamente sus productos  -> []
+OK    4.2 el chip activo se marca (aria-pressed=true) y «Todo» queda sin marcar
+OK    4.3 hash de categoría compartible (#cat=Navidad)
+OK    4.4 «Todo» vuelve a mostrar los 186
+OK    4.5 abrir un enlace con #cat=Juguetería muestra esa categoría
+OK    5.1 el detalle abre con la imagen COMPLETA (img/completas/)  -> ../img/completas/muu1q26wblx4-1.webp
+OK    5.2 el detalle muestra nombre y precio idénticos
+OK    5.3 la imagen completa carga (no rota)
+OK    5.4 galería: la flecha cambia a la 2.ª foto completa  -> ../img/completas/muu1q26wblx4-2.webp
+OK    5.5 el hash cambia a #p=ID (enlace directo al producto)
+OK    5.6 la descripción original se muestra
+OK    5.7 Esc cierra el detalle
+OK    5.8 el botón Atrás del teléfono cierra el detalle (sin salir de la página)
+OK    5.9 enlace directo #p=ID abre el detalle
+OK    6.1 agregar desde las tarjetas: insignia = 2 unidades  -> 2
+OK    6.2 el carrito abre en el paso 1 con subtotal y botón «Continuar» visibles
+OK    7.1 el enlace usa el WhatsApp autorizado 573134724702  -> https://wa.me/573134724702?text=*PEDIDO%
+OK    7.2 el mensaje incluye producto, cantidad, total y datos de entrega
+OK    8.1 el carrito se conserva al recargar (2 unidades)
+OK    8.2 la beta usa claves propias (dtb_*) y no toca las del catálogo publicado (dtcart/dtent)  -> ["dtb_ent","dtb_cart"]
+OK    8.3 vaciar (con confirmación) deja el carrito vacío con mensaje claro
+OK    9.1 primera ventana: Navidad (textos originales)
+OK    9.2 segunda ventana: Juguetería (textos originales)
+OK    9.3 el botón de Juguetería lleva a la categoría Juguetería
+OK    9.4 no se vuelven a mostrar el mismo día
+OK    10.x columnas móvil 375 = 2
+OK    10.x columnas móvil 390 = 2
+OK    10.x columnas tablet 768 = 3
+OK    10.x columnas portátil 1280 = 5
+OK    10.x columnas escritorio 1920 = 5
+OK    10.1 sin desbordamiento horizontal en 5 tamaños de pantalla  -> []
+OK    10.2 botones y controles táctiles ≥ 44 px (en la vista principal móvil)  -> []
+OK    10.3 idioma, título y viewport definidos
+OK    10.4 todas las imágenes tienen texto alternativo coherente (alt = nombre del producto)
+OK    10.5 enlace «Saltar al catálogo» disponible con teclado
+OK    11.1 también abre con doble clic (file://): 186 productos
+OK    11.2 file://: imágenes cargan
+OK    12.1 CERO errores/advertencias de consola, peticiones fallidas o HTTP ≥400 (todas las pruebas, http y file://)  -> []
+OK    12.2 las peticiones canceladas por cambiar de página (ERR_ABORTED) se cargaron bien en otra visita  -> {"canceladas":0,"sin_recuperar":[]}
+OK    13.1 datos.js == productos.json (id, nombre, precio, descripción, categoría, orden, etiquetas, whatsapp) en los 186
+OK    13.2 ningún archivo existente fuera de beta/, herramientas/ y docs/ fue modificado (originales, WebP, productos.json, manifiestos, index.html…)
+OK    13.3 index.html y catalogo-dantestore.html intactos (sha256)
+OK    13.4 productos.json y manifiestos sin cambios desde la etapa 2
+OK    13.5 el único número de WhatsApp en toda la beta es 573134724702  -> ["573134724702"]
+OK    13.6 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32  -> 9ef8bc95f5023ec2160e8590c643e26605a5db32	refs/heads/main
+
+RESULTADO: 66 de 66 verificaciones OK
+
+====================================================================================================
+Etapa 3b · logo, servidor local, Open Graph   —   node herramientas/etapa3b_verificaciones.js
+====================================================================================================
+OK    1.1 el logo del catálogo PUBLICADO (index.html de main) es byte a byte igual a img/originales/_logo-marca.png  -> e3d030e0ab687dcd
+OK    1.2 el logo de catalogo-dantestore.html (versión anterior) también es idéntico (misma identidad en todas las versiones)
+OK    1.3 el WebP que usa la beta (img/miniaturas/_logo-marca.webp) es idéntico píxel a píxel al PNG original (200×200, sin pérdida)  -> ["miniaturas True","completas True"]
+OK    1.4 la versión completa del logo también es idéntica píxel a píxel
+OK    1.5 el logo original no se modificó (sha256 = el de la etapa 1 en productos.json)
+OK    1.6 git: img/originales sin cambios
+OK    1.7 [iPhone 14 (emulado)] el logo del perro se ve en el ENCABEZADO (visible, dentro de la pantalla, cargó bien)  -> {"y":73,"nat":200}
+OK    1.8 [iPhone 14 (emulado)] tamaño visible 60×60 px (≥ 56 px, proporción 1:1, sin deformar)  -> [60,60]
+OK    1.9 [iPhone 14 (emulado)] sin filtros, marco, recorte, máscara ni transformaciones sobre el logo  -> {"x":14,"y":72.96875,"w":60,"h":60,"nat":200,"natH":200,"src":"../img/miniaturas/_logo-marca.webp","filter":"none","border":"0px","radius":"0px","transform":"none","opacity":"1","fit":"fill","vis":"visible","clip":"none","mask":"none","pad":"0px","ok":true}
+OK    1.10 [iPhone 14 (emulado)] usa el archivo del logo original (img/miniaturas/_logo-marca.webp, copia sin pérdida)  -> ../img/miniaturas/_logo-marca.webp
+OK    1.11 [iPhone 14 (emulado)] sin errores de consola  -> []
+OK    1.7 [escritorio 1280] el logo del perro se ve en el ENCABEZADO (visible, dentro de la pantalla, cargó bien)  -> {"y":74,"nat":200}
+OK    1.8 [escritorio 1280] tamaño visible 72×72 px (≥ 56 px, proporción 1:1, sin deformar)  -> [72,72]
+OK    1.9 [escritorio 1280] sin filtros, marco, recorte, máscara ni transformaciones sobre el logo  -> {"x":24,"y":73.6875,"w":72,"h":72,"nat":200,"natH":200,"src":"../img/miniaturas/_logo-marca.webp","filter":"none","border":"0px","radius":"0px","transform":"none","opacity":"1","fit":"fill","vis":"visible","clip":"none","mask":"none","pad":"0px","ok":true}
+OK    1.10 [escritorio 1280] usa el archivo del logo original (img/miniaturas/_logo-marca.webp, copia sin pérdida)  -> ../img/miniaturas/_logo-marca.webp
+OK    1.11 [escritorio 1280] sin errores de consola  -> []
+OK    1.12 el ícono de pestaña/pantalla de inicio es el mismo logo (favicon WebP + apple-touch-icon PNG original)  -> ["icon:../img/miniaturas/_logo-marca.webp","apple-touch-icon:../img/originales/_logo-marca.png"]
+OK    2.1 el servidor local sirve la beta, el CSS/JS, fotos, datos e imagen OG (200)  -> []
+OK    2.2 NO expone respaldos, herramientas, docs, .git ni el index.html oficial (403)  -> [["/herramientas/servir_beta.py",403],["/_respaldo/2026-11-13_main-9ef8bc9/index.html",403],["/index.html",403],["/docs/ETAPA3_INFORME.md",403],["/.git/config",403]]
+OK    2.3 la raíz redirige a /beta/ y las respuestas llevan Cache-Control: no-store  -> [302,"no-store","/beta/"]
+OK    2.4 existen la guía de prueba y el .bat para Windows
+OK    3.1 etiquetas Open Graph y Twitter Card completas (16)  -> []
+OK    3.2 og:url y og:image son direcciones https ABSOLUTAS bajo la URL oficial  -> ["https://dantechstore.github.io/DANTECH/beta/","https://dantechstore.github.io/DANTECH/beta/img/og-dantestore.jpg"]
+OK    3.3 la imagen de og:image existe en el repositorio en esa misma ruta (beta/img/og-dantestore.jpg)  -> beta/img/og-dantestore.jpg
+OK    3.4 la imagen mide 1200×630 (formato recomendado) y es JPEG  -> 1200 630 JPEG
+OK    3.5 pesa menos de 300 KB (WhatsApp exige < 600 KB; aquí 88 KB)
+OK    3.6 la imagen se genera SOLO con el logo original + textos de marca: la plantilla contiene una única imagen y es el logo (sin fotos de productos)  -> ["file:///home/claude/dantech/img/originales/_logo-marca.png"]
+OK    3.7 la descripción cabe en el límite recomendado (≤ 160 caracteres)  -> 117
+OK    3.8 la beta mantiene noindex (no se indexa en Google)
+OK    4.1 ningún archivo fuera de beta/, herramientas/ y docs/ fue modificado
+OK    4.2 index.html y catalogo-dantestore.html intactos (sha256)
+OK    4.3 no hay archivos de configuración de publicación (CNAME, .github/workflows, _config.yml) agregados
+OK    4.4 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32
+
+RESULTADO: 33 de 33 verificaciones OK
+
+====================================================================================================
+Etapa 4 · carrito y pedido   —   node herramientas/etapa4_pruebas.js
+====================================================================================================
+OK    A1 agregar varios productos distintos desde las tarjetas: 3 unidades, insignia visible
+OK    A2 agregar varias unidades del mismo producto: cantidad 3 de ese producto y 5 en total
+OK    A3 el carrito muestra unidades totales y productos diferentes
+OK    A4 subtotal por producto y subtotal general correctos
+OK    A5 modificar cantidades con «＋» recalcula (subtotal por producto y general)
+OK    A6 modificar cantidades con «−» recalcula
+OK    A7 la cantidad nunca baja de 1: «−» queda desactivado en 1 (no hay cero ni negativos)
+OK    A8 eliminar un producto individualmente (los demás no cambian)
+OK    A9 «Vaciar carrito» pide confirmación y no vacía al primer toque
+OK    A10 «Cancelar» conserva el carrito
+OK    A11 Esc cancela la confirmación sin cerrar ni vaciar el carrito
+OK    A12 confirmar vacía el carrito y muestra el mensaje de carrito vacío
+OK    A13 vaciar también borra los datos del comprador y la entrega
+OK    B1 el carrito, la entrega y los datos escritos se conservan al recargar
+OK    B2 recuperación ante datos locales inválidos (18 variantes: JSON roto, arreglos, claves heredadas, cantidades negativas/cero/decimales/texto/exceso): sin errores y el panel abre
+OK    B3 producto inexistente en el almacenamiento: se descarta y se conserva el válido
+OK    B4 entrega guardada inválida («constructor») se descarta
+OK    B5 entrega desconocida y datos del comprador rotos: no producen errores
+OK    B6 protección contra cantidades inválidas (negativas, cero, decimales, texto, NaN, Infinity, null, objetos): se rechazan y el carrito no cambia
+OK    B7 cantidad por omisión = 1; exceso se limita a 99 (con aviso de tope); «−» nunca baja de 1; decimales y textos en cambiar() se rechazan
+OK    B8 fijarCantidad: 0 se rechaza, 200 se limita a 99, «7» (texto numérico) vale 7
+OK    B9 ids inválidos («constructor», «__proto__», inexistentes, null, números) se rechazan al agregar y al quitar
+OK    B10 al llegar a 99: «＋» queda desactivado y se explica el máximo
+OK    B11 agregar desde el catálogo con 99 unidades no pasa del máximo y avisa
+OK    B12 el carrito se sincroniza entre pestañas abiertas
+OK    C1 las 3 modalidades y sus condiciones se conservan EXACTAS: dom $10.000 contraentrega · otra ciudad por confirmar · tienda gratis (config.js idéntico al de la etapa 3b)
+OK    C2 sin entrega elegida: el total dice «Elige la entrega» (no inventa un total)
+OK    C3 domicilio en Bogotá: +$10.000 y total = subtotal + $10.000
+OK    C4 recoger en tienda: gratis y total = subtotal
+OK    C5 envío a otra ciudad: «Envío: Por cotizar» y «Total definitivo: Pendiente de cotización» (no se suma como $0 ni se presenta como gratis)
+OK    C6 envío a otra ciudad: el aviso aclara el subtotal de productos y que el envío se confirma
+OK    C7 el cálculo interno no cuenta el envío de otra ciudad como costo cero definitivo (pendiente = true)
+OK    C8 las 3 opciones se muestran con sus textos originales
+OK    C9 producto «Consultar»: no suma al subtotal, se avisa y el total queda «Por confirmar»
+OK    D1 enviar sin datos: NO abre WhatsApp y muestra un resumen de errores (nombre y entrega) con el foco en él
+OK    D2 el campo con error se marca (aria-invalid) y su mensaje está asociado (aria-describedby)
+OK    D3 nombre de 1 carácter: se pide al menos 2 (los errores se actualizan al escribir sin perder el foco)
+OK    D4 al corregir el nombre desaparece su error
+OK    D5 con nombre pero sin entrega: sigue faltando la entrega y no se habilita el enlace de WhatsApp (href interno)
+OK    D6 domicilio en Bogotá: pide dirección (obligatoria), barrio e indicaciones (opcionales); no pide ciudad
+OK    D7 domicilio sin dirección: error específico y no se envía
+OK    D8 dirección muy corta (4 caracteres): se pide al menos 5
+OK    D9 con nombre + entrega + dirección ya es válido (barrio e indicaciones son opcionales)
+OK    D10 otra ciudad: pide ciudad (obligatoria), departamento y dirección/barrio de destino (opcionales); ya no pide dirección de domicilio
+OK    D11 otra ciudad sin ciudad: no es válido y la tarjeta de datos se titula «Datos para cotizar el envío»
+OK    D12 con la ciudad ya es válido (departamento y destino opcionales)
+OK    D13 otra ciudad solo con la ciudad: el mensaje no deja líneas vacías de departamento ni destino
+OK    D14 recoger en tienda: solo se necesita el nombre (no aparecen campos de dirección ni de ciudad)
+OK    D15 cambiar de entrega no filtra datos de otra modalidad al mensaje (tienda: sin dirección ni ciudad aunque estén escritas)
+OK    D16 datos personales: NADA de nombre, dirección, ciudad o indicaciones en localStorage (persistente)
+OK    D17 los datos escritos solo viven en sessionStorage (se borran al cerrar la pestaña) y la clave antigua dtb_nombre ya no existe
+OK    D18 al cargar, se elimina el nombre guardado de forma permanente por la versión anterior
+OK    D19 nombres con saltos de línea, tabulaciones y espacios: el mensaje queda en una sola línea limpia («Ana Pérez») y no se puede falsear una línea de TOTAL
+OK    D20 longitud máxima por campo (barrio 500 → 60) y campos desconocidos («constructor», «__proto__») se ignoran
+OK    D21 un nombre con HTML no se ejecuta ni se inserta como etiquetas (se escapa en el cuadro y en el texto de respaldo)
+OK    E1 el mensaje incluye TODOS los productos con cantidad, precio unitario y total por producto, en el formato esperado
+OK    E2 el mensaje incluye cliente, subtotal, entrega, dirección, barrio, indicaciones, domicilio y total
+OK    E3 el mensaje abre con «PEDIDO DANTESTORE» y cierra con el origen; la estructura es la esperada
+OK    E4 codificado correctamente: URL de wa.me al único número autorizado y el texto decodificado es idéntico al mensaje (con tildes, emojis, &, #, +, %, ?, saltos de línea)
+OK    E5 otra ciudad: el mensaje trae ciudad y departamento, «Envío: por cotizar» y total pendiente de confirmar (nunca un TOTAL numérico)
+OK    E6 producto sin precio: aparece con su cantidad y «precio por consultar», y el subtotal lo aclara
+OK    E7 recoger en tienda: entrega «gratis», sin datos de dirección y TOTAL = subtotal
+OK    E8 único WhatsApp autorizado 573134724702: es el único número de 9+ dígitos en el código de la beta y los enlaces de consulta lo usan
+OK    E9 todos los enlaces a WhatsApp visibles en la página apuntan al número autorizado
+OK    E10 enviar con datos completos abre WhatsApp en una pestaña nueva hacia el número autorizado con el mensaje
+OK    E11 el carrito NO se vacía al enviar (el cliente puede revisar y corregir en WhatsApp)
+OK    E12 después de enviar se informa que el carrito se conserva y se ofrece vaciarlo (con confirmación)
+OK    E13 «Ya envié mi pedido: vaciar» también pide confirmación
+OK    E14 el texto de respaldo («¿No se abre WhatsApp?») coincide exactamente con el mensaje enviado
+OK    E15 el enlace de envío abre en pestaña nueva con rel=noopener
+OK    E16 carrito grande (25 productos): el mensaje incluye los 25 y la URL mide 2698 caracteres (si WhatsApp no la abriera, existe el texto de respaldo)
+OK    F1 cinco tamaños de pantalla (320, 360, 390, 768, 1280): «Continuar», «Seguir comprando» y «Enviar pedido» siempre visibles sin hacer scroll; sin desbordes horizontales; el último campo no queda tapado; controles táctiles ≥ 44 px
+OK    F2 los avisos emergentes no tapan los botones «Continuar» / «Enviar pedido» ni la cantidad
+OK    F3 «Seguir comprando» vuelve al catálogo sin perder el carrito (la barra inferior sigue mostrando las unidades)
+OK    F4 Esc y el botón «Atrás» del navegador cierran el carrito sin perderlo
+OK    F5 el gesto «Atrás» (historial) cierra el carrito y el carrito se conserva
+OK    F6 volver al paso 1 conserva los productos y los datos escritos
+OK    F7 al volver al paso 2 los datos siguen ahí
+OK    F8 teclado: con Enter sobre «＋» la cantidad sube y el foco se queda en el mismo control
+OK    F9 teclado: con Espacio también funciona y la cantidad sigue coherente con el almacenamiento
+OK    F10 al escribir en un campo no se pierde el foco ni el texto (no se repinta el panel)
+OK    F11 teclado: el foco recorre solo el carrito abierto (no se escapa al fondo)
+OK    F12 accesibilidad: diálogo modal con título, todos los campos con etiqueta, botones con nombre, opciones de entrega en fieldset con legend, paso actual marcado, campos obligatorios con aria-required, texto de campos ≥ 16 px (sin zoom en iPhone)
+OK    G1 los 186 productos (id, nombre, categoría, precio, texto de precio, descripción) son idénticos a data/productos.json
+OK    G2 data/productos.json sigue byte a byte igual al de la etapa 3b (productos, precios, nombres, IDs, categorías, descripciones sin cambios)
+OK    G3 siguen 186 productos y 20 categorías en la beta
+OK    G4 beta/js/datos.js (datos del catálogo) no cambió respecto a la etapa 3b
+OK    G5 ninguna fotografía (originales, miniaturas ni completas) ni archivo de data/ cambió
+OK    G6 el logo original del perro Dante no se modificó (sha256 = el registrado en productos.json) y la beta usa su copia sin pérdida
+OK    G7 index.html (raíz) y catalogo-dantestore.html intactos (sha256 de la auditoría)
+OK    G8 los únicos archivos tocados están en beta/, herramientas/ y docs/ (nada de la raíz, _respaldo, data ni img)
+OK    G9 sin dependencias nuevas ni servicios externos: sin package.json, sin librerías, sin URLs externas en el código; sin archivos de publicación (CNAME, workflows)
+OK    G10 main remoto sigue en 9ef8bc95f5023ec2160e8590c643e26605a5db32 (y dantechstore-catalogo en b343f5a)
+OK    G11 consola sin errores ni advertencias, sin recursos rotos (404) en TODO el recorrido de pruebas
+
+RESULTADO: 94 de 94 verificaciones OK
+
+====================================================================================================
+Etapa 5 · auditoría final   —   node herramientas/etapa5_pruebas.js
+====================================================================================================
+OK    A1 186 productos y 20 categorías en la página, con las categorías en el orden de productos.json  -> {"productos":186,"categorias":20}
+OK    A2 identificador, nombre, precio y ORDEN de los 186 productos coinciden exactamente con data/productos.json  -> []
+OK    A3 precios con formato $x.xxx y un único producto «Consultar» (Cepillo Alisador, sin precio inventado)  -> ["Cepillo Alisador"]
+OK    A4 los 2 productos sin foto muestran «Foto próximamente» (no se inventa imagen) y siguen siendo abribles  -> ["muu1q26ymrsg","mvj15tw83a8t"]
+OK    A5 todas las fotos de las tarjetas cargan (0 rotas), son miniaturas WebP, con alt (nombre del producto) y width/height  -> {"n":192,"rotas":[],"fuera":0,"sinWH":0,"altMal":0}
+OK    A6 el detalle de los 186 productos muestra nombre, precio, categoría, descripción y nº de fotos idénticos a productos.json, con foto completa (WebP 900)  -> []
+OK    A6b 131 productos sin descripción siguen sin descripción (no se inventó texto)
+OK    A7 galería: se recorren las 7 fotos de «Gorro para Niños con Luz» (cada una distinta, completa y cargada) y la siguiente vuelve a la primera  -> ["1 / 7","2 / 7","3 / 7","4 / 7","5 / 7","6 / 7","7 / 7"]
+OK    A8 8 «Más vendidos»: los mismos ids y en el mismo orden que productos.json, todos con su insignia  -> ["muu167a3kyoe","hpafeitadora","hpkeratina3dpro"]
+OK    A9 etiquetas: «NUEVO» (36) y «Más vendido» coinciden con los datos
+OK    A10 buscador: 15 consultas (mayúsculas, tildes, varias palabras, vacía, sin resultados, caracteres especiales) devuelven exactamente lo esperado  -> []
+OK    A10b sin resultados: mensaje claro, botón «Ver todo» y enlace de WhatsApp al número autorizado
+OK    A11 filtros: cada una de las 20 categorías muestra exactamente sus productos y marca su chip; «Todo» restaura los 186 + 8 destacados  -> []
+OK    A12 enlaces directos (#p=ID, #cat=, #carrito) y hashes inválidos o mal codificados no producen errores  -> []
+OK    B1 agregar desde las tarjetas: 3 unidades en la insignia y barra «Ver carrito» visible con el subtotal
+OK    B2 paso 1: «3 unidades · 2 productos diferentes», subtotal por producto y general correctos
+OK    B3 cambiar cantidades en el carrito (＋ ＋ − y − ) recalcula: A=1, B=2
+OK    B4 enviar sin datos: NO abre WhatsApp y muestra qué falta (nombre y entrega)
+OK    B5 Domicilio en Bogotá: total = subtotal + $10.000 (pago contraentrega) mostrado en resumen y pie
+OK    B6 mensaje de domicilio: va SOLO a wa.me/573134724702, coincide palabra por palabra con el esperado y se conserva el carrito  -> *PEDIDO DANTESTORE*
+Hola DANTESTORE 👋, quiero hacer este pedido.
+
+*Cliente:* An
+OK    B7 Envío a otra ciudad: «Envío: Por cotizar» y «Total definitivo: Pendiente de cotización» (no gratis, no $0)
+OK    B8 mensaje a otra ciudad: ciudad, departamento, destino, «Envío: por cotizar» y TOTAL «pendiente de confirmar» (idéntico al esperado)  -> {"n_antes":1,"n_ahora":2,"nuevas":["*Cliente:* Ana Pérez ⏎ *Subtotal:* $340.000 ⏎ *Entrega:* Envío a otra ciudad (valor del envío por confirmar) ⏎ *Ciudad de destino:* Medellín, Antioquia ⏎ *Envío:* por cotizar ⏎ *TOTAL:* pendiente de confirmar (envío por cotizar)"],"recibido":"*PEDIDO DANTESTORE* ⏎ Hola DANTESTORE 👋, quiero hacer este pedido. ⏎  ⏎ *Cliente:* Ana Pérez ⏎  ⏎ *Productos* (2 productos, 3 unidades): ⏎ 1
+OK    B9 Recoger en tienda: gratis, solo se pide el nombre, total = subtotal
+OK    B10 mensaje de tienda: sin datos de dirección ni ciudad aunque se hubieran escrito antes (idéntico al esperado)  -> recibido: *PEDIDO DANTESTORE* ⏎ Hola DANTESTORE 👋, quiero hacer este pedido. ⏎  ⏎ *Cliente:* Ana Pérez ⏎  ⏎ *Productos* (2 productos, 3 unidades): ⏎ 1. AirPods 4 ⏎    1 × $100.000 = $100.000 ⏎ 2. Audifono Diadema Bose 700 Bluetooth ⏎    2 × $120.000 = $240.000 ⏎  ⏎ *Subtotal:* $340.000 ⏎ *Entrega:* Recoger en tienda (gratis) ⏎ *TOTAL:* $340.000 ⏎  ⏎ Origen: catálogo web || esperado: *PEDIDO DANTESTORE* ⏎ Hola DANTES
+OK    B11 al recargar: carrito y entrega se conservan (3 unidades, tienda)
+OK    B12 datos personales: nada del comprador en localStorage ni cookies; solo en sessionStorage de la pestaña  -> {"l":["dtb_ent","dtb_cart"],"s":["dtb_comprador"],"v":"{\"dtb_ent\":\"tienda\",\"dtb_cart\":\"{\\\"muu167a3kyoe\\\":1,\\\"dtaudifonodiademabose700bluetooth\\\":2}\"}","c":""}
+OK    B13 cantidades: el máximo por la interfaz es 99 («＋» se desactiva y explica el tope); el mínimo es 1 («−» desactivado)
+OK    B14 agregar desde la tarjeta con 99 unidades no pasa del máximo y avisa
+OK    B15 pedido extremo (los 186 productos × 99): no se rompe, el mensaje y el enlace se generan y el texto de respaldo existe (largos medidos: mensaje 11026 · enlace 18252 caracteres)  -> {"lineas":186,"uni":18414,"msg":11026,"url":18252,"ok":true}
+OK    B16 todo enlace de WhatsApp de la página apunta al único número autorizado; sin tel: ni otros teléfonos  -> {"wa":["573134724702"],"otros":["573134724702"],"tel":false,"api":false}
+OK    C1 XSS: cargas hostiles en el buscador y en los 4 campos de texto no ejecutan código ni inyectan elementos (se escapan; en el mensaje van como texto)  -> {"img":0,"svg":0,"area":true}
+OK    C2 XSS por la dirección: hash y parámetros hostiles se ignoran sin ejecutar nada ni producir errores  -> []
+OK    C3 almacenamiento local hostil (ids con HTML, __proto__, constructor, valor de 100 KB): se descarta, sin contaminar prototipos ni ejecutar código
+OK    C4 sin cookies; solo claves propias dtb_* en localStorage  -> {"c":"","l":["dtb_ent","dtb_pm_nav","dtb_cart"]}
+OK    C5 datos del comprador NO sobreviven a una pestaña nueva (se borran al cerrar la pestaña); el carrito sí se conserva
+OK    C5b vaciar el carrito borra también los datos del comprador de sessionStorage
+OK    C6 almacenamiento bloqueado (modo privado extremo): la beta carga y el carrito/pedido funcionan en memoria, sin errores  -> []
+OK    C7 entradas extremas: 10.000 caracteres se recortan al máximo (120), nombre de solo espacios/control es inválido, emojis y buscador de 10.000 caracteres no bloquean (< 500 ms)  -> {"max":120,"vok":true,"msg":693,"vacioNombreInvalido":true,"emoji":60,"ms":1}
+OK    C8 el código solo menciona 2 dominios: wa.me (pedidos) y dantechstore.github.io (vista previa Open Graph); sin CDN, fuentes, analítica ni servicios externos  -> ["https://dantechstore.github.io","https://wa.me"]
+OK    C9 sin eval, new Function, document.write, atributos on*= ni imports dinámicos  -> []
+OK    C10 datos expuestos mínimos: productos.json solo tiene campos de catálogo (sin costos, proveedores, stock, márgenes, clientes)  -> id,orden_global,categoria,orden_en_categoria,nombre,nombre_visible,descripcion,descripcion_html,precio,precio_texto,fotos,sin_foto,etiquetas
+OK    C11 ningún correo, identidad personal ni teléfono distinto del autorizado en beta/, data/, docs/, herramientas/ (los respaldos del catálogo original se excluyen)  -> []
+OK    C12 todos los enlaces que abren pestaña nueva (target=_blank) llevan rel="noopener" en inicio, detalle, sin resultados y carrito  -> []
+OK    C13 la beta no se indexa: noindex, nofollow; sin <base>; sin formularios que envíen datos (el buscador no envía nada)
+OK    G1 todos los recursos y enlaces internos de la página inicial existen (HTTP 200)  -> []
+OK    G2 las 642 imágenes WebP (321 miniaturas + 321 completas) existen en disco con el tamaño exacto del manifiesto  -> []
+OK    G3 cada foto que cita datos.js responde 200 en su ruta (miniatura y completa) y las dimensiones declaradas (width/height) coinciden con el manifiesto  -> {"rutas":640,"mal":[],"dim":0}
+OK    G4 mayúsculas/minúsculas y nombres: todo archivo de imagen está en minúsculas y sin espacios (seguro en GitHub Pages, que distingue mayúsculas)  -> []
+OK    G5 CSS sin url() externas ni rotas
+OK    G6 ninguna petición a recursos externos durante TODAS las pruebas (solo 127.0.0.1 y wa.me interceptado)  -> []
+OK    G7 el servidor local de la guía del iPhone (herramientas/servir_beta.py) sirve la beta completa: 186 productos, imágenes y carrito sin errores  -> []
+OK    D:iPhone SE (3rd gen) vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPhone SE (3rd gen) horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPhone 14 vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPhone 14 horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPhone 14 Pro Max vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPhone 14 Pro Max horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Pixel 7 vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Pixel 7 horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Galaxy S9+ vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Galaxy S9+ horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPad (gen 7) vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPad (gen 7) horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPad Pro 11 vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:iPad Pro 11 horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Galaxy Tab S4 vertical recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Galaxy Tab S4 horizontal recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Escritorio 1366×768 recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    D:Escritorio 1920×1080 recorrido completo sin desbordes, con logo visible, popups dentro de pantalla, botones Continuar/Seguir/Enviar visibles y táctiles ≥44, campos ≥16 px y campo tapado por el teclado  -> []
+OK    E1 carga inicial en celular (Pixel 7 emulado, 4G lenta 1,6 Mbps/150 ms, CPU ×4, sin caché): LCP ≤ 2,5 s... medido 1216 ms  -> {"lcp_ms":1216,"fcp_ms":736,"cls":0,"tbt_ms":13,"dom_ms":936,"carga_ms":1494,"html_kb":3,"css_kb":7,"js_kb":33,"img_kb":104,"imgs":11,"total_kb":152}
+OK    E1b estabilidad visual: CLS ≤ 0,1 y bloqueo total (TBT) ≤ 300 ms  -> {"cls":0,"tbt":13}
+OK    E2 peso inicial: código comprimido ≤ 100 KB y total (con las primeras imágenes) ≤ 600 KB, frente a los 20 MB del catálogo actual  -> {"codigo_kb":43,"total_kb":152}
+OK    E3 la lista no descarga fotos completas ni originales (solo miniaturas WebP): 11 imágenes al inicio  -> []
+OK    E4 imágenes con carga diferida: 192 de 192 (solo se cargan al acercarse); todas con width/height  -> {"lazy":{"n":192,"lazy":192,"sinWH":0},"cargadas":11}
+OK    E5 recorrer todo el catálogo carga solo miniaturas, sin duplicados (94 imágenes, 953 KB en total)  -> {"dup":0,"img_kb":953}
+OK    E6 abrir un producto descarga solo su foto completa (y miniaturas del mismo producto), no las de otros  -> ["muu1q271fjto-1.webp","mv1vtwn6age7-1.webp","muu1q26wahap-1.webp","hpmonitorbebe-1.webp","muu1q26y58ek-1.webp","mv7cd0eeto9j-1.webp","mvi9ee7ald9c-1.webp","hptensiometro-1.webp","mv62b8msxn13-1.webp","mv7c7rhbdte8-1.webp","mvi9a826m06k-1.webp","mw9qg332sjm5-1.webp","mw9uxniy2hpn-1.webp","mv615dy3ldqa-1.webp","mw9qj2580hr0-1.webp","mw9qpyz2ncrs-1.webp","mw9umowuhomi-1.webp","mw9uq1pyiyfv-1.webp","mv60uvx1011b-1.webp"
+OK    E7 scripts al final del cuerpo (no bloquean el pintado), una sola hoja de estilos, sin fuentes web externas
+OK    E8 tamaño del código: 177 KB sin comprimir → 42 KB con gzip (GitHub Pages comprime texto)  -> ["index.html:2","estilos.css:7","config.js:1","datos.js:16","carrito.js:4","app.js:11"]
+OK    F1 idioma es, título, viewport SIN bloqueo de zoom (sin user-scalable=no ni maximum-scale), un solo h1, landmarks header/main/footer/nav con nombre/búsqueda y enlace «Saltar al catálogo»  -> {"lang":"es","titulo":"DANTESTORE · Mucho más para ti","vp":"width=device-width, initial-scale=1, viewport-fit=cover","h1":1,"main":1,"header":1,"footer":1,"navs":["Categorías"],"buscar":true,"saltar":true}
+OK    F2 jerarquía de títulos sin saltos (h1 → h2 → h3) en la página principal  -> {"n":216,"salto":0}
+OK    F3 inicio: todos los 631 controles (botones, enlaces, campos) tienen nombre accesible; las 193 imágenes tienen atributo alt; las de producto con el nombre del producto  -> {"total":631,"sin":[],"sinAlt":[],"prodSinNombre":[],"imgs":193}
+OK    F4 contraste WCAG AA (4,5:1 texto normal, 3:1 texto grande) en inicio, categoría, sin resultados, detalle, carrito (3 estados) y confirmación: 1765 textos evaluados  -> {"fallan":[],"peor":"inicio:4.6 | categoría:4.73 | sin resultados:4.73 | detalle:4.73 | carrito paso 1:4.59 | carrito paso 2 con errores:4.59 | carrito paso 2 otra ciudad:4.59 | confirmar vaciar:4.59","indeterminados":0}
+OK    F5 detalle y carrito (pasos 1 y 2): todos los controles con nombre accesible y alt presente  -> {"detalle":[],"c1":[],"c2":[]}
+OK    F6 teclado: el primer Tab llega a «Saltar al catálogo» y Enter lleva el foco al catálogo
+OK    F7 teclado: se recorre toda la página con Tab hasta el pie (437 paradas) sin trampas y cada parada tiene indicador de foco visible  -> {"paradas":437,"sinIndicador":[]}
+OK    F8 carrito (modal): el foco permanece dentro con 14 Tab, Esc lo cierra y el foco vuelve al botón «Carrito»  -> 0
+OK    F9 detalle (modal): el foco permanece dentro con 20 Tab, Esc lo cierra y el foco vuelve a la tarjeta
+OK    F10 ventana emergente: role=dialog, aria-modal, título asociado, foco en «Cerrar» y Esc la cierra
+OK    F11 con «reducir movimiento» no hay animaciones infinitas en marcha (decoración de ventanas emergentes oculta)  -> 0
+OK    F12 modo oscuro del iPhone: la página sigue legible (mismo contraste AA, fondo claro propio): 811 textos, peor 4.6:1  -> {"fallan":[],"bg":"rgb(251, 247, 241)"}
+OK    F13 Open Graph y Twitter Card completos con direcciones absolutas bajo la URL oficial; imagen 1200×630 existente
+OK    F14 áreas táctiles (iPhone 14): 667 controles revisados; los principales (agregar, ＋/−, chips, cerrar, continuar, enviar, campos, opciones de entrega) miden ≥ 44 px; ninguno < 24 px (mínimo WCAG 2.2 AA)  -> {"criticos_menores_de_44":[],"secundarios_menores_de_44":194}
+OK    H1 main remoto conserva su commit original 9ef8bc95f5023ec2160e8590c643e26605a5db32
+OK    H2 la rama dantechstore-catalogo no cambió (b343f5a5e06dc71f93e72006e3a1ae54ea081561)
+OK    H3 index.html oficial y catalogo-dantestore.html idénticos a los de main (sha256)
+OK    H4 las 321 fotos originales (y el logo del perro Dante) son idénticas byte a byte a las de la etapa 1  -> []
+OK    H5 logo original: sha256 igual al del catálogo publicado en main
+OK    H6 data/productos.json y los respaldos (_respaldo/) sin cambios desde la etapa 1
+OK    H7 los 186 productos de beta/js/datos.js (id, nombre, categoría, precio, descripción) son idénticos a data/productos.json  -> []
+OK    H8 solo se tocaron beta/, herramientas/ y docs/ (nada en la raíz, img/ ni _respaldo/); la única excepción documentada es el manifiesto de imágenes y su cambio es solo «Infinity» → null (JSON válido)  -> {"cambios":"M\tdata/manifiesto_imagenes.json","dm":["-\"psnr_db\":Infinity,","+\"psnr_db\":null,","-\"psnr_db\":Infinity,","+\"psnr_db\":null,"]}
+OK    H9 sin archivos de publicación nuevos (CNAME, .github/workflows, _config.yml, .nojekyll) ni dependencias (package.json)
+OK    Z1 consola sin errores ni advertencias y sin respuestas HTTP ≥ 400 en TODAS las pruebas de esta etapa
+
+RESULTADO: 102 de 102 verificaciones OK
+Peticiones al servidor local: 3964 · wa.me interceptados: 3 · externos bloqueados: 0
