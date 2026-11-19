@@ -1,0 +1,72 @@
+DANTESTORE beta - ETAPA 6 - RESULTADOS REALES DE PRUEBAS
+Commit de código probado: 87724bd (correcciones) + a377a4e (ajuste de pruebas). Rama renovacion-dantestore.
+Entorno: Chromium + Playwright (EMULACIÓN de dispositivos). No es Safari/WebKit, no es un iPhone físico, no es Lighthouse ni axe-core.
+
+RESUMEN DE TODAS LAS SUITES (ejecutadas sobre el árbol limpio tras las correcciones)
+  Etapa 1 validador ............ 28/28
+  Etapa 2 validador ............ 21/21
+  Etapa 3 pruebas .............. 66/66
+  Etapa 3b verificaciones ...... 33/33
+  Etapa 4 pruebas .............. 94/94   (2 comprobaciones ajustadas por cambios intencionales: C1, F2; ver ETAPA6_INFORME.md)
+  Etapa 5 pruebas .............. 102/102 (1 falso positivo de la propia prueba corregido: C11)
+  Etapa 6 pruebas (nuevas) ..... 55/55
+  TOTAL ........................ 399/399
+
+DETALLE ETAPA 6 (salida literal de herramientas/etapa6_pruebas.js)
+  OK  C1 tokens de texto (--suave, --oro-osc) ≥4.9:1 aun sobre el fondo más oscuro (--linea) y blanco sobre --wa ≥5.5:1  [4.95]
+  OK  C2 inicio: todo el texto con fondo sólido ≥4.5:1 (margen ≥4.9)  [805 textos, peor 5.02 DIV.beta-banner «VERSIÓN BETA DE PRUEBA · no es»]
+  OK  C3 carrito paso 1 ≥4.9  [31 textos, peor 5.89 SPAN. «2»]
+  OK  C4 carrito paso 2 (otra ciudad) ≥4.9  [47 textos, peor 5.89 SPAN. «1»]
+  OK  C5 detalle de producto ≥4.9  [17 textos, peor 6.13 BUTTON.enlace «Audífonos»]
+  OK  T-iPhone SE nombre de producto: área táctil efectiva ≥44 px en 31 tarjetas muestreadas y el botón Agregar no queda tapado  [malos= tapa=0]
+  OK  T-iPhone 13 nombre de producto: área táctil efectiva ≥44 px en 31 tarjetas muestreadas y el botón Agregar no queda tapado  [malos= tapa=0]
+  OK  T-Tablet nombre de producto: área táctil efectiva ≥44 px en 31 tarjetas muestreadas y el botón Agregar no queda tapado  [malos= tapa=0]
+  OK  T-diseño el diseño no cambia: la caja del nombre sigue midiendo 2.5em (no se agregó alto real)  [{"n":37.5,"b":45.5,"efm":"15px"}]
+  OK  T-clic un toque en el borde superior ampliado del nombre abre el detalle
+  OK  S1 existen 3 accesos rápidos: catálogo, buscar/categorías y pie de página  [[["#catalogo","Saltar al catálogo"],["#barra","Ir a buscar y categorías"],["#pie","Ir al pie de página y contacto"]]]
+  OK  S2 destinos existen y son enfocables (main, barra, footer)
+  OK  S3 landmarks: un <main>, un <footer>, <nav> de categorías y buscador (role=search)
+  OK  S4 primer Tab: aparece "Saltar al catálogo" visible en pantalla  [{"t":"Saltar al catálogo","vis":true}]
+  OK  S5 Enter en "Saltar al catálogo": el foco queda en <main>, el hash no cambia y el contenido queda visible bajo la barra fija  [{"id":"catalogo","hash":"","mtop":131.390625,"bh":123}]
+  OK  S6 segundo Tab: "Ir a buscar y categorías"  [Ir a buscar y categorías]
+  OK  S7 Enter lleva el foco a la barra de búsqueda/categorías sin cambiar el hash  [{"id":"barra","hash":"","top":0.390625}]
+  OK  S8 desde allí, el siguiente Tab cae en el campo de búsqueda
+  OK  S9 tercer Tab: "Ir al pie de página y contacto"  [Ir al pie de página y contacto]
+  OK  S10 Enter lleva el foco al pie (visible) sin cambiar el hash; el siguiente Tab es el WhatsApp del pie  [{"id":"pie","hash":"","vis":true,"wa":true}]
+  OK  S11 el Tab siguiente cae en «Escríbenos por WhatsApp»
+  OK  A-iPhone 13 horizontal aviso visible, sin tapar título ni botón de cerrar del carrito  [aviso y=151 h=40 vp=750x342]
+  OK  A2-iPhone 13 horizontal tampoco tapa el pie con «Continuar»/«Enviar pedido»  [pie y=232]
+  OK  A-iPhone SE horizontal aviso visible, sin tapar título ni botón de cerrar del carrito  [aviso y=140 h=40 vp=568x320]
+  OK  A2-iPhone SE horizontal tampoco tapa el pie con «Continuar»/«Enviar pedido»  [pie y=210]
+  OK  A-Pixel 7 horizontal aviso visible, sin tapar título ni botón de cerrar del carrito  [aviso y=160 h=40 vp=863x360]
+  OK  A2-Pixel 7 horizontal tampoco tapa el pie con «Continuar»/«Enviar pedido»  [pie y=250]
+  OK  A-iPhone 13 vertical aviso visible, sin tapar título ni botón de cerrar del carrito  [aviso y=312 h=40 vp=390x664]
+  OK  A2-iPhone 13 vertical tampoco tapa el pie con «Continuar»/«Enviar pedido»  [pie y=554]
+  OK  A-iPhone SE vertical aviso visible, sin tapar título ni botón de cerrar del carrito  [aviso y=264 h=40 vp=320x568]
+  OK  A2-iPhone SE vertical tampoco tapa el pie con «Continuar»/«Enviar pedido»  [pie y=398]
+  OK  G0 carrito extremo (todos los productos ×99) se carga y conserva
+  OK  G1 pedido extremo: aparece aviso «Tu pedido es muy grande» y el respaldo de copiar queda abierto  [enlace 18104 caracteres]
+  OK  G2 el enlace de WhatsApp sigue yendo SOLO a 573134724702 y su texto decodificado es idéntico al mensaje de respaldo
+  OK  G3 «Copiar mensaje» copia el mensaje completo al portapapeles (sin truncar)  [10939 caracteres]
+  OK  G4 aviso «Mensaje copiado»
+  OK  G5 el mensaje largo conserva líneas de los 186 productos y el total (no se recorta)
+  OK  G6 sin desborde horizontal con pedido extremo
+  OK  G7 enviar un pedido extremo no vacía el carrito
+  OK  G8 pedido normal: NO aparece el aviso y el respaldo sigue cerrado (comportamiento anterior)
+  OK  M1 el carrito sobrevive a recargar la página
+  OK  M2 viewport permite zoom (sin user-scalable=no ni maximum-scale) y usa viewport-fit=cover
+  OK  M3 campos de texto ≥16 px (iOS no hace zoom automático al enfocar)
+  OK  M4 enviar sin datos: no se abre WhatsApp y se muestran los errores
+  OK  M5 con datos completos el enlace va a 573134724702 con el pedido
+  OK  M6 se registró 1 apertura de WhatsApp y el carrito se conserva
+  OK  M7 los datos del comprador viven en sessionStorage y NO en localStorage
+  OK  M8 almacenamiento bloqueado (modo privado extremo): el carrito funciona en memoria sin errores
+  OK  M9 320 px de ancho: sin desborde horizontal
+  OK  P1 index.html (catálogo publicado) intacto
+  OK  P2 catalogo-dantestore.html intacto
+  OK  P3 186 productos en la beta  [186]
+  OK  P4 el único número de WhatsApp en la beta es 573134724702  [573134724702]
+  OK  P5 condiciones comerciales sin cambios (domicilio $10.000 contraentrega, otra ciudad por confirmar, tienda gratis, máx 99)
+  OK  P6 sin errores de JavaScript durante las pruebas  []
+
+ETAPA 6: 55/55 pruebas OK
