@@ -267,7 +267,7 @@ if(quiere('C')){
   ok('C10','datos expuestos mínimos: productos.json solo tiene campos de catálogo (sin costos, proveedores, stock, márgenes, clientes)',![...campos].some(k=>/cost|proveed|stock|margen|utilid|client|compra|venta|cantidad|inventario/i.test(k)),[...campos].join(','));
   const todo=sh('git ls-files').split('\n').filter(f=>f&&!/\.(webp|jpg|png)$/.test(f));
   let hits=[];todo.forEach(f=>{let s='';try{s=fs.readFileSync(f,'utf8').replace(/\b[0-9a-f]{64}\b/g,'')}catch(e){return}   /* las huellas sha256 (64 hex) se quitan: sus dígitos no son teléfonos */
-    if(f.startsWith('_respaldo')||f==='index.html'||f==='catalogo-dantestore.html')return;if(f==='herramientas/etapa5_pruebas.js')return;
+    if(f.startsWith('_respaldo')||f==='index.html'||f==='catalogo-dantestore.html')return;if(f==='herramientas/etapa5_pruebas.js'||/^docs\/ETAPA\d_RESULTADO_PRUEBAS\.txt$/.test(f))return;   /* los informes de resultados citan el texto de las propias comprobaciones */
     if(/hotmail|@[a-z0-9-]+\.(com|es|co)\b|oskar_toledo/i.test(s.replace(/@(media|keyframes|import|font-face|supports|charset|types)/g,'')))hits.push(f+': correo/identidad');
     const n=[...s.matchAll(/(?<![\w.#-])(\+?57[ -]?)?3\d{2}[ -]?\d{3}[ -]?\d{4}(?!\d)/g)].map(m=>m[0].replace(/\D/g,'')).filter(x=>!(x===WA||x===WA.slice(2)));if(n.length&&!/sha|hash/i.test(f))hits.push(f+': '+[...new Set(n)].join(','))});
   ok('C11','ningún correo, identidad personal ni teléfono distinto del autorizado en beta/, data/, docs/, herramientas/ (los respaldos del catálogo original se excluyen)',!hits.length,hits.slice(0,5));

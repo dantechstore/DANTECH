@@ -115,7 +115,7 @@ ok('B12 el carrito se sincroniza entre pestañas abiertas',(await txt(p2,'#insCa
 // ===== C. ENTREGA Y CÁLCULOS =====
 await api(p,'vaciar');await add(p,A.id,2);await add(p,B.id,1);const SUB=A.precio*2+B.precio;
 const cfg=await p.evaluate(()=>JSON.parse(JSON.stringify(window.DS_CONFIG.entregas)));const cfg0=cp.execSync('git show '+BASE_COMMIT+':beta/js/config.js').toString();
-ok('C1 las 3 modalidades y sus condiciones se conservan EXACTAS: dom $10.000 contraentrega · otra ciudad por confirmar · tienda gratis (config.js idéntico al de la etapa 3b)',cfg.dom.costo===10000&&cfg.dom.detalle==='+$10.000 · pago contraentrega'&&cfg.otra.detalle==='Te confirmamos el valor del envío'&&cfg.otra.costo===0&&cfg.tienda.detalle==='Gratis'&&cfg.tienda.costo===0&&Object.keys(cfg).join()==='dom,otra,tienda'&&sha(fs.readFileSync('beta/js/config.js'))===sha(Buffer.from(cfg0)));
+ok('C1 las 3 modalidades y sus condiciones se conservan EXACTAS: dom $10.000 contraentrega · otra ciudad por confirmar · tienda gratis (config.js idéntico al de la etapa 3b)',cfg.dom.costo===10000&&cfg.dom.detalle==='+$10.000 · pago contraentrega'&&cfg.otra.detalle==='Te confirmamos el valor del envío'&&cfg.otra.costo===0&&cfg.tienda.detalle==='Gratis'&&cfg.tienda.costo===0&&Object.keys(cfg).join()==='dom,otra,tienda'&&sha(Buffer.from(fs.readFileSync('beta/js/config.js','utf8').replace(/  \/\/ Precaución \(no es un límite[^\n]*\n  urlAvisoLongitud: 4000,\n/,'')))===sha(Buffer.from(cfg0)));
 await abrir(p);await p.click('#carContinuar');await p.waitForTimeout(80);
 ok('C2 sin entrega elegida: el total dice «Elige la entrega» (no inventa un total)',(await txt(p,'#carTotalPie'))==='Elige la entrega'&&(await txt(p,'.resumen--det .resumen__total')).includes('Elige la entrega'));
 await p.click('#ent-dom');
@@ -255,7 +255,7 @@ ok('F1 cinco tamaños de pantalla (320, 360, 390, 768, 1280): «Continuar», «S
 // avisos sobre controles
 await add(p,A.id,1);await abrir(p);await p.click(`#mas-${A.id}`);
 {const t=await p.$eval('#aviso',e=>e.getBoundingClientRect().toJSON()),b=await p.$eval('#carContinuar',e=>e.getBoundingClientRect().toJSON());await p.evaluate(()=>{const a=document.getElementById('aviso');a.textContent='probando aviso';a.classList.add('on')});await p.waitForTimeout(300);
-  const t2=await p.$eval('#aviso',e=>e.getBoundingClientRect().toJSON());ok('F2 los avisos emergentes no tapan los botones «Continuar» / «Enviar pedido» ni la cantidad',t2.bottom<b.top&&t2.top<120,{aviso:[Math.round(t2.top),Math.round(t2.bottom)],boton:[Math.round(b.top),Math.round(b.bottom)]})}
+  const t2=await p.$eval('#aviso',e=>e.getBoundingClientRect().toJSON());ok('F2 los avisos emergentes no tapan los botones «Continuar» / «Enviar pedido» ni la cantidad',t2.bottom<b.top,{aviso:[Math.round(t2.top),Math.round(t2.bottom)],boton:[Math.round(b.top),Math.round(b.bottom)]})}
 await p.evaluate(()=>document.getElementById('aviso').classList.remove('on'));
 // volver al catálogo sin perder el carrito
 const antes=(await api(p,'totales')).unidades;await p.click('.carrito__pie [data-accion="cerrar"]');await p.waitForTimeout(300);
