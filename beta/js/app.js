@@ -247,7 +247,9 @@
       (ent === 'tienda' ? '<div class="res__fila"><span>Recoger en tienda</span><b>Gratis</b></div>' : '') +
       '<div class="resumen__total"><b>' + tt.etq + '</b><b>' + esc(tt.v) + '</b></div>' + (tt.nota ? '<p class="nota">' + esc(tt.nota) + '</p>' : '') + '</section>';
     if (cp.enviado) h += '<div class="enviado" role="status"><b>Se abrió WhatsApp con tu pedido.</b><p>Revísalo y envíalo desde allí. Tu carrito se conserva por si necesitas corregir algo. Si ya lo enviaste, puedes vaciarlo.</p><button class="btn btn--sec" type="button" data-accion="vaciar">Ya envié mi pedido: vaciar carrito</button></div>';
-    h += '<details class="copiar"><summary>¿No se abre WhatsApp?</summary><p>Copia este mensaje y envíalo al +' + esc(C.whatsapp) + ':</p><textarea id="carTexto" readonly rows="8" aria-label="Mensaje del pedido, para copiar">' + esc(K.mensaje()) + '</textarea></details>';
+    var largo = K.enlace().length > C.urlAvisoLongitud;
+    if (largo) h += '<p class="nota nota--aviso" id="avisoGrande" role="note"><b>Tu pedido es muy grande.</b> Si WhatsApp no se abre o el mensaje llega cortado, usa «Copiar mensaje» (abajo) y pégalo en el chat de +' + esc(C.whatsapp) + '. También puedes enviarlo en dos partes.</p>';
+    h += '<details class="copiar"' + (largo ? ' open' : '') + '><summary>¿No se abre WhatsApp?</summary><p>Copia este mensaje y envíalo al +' + esc(C.whatsapp) + ':</p><textarea id="carTexto" readonly rows="8" aria-label="Mensaje del pedido, para copiar">' + esc(K.mensaje()) + '</textarea><button class="btn btn--sec copiar__btn" id="btnCopiar" type="button" data-accion="copiar">Copiar mensaje</button></details>';
     return h;
   }
   function pintarCarrito() {
@@ -293,6 +295,11 @@
     else if (par && !par.disabled) par.focus({ preventScroll: true });
     else if (cp.confirmando && byId('vaciarNo')) byId('vaciarNo').focus();
     else if (!el.contains(document.activeElement)) { var tt2 = byId('carTitulo') || $('[data-cerrar]', el); if (tt2) tt2.focus({ preventScroll: true }); }
+  }
+  function copiarMensaje() {
+    var ta = byId('carTexto'); if (!ta) return; ta.value = K.mensaje();
+    var ok = function () { aviso('Mensaje copiado'); }, plan = function () { try { ta.focus(); ta.select(); ta.setSelectionRange(0, ta.value.length); if (document.execCommand('copy')) ok(); else aviso('Selecciona el texto y cópialo'); } catch (e) { aviso('Selecciona el texto y cópialo'); } };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(ok, plan); else plan();
   }
   /* Mensajes de error junto a cada campo y resumen al inicio; solo después de intentar enviar. */
   function marcarErrores() {
@@ -357,6 +364,17 @@
     $('#chips').innerHTML = h;
   }
 
+  /* ---------- Accesos rápidos (teclado): llevan el foco al destino sin tocar el historial ---------- */
+  $$('.saltar').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      var d = byId(a.getAttribute('href').slice(1)); if (!d) return; e.preventDefault();
+      d.focus({ preventScroll: true });
+      if (d.id === 'catalogo') { var b = $('#barra'); window.scrollTo(0, Math.max(0, d.getBoundingClientRect().top + window.scrollY - (b ? b.offsetHeight : 0) - 8)); }
+      else if (d.id === 'barra') window.scrollTo(0, Math.max(0, d.getBoundingClientRect().top + window.scrollY));
+      else d.scrollIntoView({ block: 'start' });
+    });
+  });
+
   /* ---------- Eventos (delegación) ---------- */
   document.addEventListener('click', function (e) {
     var t = e.target.closest('[data-accion]'); if (!t) return;
@@ -393,6 +411,7 @@
           var sm = byId('carErrores'); if (sm && !sm.hidden) { sm.focus(); var cu = $('.carrito__cuerpo'); if (cu) cu.scrollTop = 0; }
         } else { setTimeout(function () { cp.enviado = true; if (!$('#capaCarrito').hidden) pintarCarrito(); }, 700); }   // el carrito NO se vacía: el cliente puede revisar y corregir
         break;
+      case 'copiar': copiarMensaje(); break;
       case 'popup-cerrar': cerrarPopup(); break;
       case 'popup-ir': cerrarPopup(t.dataset.cat); break;
     }

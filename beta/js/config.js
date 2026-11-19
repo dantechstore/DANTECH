@@ -16,6 +16,8 @@ window.DS_CONFIG = {
     tienda: { titulo: 'Recoger en tienda', icono: '🏪', detalle: 'Gratis', costo: 0, mensaje: 'Recoger en tienda (gratis)' }
   },
   cantidadMaxima: 99,
+  // Precaución (no es un límite verificado de WhatsApp): sobre esta longitud de enlace se avisa al cliente y se ofrece copiar el mensaje.
+  urlAvisoLongitud: 4000,
   // Las ventanas emergentes se muestran una vez al día por visitante.
   popupsUnaVezAlDia: true
 };
